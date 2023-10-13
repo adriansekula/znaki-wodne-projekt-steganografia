@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageDraw, ImageFont, ImageTk
 
-def add_watermark():
+def add_watermark_and_save():
     # Wczytaj obraz źródłowy
     file_path = filedialog.askopenfilename()
     source_image = Image.open(file_path)
@@ -35,6 +35,11 @@ def add_watermark():
     # Rysuj znak wodny
     draw.text(position, watermark_text, fill=watermark_color, font=font)
 
+    # Zapisz obraz z dodanym znakiem wodnym
+    save_path = filedialog.asksaveasfilename(defaultextension=".jpg", filetypes=[("Pliki JPEG", "*.jpg")])
+    if save_path:
+        marked_image.save(save_path)
+
     # Wyświetl obraz w interfejsie
     marked_photo = ImageTk.PhotoImage(marked_image)
     marked_image_label.config(image=marked_photo)
@@ -45,8 +50,8 @@ root = tk.Tk()
 root.title("Aplikacja do dodawania znaku wodnego")
 
 # Przycisk wyboru obrazu źródłowego
-select_image_button = tk.Button(root, text="Wybierz obraz źródłowy", command=add_watermark)
-select_image_button.pack()
+# select_image_button = tk.Button(root, text="Wybierz obraz źródłowy", command=add_watermark)
+# select_image_button.pack()
 
 # Pole tekstowe na znak wodny
 watermark_entry = tk.Entry(root, width=30)
@@ -91,9 +96,9 @@ watermark_size_entry = tk.Entry(root, width=5)
 watermark_size_entry.pack()
 watermark_size_entry.insert(0, "24")
 
-# Przycisk do generowania obrazu z znakiem wodnym
-generate_button = tk.Button(root, text="Generuj obraz z znakiem wodnym", command=add_watermark)
-generate_button.pack()
+# Przycisk do generowania i zapisywania obrazu z znakiem wodnym
+generate_and_save_button = tk.Button(root, text="Generuj i zapisz obraz z znakiem wodnym", command=add_watermark_and_save)
+generate_and_save_button.pack()
 
 # Wyświetlanie obrazu
 marked_image_label = tk.Label(root)
