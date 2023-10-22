@@ -1,4 +1,3 @@
-from distutils.log import warn
 import tkinter as tk
 import tkinter.ttk as ttk
 from tkinter import filedialog
