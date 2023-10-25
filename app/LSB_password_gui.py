@@ -89,16 +89,18 @@ class LSB_Watermark_Password:
 
     def pack_elements(self):
         def get_src_file():
-            self.src_filename = filedialog.askopenfilename()
+            self.src_filename = filedialog.askopenfilename(title="Wybierz plik zrodlowy",
+                                                           filetypes=[('image files', '.png')])
 
         def get_src_file_decode():
-            self.src_filename_decode = filedialog.askopenfilename()
+            self.src_filename_decode = filedialog.askopenfilename(title="Wybierz plik zrodlowy",
+                                                                  filetypes=[('image files', '.png')])
 
         self.notebook.add(self.encode_tab, text="Dodaj znak wodny")
         self.notebook.add(self.decode_tab, text="Odczytaj znak wodny")
         self.notebook.pack()
 
-        tk.Label(self.encode_tab, text="Obraz źródłowy").grid(row=0)
+        tk.Label(self.encode_tab, text="Obraz źródłowy (PNG)").grid(row=0)
         tk.Label(self.encode_tab, text="Znak wodny do ukrycia").grid(row=1)
         tk.Label(self.encode_tab, text="Hasło").grid(row=2)
 
@@ -115,12 +117,13 @@ class LSB_Watermark_Password:
             dest = filedialog.asksaveasfilename()
             message = message_entry_encode.get()
             password = password_entry_encode.get()
+            print(self.src_filename, message, password)
             self.Encode(self.src_filename, message, dest, password)
 
         tk.Button(self.encode_tab, text="Zakoduj",
                   command=encode).grid(row=4, column=1)
 
-        tk.Label(self.decode_tab, text="Obraz źródłowy").grid(row=0)
+        tk.Label(self.decode_tab, text="Obraz źródłowy (PNG)").grid(row=0)
         tk.Label(self.decode_tab, text="Hasło").grid(row=1)
 
         src_entry_decode = tk.Button(self.decode_tab, text="Wybierz",
@@ -131,6 +134,7 @@ class LSB_Watermark_Password:
 
         def decode():
             password = password_entry_decode.get()
+            print(self.src_filename, password)
             self.Decode(self.src_filename_decode, password)
 
         tk.Button(self.decode_tab, text="Zdekoduj",
