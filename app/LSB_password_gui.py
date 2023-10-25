@@ -117,7 +117,6 @@ class LSB_Watermark_Password:
             dest = filedialog.asksaveasfilename()
             message = message_entry_encode.get()
             password = password_entry_encode.get()
-            print(self.src_filename, message, password)
             self.Encode(self.src_filename, message, dest, password)
 
         tk.Button(self.encode_tab, text="Zakoduj",
@@ -134,7 +133,6 @@ class LSB_Watermark_Password:
 
         def decode():
             password = password_entry_decode.get()
-            print(self.src_filename, password)
             self.Decode(self.src_filename_decode, password)
 
         tk.Button(self.decode_tab, text="Zdekoduj",
