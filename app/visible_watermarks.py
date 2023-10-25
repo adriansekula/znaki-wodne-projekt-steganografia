@@ -108,11 +108,12 @@ class VisibleWatermarks():
     def add_watermark_and_save(self):
 
         file_path = filedialog.askopenfilename()
-        source_image = Image.open(file_path).convert("RGB")
+        source_image = Image.open(file_path)
 
         # Skopiuj obraz źródłowy, aby nie modyfikować oryginału
         marked_image = source_image.copy()
         marked_image.convert('RGBA')
+        width_marked_image, height_marked_image = marked_image.size
 
         # Check which tab is currently selected
         selected_tab = self.notebook.select()
@@ -166,6 +167,10 @@ class VisibleWatermarks():
             # Open dialog to choose watermark image
             watermark_image_path = filedialog.askopenfilename()
             watermark_image = Image.open(watermark_image_path).convert('RGBA')
+            width_watermark_image, height_watermark_image = watermark_image.size
+            watermark_image_aspect_ratio = width_watermark_image / height_watermark_image
+            watermark_image = watermark_image.resize((int(width_marked_image / 10),
+                                                      int((width_marked_image / 10) / watermark_image_aspect_ratio)))
 
             # Określ pozycję znaku wodnego
             if watermark_position == "Góra lewo":

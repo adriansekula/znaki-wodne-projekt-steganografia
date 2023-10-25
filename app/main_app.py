@@ -1,5 +1,6 @@
 import tkinter as tk
 from visible_watermarks import VisibleWatermarks
+from LSB_password_gui import LSB_Watermark_Password
 
 
 class ZnakiWodneAplikacja():
@@ -7,8 +8,13 @@ class ZnakiWodneAplikacja():
         self.root = tk.Tk()
         self.root.geometry("500x200")
         self.root.title("Znaki wodne - Widoczne i niewidoczne")
+
         self.launch_button = tk.Button(
             self.root, text="Znak wodny widoczny", command=self.visible_watermarks)
+        self.launch_button.pack()
+
+        self.launch_button = tk.Button(
+            self.root, text="Znak wodny ukryty - LSB z haslem", command=self.lsb_watermark_password)
         self.launch_button.pack()
 
     def launch_app(self):
@@ -25,6 +31,17 @@ class ZnakiWodneAplikacja():
         newWindow.geometry("+%d+%d" % (x, y))
 
         app = VisibleWatermarks(newWindow)
+        app.pack_elements()
+
+    def lsb_watermark_password(self):
+        newWindow = tk.Toplevel(self.root)
+        newWindow.grab_set()
+
+        x = self.root.winfo_x()
+        y = self.root.winfo_y()
+        newWindow.geometry("+%d+%d" % (x, y))
+
+        app = LSB_Watermark_Password(newWindow)
         app.pack_elements()
 
 
