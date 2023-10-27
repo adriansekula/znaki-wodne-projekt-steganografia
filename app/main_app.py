@@ -7,10 +7,14 @@ class ZnakiWodneAplikacja():
     def __init__(self):
         self.root = tk.Tk()
         self.root.geometry("500x200")
-        self.root.title("Znaki wodne - Widoczne i niewidoczne")
+        self.root.title("Znaki wodne - Widoczne i Niewidoczne")
+
+        self.title_label = tk.Label(
+            self.root, text="Wybierz jedną z ponizszych opcji:")
+        self.title_label.pack()
 
         self.launch_button = tk.Button(
-            self.root, text="Znak wodny widoczny", command=self.visible_watermarks)
+            self.root, text="Znak wodny widoczny (tekst/obraz)", command=self.visible_watermarks)
         self.launch_button.pack()
 
         self.launch_button = tk.Button(
