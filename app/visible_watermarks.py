@@ -142,11 +142,12 @@ class VisibleWatermarks():
             if watermark_position == "Góra lewo":
                 position = (10, 10)
             elif watermark_position == "Góra prawo":
-                position = (source_image.width - watermark_size - 10, 10)
+                position = (source_image.width -
+                            (watermark_size * len(watermark_text) // 1.5), 10)
             elif watermark_position == "Dół lewo":
                 position = (10, source_image.height - watermark_size - 10)
             else:
-                position = (source_image.width - watermark_size - 10,
+                position = (source_image.width - (watermark_size * len(watermark_text) // 1.5),
                             source_image.height - watermark_size - 10)
 
             # Rysuj znak wodny
