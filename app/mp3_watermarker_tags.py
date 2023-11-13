@@ -30,11 +30,15 @@ class MP3_Watermarker:
         self.button_tab2 = tk.Button(self.tab2, text="Wybierz plik i odczytaj znak wodny",
                                      command=self.read_watermark_tab2)
 
+        self.info_button = tk.Button(
+            root, text="Pomoc", command=self.show_help_box)
+
     def pack_elements(self):
         self.label_tab1.pack()
         self.entry_tab1.pack()
         self.button_tab1.pack()
         self.button_tab2.pack()
+        self.info_button.pack()
 
     def open_file_tab1(self):
         filename = filedialog.askopenfilename(
@@ -72,7 +76,32 @@ class MP3_Watermarker:
             audio = ID3(filename)
             watermark = audio.getall("TXXX")
             if watermark:
-                messagebox.showinfo("Znak wodny", watermark[0].text[0])
+                messagebox.showinfo(
+                    "Znak wodny", "Odczytany znak wodny:\n" + watermark[0].text[0])
             else:
                 messagebox.showinfo(
                     "Znak wodny", "Nie znaleziono znaku wodnego!")
+
+    def show_help_box(self):
+        help_info = '''
+        Ukryty znak wodny w tagu pliku MP3
+
+        *Dodaj znak wodny
+        Zakładka pozwala dodać ukryty tekstowy znak wodny do pliku MP3
+
+        Opcje:
+        - Tekst znaku wodnego - znak wodny tekstowy do ukrycia w pliku MP3
+
+        Aby dodać ukryty znak wodny tekstowy do pliku MP3
+        1) Wpisz tekst znaku wodnego
+        2) Kliknij "Wybierz plik..."
+        3) W nowym oknie wybierz plik MP3
+        4) Plik MP3 ze znakiem wodnym tekstowym zostanie 
+           zapisany w tym samym folderze co plik źródłowy
+
+        *Odczytaj znak wodny
+        Aby odczytać ukryty znak wodny z pliku MP3
+        1) Kliknij "Wybierz plik..."
+        2) Odczytaj znak wodny w nowym oknie
+        '''
+        messagebox.showinfo("Pomoc", help_info)

@@ -1,6 +1,6 @@
 import tkinter as tk
 import tkinter.ttk as ttk
-from tkinter import filedialog
+from tkinter import filedialog, messagebox
 from PIL import Image, ImageDraw, ImageFont, ImageTk
 import numpy as np
 
@@ -12,8 +12,8 @@ class VisibleWatermarks():
         self.notebook = ttk.Notebook(root)
         self.text_tab = tk.Frame(self.notebook)
         self.image_tab = tk.Frame(self.notebook)
-        self.notebook.add(self.text_tab, text='Text Watermark')
-        self.notebook.add(self.image_tab, text='Image Watermark')
+        self.notebook.add(self.text_tab, text='Watermark - Text')
+        self.notebook.add(self.image_tab, text='Watermark - Obraz')
 
         self.watermark_entry_label = tk.Label(
             self.text_tab, text="Tekst znaku wodnego:")
@@ -65,6 +65,9 @@ class VisibleWatermarks():
         self.generate_and_save_button_image = tk.Button(
             self.image_tab, text="Generuj i zapisz obraz z znakiem wodnym", command=self.add_watermark_and_save)
 
+        self.info_button = tk.Button(
+            root, text="Pomoc", command=self.show_help_box)
+
     def pack_elements(self):
         # Pack the notebook with two tabs
         self.notebook.pack()
@@ -104,6 +107,8 @@ class VisibleWatermarks():
         # Przycisk do generowania i zapisywania obrazu z znakiem wodnym
         self.generate_and_save_button_text.pack()
         self.generate_and_save_button_image.pack()
+
+        self.info_button.pack()
 
     def add_watermark_and_save(self):
 
@@ -194,3 +199,41 @@ class VisibleWatermarks():
                 defaultextension=".png", filetypes=[("Pliki PNG", "*.png")])
             if save_path:
                 marked_image.save(save_path)
+
+    def show_help_box(self):
+        help_info = '''
+        Znak wodny widoczny (tekst/obraz)
+
+        Podprogram obsługuje znaki wodne tekstowe oraz obrazowe (PNG)
+        
+        *Watermark - Text
+        Pierwsza zakładka słuzy dodawaniu tekstu jako znaku wodnego do obrazu
+        
+        Opcje:
+        - Tekst znaku wodnego - wpisany przez uzytkownika znak wodny tekstowy
+        - Kolor znaku wodnego - wybór koloru tekstu znaku wodnego
+        - Połozenie znaku wodnego - określa połozenie tekstu
+        - Rozmiar znaku wodnego - określa rozmiar rekstu znaku wodnego
+
+        Aby wygenerować obraz ze znakiem wodnym:
+        1) Wpisz tekst znaku wodnego
+        2) Ustaw opcje znaku wodnego
+        3) Kliknij przycisk "Generuj..."
+        4) W nowym oknie wybierz obraz do oznakowania
+        5) W kolejnym oknie wybierz miejsce zapisu obrazu oraz jego nazwę
+
+        *Watermark - Obraz
+        Druga zakładka słuzy dodawaniu obrazu PNG jako znaku wodnego do obrazu
+        
+        Opcje:
+        - Polozenie znaku wodnego - określa polozenie obrazu znaku wodnego
+
+        Aby wygenerować obraz ze znakiem wodnym:
+        1) Ustaw połozenie znaku wodnego
+        2) Kliknij przycisk "Generuj..."
+        3) W nowym oknie wybierz obraz który chcesz oznakować
+        4) W kolejnym oknie wybierz znak wodny, który chcesz dodać do obrazu
+        5) W kolejnym oknie wybierz nazwę oraz miejsce zapisu oznakowanego obrazu
+
+        '''
+        messagebox.showinfo("Pomoc", help_info)

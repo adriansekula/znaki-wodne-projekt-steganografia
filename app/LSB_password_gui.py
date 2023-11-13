@@ -19,6 +19,9 @@ class LSB_Watermark_Password:
         self.src_filename = None
         self.src_filename_decode = None
 
+        self.info_button = tk.Button(
+            root, text="Pomoc", command=self.show_help_box)
+
     def Encode(self, src, message, dest, password):
         img = Image.open(src, 'r')
         width, height = img.size
@@ -137,3 +140,38 @@ class LSB_Watermark_Password:
 
         tk.Button(self.decode_tab, text="Zdekoduj",
                   command=decode).grid(row=2, column=1)
+
+        self.info_button.pack()
+
+    def show_help_box(self):
+        help_info = '''
+        Znak wodny ukryty - LSB z hasłem
+
+        Podprogram pozwala na ukrycie tekstowego znaku wodnego w obrazie PNG
+        <!> Program nie wspiera polskich znaków (ą, ś, ...)
+
+        *Dodaj znak wodny
+        Opcje:
+        - Obraz źródłowy (PNG) - wybranie obrazu bazowego
+        - Znak wodny do ukrycia - tekstowy znak wodny do ukrycia w obrazie
+        - Hasło - hasło potrzebne do odkowowania znaku wodnego
+
+        Aby dodać niewidoczny tesktowy znak wodny:
+        1) Wybierz obraz źródłowy PNG
+        2) Wpisz znak wodny tekstowy do pola tekstowego
+        3) Wpisz hasło wymagane do odkodowania znaku wodnego
+        4) Kliknij "Zakoduj"
+        5) W nowym oknie wybierz nazwę i miejsce zapisu podpisanego obrazu
+
+        *Odczytaj znak wodny
+        Opcje:
+        - Obraz źródłowy (PNG) - wybranie obrazu bazowego z ukrytym tekstem
+        - Hasło - hasło podane przy zakodowywaniu znaku wodnego
+
+        Aby odczytać ukryty tekstowy znak wodny:
+        1) Wybierz obraz źródłowy PNG
+        2) Wpisz hasło wymagane do odkodowania znaku wodnego
+        3) Kliknij przycisk "Zdekoduj"
+        4) Odczytaj znak wodny w nowym oknie 
+        '''
+        messagebox.showinfo("Pomoc", help_info)

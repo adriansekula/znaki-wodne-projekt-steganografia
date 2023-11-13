@@ -11,7 +11,7 @@ class ZnakiWodneAplikacja():
         self.root.title("Znaki wodne - Widoczne i Niewidoczne")
 
         self.title_label = tk.Label(
-            self.root, text="Wybierz jedną z ponizszych opcji:")
+            self.root, text="Wybierz jedną z ponizszych metod dodawania znaku wodnego:")
         self.title_label.pack()
 
         self.launch_button = tk.Button(
@@ -19,11 +19,11 @@ class ZnakiWodneAplikacja():
         self.launch_button.pack()
 
         self.launch_button = tk.Button(
-            self.root, text="Znak wodny ukryty - LSB z haslem", command=self.lsb_watermark_password)
+            self.root, text="Znak wodny ukryty - LSB z hasłem", command=self.lsb_watermark_password)
         self.launch_button.pack()
 
         self.launch_button = tk.Button(
-            self.root, text="Ukryty znak wodny w pliku MP3", command=self.mp3_watermarker)
+            self.root, text="Ukryty znak wodny w tagu pliku MP3", command=self.mp3_watermarker)
         self.launch_button.pack()
 
     def launch_app(self):
