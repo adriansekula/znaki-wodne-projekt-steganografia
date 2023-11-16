@@ -2,6 +2,7 @@ import tkinter as tk
 from visible_watermarks import VisibleWatermarks
 from LSB_password_gui import LSB_Watermark_Password
 from mp3_watermarker_tags import MP3_Watermarker
+from web_watermark import WebWatermarksApp
 
 
 class ZnakiWodneAplikacja():
@@ -24,6 +25,10 @@ class ZnakiWodneAplikacja():
 
         self.launch_button = tk.Button(
             self.root, text="Ukryty znak wodny w tagu pliku MP3", command=self.mp3_watermarker)
+        self.launch_button.pack()
+
+        self.launch_button = tk.Button(
+            self.root, text="Ukryty watermark w meta tagu HTML", command=self.web_watermarks)
         self.launch_button.pack()
 
     def launch_app(self):
@@ -62,6 +67,17 @@ class ZnakiWodneAplikacja():
         newWindow.geometry("+%d+%d" % (x, y))
 
         app = MP3_Watermarker(newWindow)
+        app.pack_elements()
+
+    def web_watermarks(self):
+        newWindow = tk.Toplevel(self.root)
+        newWindow.grab_set()
+
+        x = self.root.winfo_x()
+        y = self.root.winfo_y()
+        newWindow.geometry("+%d+%d" % (x, y))
+
+        app = WebWatermarksApp(newWindow)
         app.pack_elements()
 
 
