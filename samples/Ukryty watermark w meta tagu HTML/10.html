@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+  <link href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/manifest.json" rel="manifest"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+  <meta content="yes" name="apple-touch-fullscreen"/>
+  <meta content="yes" name="mobile-web-app-capable">
+   <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="Frisco.pl" name="apple-mobile-web-app-title"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <link href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/img/fblogo.png" rel="apple-touch-icon">
+     <title>
+      Zakupy spożywcze online z dostawą do domu - Warszawa, Kraków, Wrocław, Poznań, Trójmiasto, Katowice.
+     </title>
+     <meta content="Frisco.pl - sklep spożywczy online z szerokim asortymentem i wieloma promocjami. Zamów zakupy online, zapewniamy dowóz nawet tego samego dnia w Warszawie, Krakowie, Wrocławiu, Poznaniu, Trójmieście, Katowicach." name="Description">
+      <link href="https://www.frisco.pl/" rel="canonical"/>
+      <meta content="index,follow,noodp" name="robots"/>
+      <script type="application/ld+json">
+       {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.frisco.pl/",
+      "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.frisco.pl/q,{search_term_string}/stn,searchResults",
+          "query-input": "required name=search_term_string"
+      }
+  }
+      </script>
+      <meta content="Frisco.pl - supermarket online" property="og:title"/>
+      <meta content="Klienci Frisco mają lepiej! Zrób pierwszy krok w stronę nowoczesnych zakupów i zyskaj czas na to, co dla Ciebie najważniejsze! Rób zakupy spożywcze online z dostawą do domu." property="og:description"/>
+      <meta content="Supermarket online Frisco.pl" property="og:site_name"/>
+      <meta content="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/img/fblogo.png" property="og:image"/>
+      <meta content="bok@frisco.pl" http-equiv="Reply-to">
+       <!-- <meta http-equiv="Accept-CH" content="Width, DPR" />  not compatible with serviceWorker -->
+       <meta content="cache" name="Pragma">
+        <meta content="Safe for kids" name="Rating">
+         <meta content="Frisco.pl" name="Layout">
+          <meta content="Frisco.pl" name="Author">
+           <meta content="Frisco.pl" name="Copyright">
+            <meta content="#a30050" name="theme-color"/>
+            <meta content="10d3e4b64f66b539d605279d9c962d45" name="p:domain_verify"/>
+            <meta content="8kMjcqIM4vvHymXGBmDUIndeiK-1scGeKpSROe4mAKA" name="google-site-verification"/>
+            <meta content="Ng7Z6dk5MmTBA0Fcfs2mgTqPwoezvx0lHV9dqfR_Bkg" name="google-site-verification"/>
+            <meta content="ASwcUMl2UG9jR5GbbkQyOUsKVJAjSpVEPFsi85vE-Eg" name="google-site-verification"/>
+            <meta content="/" name="msapplication-starturl"/>
+            <link href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+            <meta content="1r79z42r3v7vpd9s50yiv1w1vk9h37" name="facebook-domain-verification"/>
+            <link href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/css/usp.css" rel="stylesheet" type="text/css"/>
+            <!-- Preconnect to cdns -->
+            <link href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/" rel="preconnect"/>
+            <!-- Preconnect to cdns -->
+            <link href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+            <!-- Load polyfills -->
+            <script crossorigin="anonymous" defer="" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&amp;features=IntersectionObserver,Intl.RelativeTimeFormat,Intl.RelativeTimeFormat.~locale.pl,Intl.Locale,Intl.DateTimeFormat.%7EtimeZone.golden,Intl.~locale.pl,Promise,XMLHttpRequest,Promise.prototype.finally,Array.prototype.includes,WeakMap,WeakSet,Map,Set,Array.prototype.find,Array.from,CustomEvent,Array.prototype.lastIndexOf,String.prototype.startsWith,ResizeObserver,Object.values,Number.parseInt,scroll">
+            </script>
+            <script async="" crossorigin="anonymous" src="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/js/loading-attribute-polyfill.min.js">
+            </script>
+            <!-- Configure code bugs analitics -->
+            <script defer="" type="text/javascript">
+             function startSentry() {
+    var origin = location.origin;
+    if ((origin === 'https://www.frisco.pl')) {
+      Sentry.init({
+        dsn: 'https://68f11ac86fcc42938bf2a992eaff0205@o321755.ingest.sentry.io/1844668',
+        environment: 'Production',
+        release: 'master-20231123-26837',
+        whitelistUrls: [origin],
+        ignoreErrors: [
+          /Properties can only be defined/,
+          /Jsloader error .*/,
+          /Object doesn't support property or method 'setup'/,
+          /Loading chunk .*/,
+          /unknown/,
+          /Failed to register a ServiceWorker/,
+          /SecurityError/,
+          /Unexpected token else/,
+          /Unexpected token 'else'/,
+          /The fetching process for the media resource was aborted by the user agent/,
+          /The media could not be loaded, either because the server or network failed/,
+          /The element has no supported sources/,
+          /ServiceWorker script evaluation failed/,
+          /Internal error/,
+          /Failed to reconnect/,
+          /Timeout/,
+          /^error$/,
+          /Failed to update a ServiceWorker/,
+          /Script https:\/\/www.frisco.pl\/sw.js load failed/,
+          /redefine non-configurable/,
+          /Script load failed/,
+          /ServiceWorker script/,
+          /called on an object that does not implement interface History/,
+          /Unexpected end of input/,
+          /The element has no supported sources/,
+          /There is no clipping info for given tab/,
+          /NotSupportedError/,
+          /out of memory/,
+          /The operation was aborted/,
+          /request was interrupted by a call to pause/,
+          /An attempt was made to use an object that is not, or is no longer, usable/,
+          /The request is not allowed by the user agent or the platform/,
+          /Can't find variable: Promise/,
+          /fbq/,
+          "Minified React error #418",
+          "Minified React error #423",
+          "Minified React error #425",
+        ],
+        beforeSend: function (event) {
+          return new Promise(function (resolve) {
+            setTimeout(function () {
+              var container = document.getElementById('container')
+              if (container && container.innerHTML === '') {
+                  event.tags.pageStatus = 'down';
+              }
+              resolve(event);
+            }, 300)
+          });
+        },
+        denyUrls: [
+          /statics\/js\/cognigyWebChat/
+        ]
+      });
+      function _setSentryTags(tags) {
+        Sentry.setUser(tags.user);
+        delete tags.user;
+        Sentry.setTags(tags);
+      }
+      if (window._sentryTags) {
+        console.warn('BABA GOT 1', window._sentryTags);
+        _setSentryTags(window._sentryTags);
+        delete window._sentryTags;
+      } else {
+        window._setSentryTags = _setSentryTags;
+      }
+    }
+    window.onunhandledrejection = function (e) {
+      try {
+        if (e.reason) {
+          if (e.reason && (e.reason.indexOf('Timeout') === -1)) {
+            // All http timeouts
+            Sentry.captureException(e.reason, { extra: { unhandledPromise: true } });
+          }
+        }
+      } catch (err) {
+        // squash error, when sentry throws on capturing
+      }
+    }
+  }
+            </script>
+            <link as="script" crossorigin="anonymous" href="https://browser.sentry-cdn.com/6.19.1/bundle.min.js" rel="prefetch"/>
+            <script crossorigin="anonymous" defer="" integrity="sha384-GRagWAKYasaEEyhq5NqRz9Hs7zZOXt+DwzY/WGbWZBkpvt5+lZxITNyU3bD7SFk5" onload="startSentry();" src="https://browser.sentry-cdn.com/6.19.1/bundle.min.js">
+            </script>
+            <script defer="" type="text/javascript">
+             var FRISCO_STATIC_URL = "https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/";
+      var buildVersion = '26837';
+      var additionalLazyModules = ["view-ui-cookies-consents","view-notification","view-lib-notifications-modal"];
+      var requiredLazyModules = [];
+      var timerStart = Date.now();
+      var isMobile = false;
+      var _flushFriscoMsgHandler = (function(){
+        var queue = [];
+        var handler = function(msg) {
+          queue.push(msg);
+        }
+        window.addEventListener("message", handler);
+        return function(){ window.removeEventListener("message", handler); return queue; };
+      })();
+
+      window._triggerResize = function() {
+        if (!isMobile) {
+          var event = document.createEvent("HTMLEvents");
+          event.initEvent("resize", true, false);
+          window.dispatchEvent(event);
+        }
+      };
+
+      var isSamsung = !!navigator.userAgent.toLowerCase().match(/family\s?hub/);
+            </script>
+            <script async="" type="text/javascript">
+             if('serviceWorker' in navigator && !isSamsung) {
+        navigator.serviceWorker.register('https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/js/sw.js').then(function(registration){
+          if (typeof registration.update == 'function')
+            registration.update();
+        });
+      }
+            </script>
+            <!-- Preconnect to google fonts -->
+            <link href="https://fonts.gstatic.com" rel="preconnect"/>
+            <!-- Preload fonts -->
+            <link as="font" crossorigin="anonymous" href="https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2" rel="preload"/>
+            <link as="font" crossorigin="anonymous" href="https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2" rel="preload"/>
+            <link as="font" crossorigin="anonymous" href="https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2" rel="preload"/>
+            <link as="font" crossorigin="anonymous" href="https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2" rel="preload"/>
+            <link as="font" crossorigin="anonymous" href="https://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCQYbw.woff2" rel="preload"/>
+            <link as="font" crossorigin="anonymous" href="https://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCoYb8td.woff2" rel="preload"/>
+            <!-- Preconnect to backend  -->
+            <link href="http://frisco-commerce-proxy" rel="preconnect"/>
+            <!-- Preload main styles -->
+            <link as="style" href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/css/tailwind.css" rel="preload"/>
+            <link as="style" href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/css/core.css" rel="preload"/>
+            <!-- Preload scripts -->
+            <link as="script" href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/js/jquery.min.js" rel="preload">
+             <link as="script" href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/js/jquery.mobile.events.min.js" rel="preload">
+              <link as="script" href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/browser.out/browser.js" rel="preload"/>
+              <link as="style" href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/css/tailwind.css" rel="stylesheet"/>
+              <link href="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/css/core.css" onload="setTimeout(window._triggerResize, 200)" rel="stylesheet" type="text/css"/>
+              <!-- Page hiding snippet for Optimize -->
+              <script>
+               (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+      })(window,document.documentElement,'async-hide','dataLayer',4000,
+         {'GTM-P87ZTDP':true});
+              </script>
+              <script>
+               dataLayer.push({"exp":"999000999.0!iWF3tMOky4lzUsEeQL0DvN.0!AAAAAAAAAAAAAAA2023.0"});
+
+ // Special activation events
+              </script>
+              <!-- Hotjar Tracking Code for https://www.frisco.pl/ -->
+              <script>
+               (function(h,o,t,j,a,r) {
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:820688,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      window.hj=window.hj||function(){(hj.q=hj.q||[]).push(arguments)};
+              </script>
+              <script async="" src="//rum-static.pingdom.net/pa-60c09c9b541c6000110001a2.js">
+              </script>
+             </link>
+            </link>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </link>
+   </meta>
+  </meta>
+  <meta content="27a8440b5d94e137c02b6d47e8510abf65a3f6891279a5dad5f0845c06f26df9" name="body_hash"/>
+ </head>
+ <body>
+  <!-- Google Tag Manager -->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-5NPWZ4" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+    dataLayer.push({ event: "gtm.init_consent" });
+
+    function gtag() { window.dataLayer.push(arguments); }gtag('consent', 'default', {"ad_storage":"denied","extended_conversions":"denied","analytics_storage":"denied"});(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5NPWZ4');
+  </script>
+  <!-- End Google Tag Manager -->
+  <script>
+  </script>
+  <script async="">
+   (function(){
+        var m,r;
+        if(m = (document.cookie.match(/hidden-ribbons=(.*?)(;|$)/) || [])[1]) {
+          document.write('<style type="text/css">.hidden-ribbon');
+          var re = /^[a-z0-9_-]+$/;
+          m = m.split("|");
+          for(r in m) {
+            if(m[r] && re.test(m[r])) document.write(', .ribbon-' + m[r]);
+          }
+          document.write('{display:none;}</style>');
+        }
+      })();
+  </script>
+  <div id="container">
+   <div class="home-page-wrapper user-not-logged sticky-allowed sdm-Van no-touch no-phone lang-pl nav-bar-expanded" id="wrapper">
+    <div class="ribbons">
+     <div>
+     </div>
+    </div>
+    <div class="header--placeholder tw-h-[136px]">
+     <div class="header tw-left-0 tw-right-0 tw-fixed" id="header">
+      <div class="side-box_overlay">
+      </div>
+      <div class="header_bar seach-state">
+       <div class="header-content fluid-container">
+        <div class="header_logo">
+         <a href="/">
+          <img class="header_logo-img" src="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/img/icons/logo.svg"/>
+         </a>
+        </div>
+        <div class="header_search-box">
+         <div class="search-form">
+          <div class="tooltip-wrapper">
+           <form class="query-input">
+            <input data-hj-allow="true" placeholder="Jakiego produktu szukasz?" value=""/>
+            <div class="search-icon">
+             <div class="icon-comp Search" style='mask:url("https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/img/icons-new-frisco/Search.svg")no-repeat center/contain;-webkit-mask:url("https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/img/icons-new-frisco/Search.svg")no-repeat center/contain'>
+             </div>
+            </div>
+           </form>
+          </div>
+         </div>
+        </div>
+        <div class="header-box header-user with-buttons">
+         <div class="buttons-group higher">
+          <button class="button cta header-button" type="button">
+           Zaloguj się
+          </button>
+          <button class="button cta header-button" type="button">
+           Załóż konto
+          </button>
+         </div>
+        </div>
+        <div class="header-box header-postcode">
+         <div class="header-box-inner with-chevron chevron-right">
+          <div>
+           <small>
+            Kod pocztowy
+           </small>
+           <div>
+            <div class="icon-comp Spinner" style='mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/q_1/v1557136692/NewFrisco/Others/icons/loader.svg")no-repeat center/contain;-webkit-mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/q_1/v1557136692/NewFrisco/Others/icons/loader.svg")no-repeat center/contain;width:20px;height:20px;background-color:white'>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div id="portal-post-code">
+         </div>
+        </div>
+        <div class="header-cart header-box">
+         <div class="header-box-inner with-chevron chevron-right">
+          Mój koszyk
+          <br/>
+          <span class="price digits-1">
+           <span class="price_num">
+            0
+           </span>
+           <span class="comma-hidden">
+            ,
+           </span>
+           <span class="price_decimals">
+            00
+           </span>
+           <span class="price_cur">
+            zł
+           </span>
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="ribbons">
+      </div>
+      <div class="tw-transition tw-duration-500 tw-ease-[cubic-bezier(0.8, 0.2, 0.2, 0.8)]">
+       <div class="horizontal-navigation-bar">
+        <div class="horizontal-navigation-bar_wrapper fluid-container">
+         <div class="horizontal-navigation-bar_panel">
+          <div class="horizontal-navigation-bar_categories">
+           <a class="button shadowed secondary higher with-chevron categories-dropdown-link">
+            <span class="short">
+             Kategorie
+            </span>
+            <span class="long">
+             Kategorie sklepu
+            </span>
+           </a>
+           <div class="extra-links">
+            <a class="" href="/stn,settings/sub,vouchers">
+             Kupony rabatowe
+            </a>
+            <a class="" href="/stn,promocje">
+             Promocje
+            </a>
+            <a class="" href="/stn,nowosci">
+             Nowości
+            </a>
+            <a class="" href="/stn,kdr">
+             KDR
+            </a>
+            <a class="" href="/frisco-friends">
+             Frisco Friends
+            </a>
+            <a class="" href="/biznes">
+             Dla Biura
+            </a>
+           </div>
+           <div class="horizontal-navigation-bar_more-links">
+            <div class="button horizontal-navigation-bar_more-links-button">
+             <div class="icon-comp MoreHoriz" style='mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Three-dots.svg")no-repeat center/contain;-webkit-mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Three-dots.svg")no-repeat center/contain'>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="horizontal-navigation-bar_extra-links">
+           <div class="button more">
+           </div>
+           <div class="buttons-group higher">
+            <a class="no-icon button secondary" href="/stn,dostawa">
+             Informacje o dostawie
+            </a>
+            <a class="no-icon button secondary" href="/stn,metody-platnosci">
+             Metody płatności
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="categories-dropdown">
+      </div>
+      <div class="horizontal-bar-container">
+       <span>
+       </span>
+       <span>
+       </span>
+       <span>
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="page-index" id="page-content">
+     <div class="home-page-2">
+      <div class="home-page-2_rotator">
+       <div class="banners-rotator full-width-container titled">
+        <div style="width:0;height:0">
+        </div>
+        <div class="banners-rotator-inner">
+         <div class="slider">
+          <div class="window">
+           <div class="reel" id="reel" style="transform:translateX(-100%)">
+            <div class="banner-with-products active with-headline-uni tracked-banner2023-G24-friscowa-odbierz-bon=wroc-165pln-rotatorSGx--ZZ-x" style="order:1;-webkit-order:1;background-image:https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1695968668/Nowy_branding_2023/Odbierz%20165/Frisco_165_z%C5%82_1920x400_Rotator_1.png">
+             <img class="banner-with-products_image" src="https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1695968668/Nowy_branding_2023/Odbierz%20165/Frisco_165_z%C5%82_1920x400_Rotator_1.png"/>
+             <a class="banner-link" href="/165" target="_self">
+             </a>
+             <div class="banner-with-products_inner container">
+              <div class="inner-wrapper-left">
+               <div class="banner-with-products_content">
+                <div class="banner-with-products_headline-wrapper">
+                 <h2>
+                  <span style="white-space:pre-line">
+                  </span>
+                 </h2>
+                </div>
+                <div class="banner-with-products_subline-wrapper">
+                 <div class="subline" style="white-space:pre-line">
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="banner-with-products_products" style="z-index:1">
+              </div>
+             </div>
+            </div>
+            <div class="banner-with-products" style="order:2;-webkit-order:2">
+            </div>
+            <div class="banner-with-products" style="order:3;-webkit-order:3">
+            </div>
+            <div class="banner-with-products" style="order:4;-webkit-order:4">
+            </div>
+            <div class="banner-with-products" style="order:5;-webkit-order:5">
+            </div>
+            <div class="banner-with-products" style="order:6;-webkit-order:6">
+            </div>
+            <div class="banner-with-products" style="order:7;-webkit-order:7">
+            </div>
+            <div class="banner-with-products" style="order:8;-webkit-order:8">
+            </div>
+            <div class="banner-with-products" style="order:0;-webkit-order:0">
+            </div>
+           </div>
+          </div>
+          <a class="switch prev">
+           <div class="arrow-icon">
+           </div>
+          </a>
+          <a class="switch next">
+           <div class="arrow-icon">
+           </div>
+          </a>
+          <div class="slide-titles">
+           <div class="buttons-collection upmoved">
+            <div class="slide-titles_title button active">
+             Odbierz kupony 165 zł
+            </div>
+            <div class="slide-titles_title button">
+             Friscontowe Ceny
+            </div>
+            <div class="slide-titles_title button">
+             Szansa na wygraną 8.000 zł!
+            </div>
+            <div class="slide-titles_title button">
+             Gazetka FRISCO
+            </div>
+            <div class="slide-titles_title button">
+             Coca-Cola
+            </div>
+            <div class="slide-titles_title button">
+             Nescafé
+            </div>
+            <div class="slide-titles_title button">
+             Black Week
+            </div>
+            <div class="slide-titles_title button">
+             Actimel &amp; Danio
+            </div>
+            <div class="slide-titles_title button">
+             Produkty wysokobiałkowe
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="usp-banner_placeholder full-width-container">
+      </div>
+      <div class="home-page-2_content_header">
+       <div class="home-page-2_content_header_title">
+        Kategorie najczęściej wybierane
+       </div>
+       <div class="home-page-2_content_header_text">
+        Przejrzyj kategorie szczególnie lubione przez naszych Klientów i zacznij komponować swój koszyk!
+       </div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+      <div class="home-page-2_content_header">
+       <div class="home-page-2_content_header_title">
+        Wybierz to, co u nas najlepsze
+       </div>
+       <div class="home-page-2_content_header_text">
+        Sekcje tematyczne, garść inspiracji, najlepszych okazji oraz nowości.
+       </div>
+      </div>
+      <div>
+      </div>
+      <div class="home-page-2_section products-slider">
+       <div class="home-page-2_section-header">
+        <div class="placeholder" style="width:150px;height:32px">
+        </div>
+       </div>
+       <div class="home-page-2_section-products">
+        <div class="ui-slider_wrapper">
+         <div class="ui-slider products placeholders">
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="home-page-2_section products-slider">
+       <div class="home-page-2_section-header">
+        <div class="placeholder" style="width:150px;height:32px">
+        </div>
+       </div>
+       <div class="home-page-2_section-products">
+        <div class="ui-slider_wrapper">
+         <div class="ui-slider products placeholders">
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="home-page-2_section products-slider">
+       <div class="home-page-2_section-header">
+        <div class="placeholder" style="width:150px;height:32px">
+        </div>
+       </div>
+       <div class="home-page-2_section-products">
+        <div class="ui-slider_wrapper">
+         <div class="ui-slider products placeholders">
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="home-page-2_section products-slider">
+       <div class="home-page-2_section-header">
+        <div class="placeholder" style="width:150px;height:32px">
+        </div>
+       </div>
+       <div class="home-page-2_section-products">
+        <div class="ui-slider_wrapper">
+         <div class="ui-slider products placeholders">
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="home-page-2_section products-slider">
+       <div class="home-page-2_section-header">
+        <div class="placeholder" style="width:150px;height:32px">
+        </div>
+       </div>
+       <div class="home-page-2_section-products">
+        <div class="ui-slider_wrapper">
+         <div class="ui-slider products placeholders">
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+          <div class="new-product-box-placeholder">
+           <div class="new-product-box-placeholder_img">
+           </div>
+           <div class="new-product-box-placeholder_text">
+            <div class="line line1">
+            </div>
+            <div class="line line2">
+            </div>
+            <div class="line line3">
+            </div>
+           </div>
+           <div class="new-product-box-placeholder_price">
+           </div>
+           <div class="new-product-box-placeholder_button">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="home-page-2_seo">
+       <div class="title">
+        <h1>
+         <b>
+          Zakupy spożywcze online — wybierz Frisco.pl
+         </b>
+        </h1>
+       </div>
+       <a class="show-more">
+        Więcej
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="ribbons">
+    </div>
+    <div class="footer" id="footer">
+     <div class="footer_top fluid-container">
+      <div class="footer_list-holder">
+       <div class="col-wrapper footer-accordion">
+        <div class="footer-accordion_tab col-2">
+         <div class="footer-accordion_tab_header">
+          <h4>
+           Dostawa
+          </h4>
+          <div class="chevron">
+          </div>
+         </div>
+         <div class="footer-accordion_tab_content">
+          <ul>
+           <li>
+            <a href="/stn,dostawa" rel="nofollow">
+             Koszt i obszar dostawy
+            </a>
+           </li>
+           <li>
+            <a href="/stn,metody-platnosci" rel="nofollow">
+             Metody Płatności
+            </a>
+           </li>
+           <li>
+            <a href="/stn,pomoc/page,topic/id,212704229" rel="nofollow">
+             Terminy dostawy
+            </a>
+           </li>
+           <li>
+            <a href="/stn,pomoc/page,forum/id,202877189" rel="nofollow">
+             Reklamacje i zwroty
+            </a>
+           </li>
+           <li>
+            <a href="/krakow">
+             Kraków
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="footer-accordion_tab col-2">
+         <div class="footer-accordion_tab_header">
+          <h4>
+           Oferta
+          </h4>
+          <div class="chevron">
+          </div>
+         </div>
+         <div class="footer-accordion_tab_content">
+          <ul>
+           <li>
+            <a href="https://www.frisco.pl/stn,akcje-promo/gazetka_24_2023_FRSC" rel="nofollow">
+             Gazetka Frisco
+            </a>
+           </li>
+           <li>
+            <a href="/stn,nowosci" rel="nofollow">
+             Nowości
+            </a>
+           </li>
+           <li>
+            <a href="/stn,promocje" rel="nofollow">
+             Promocje
+            </a>
+           </li>
+           <li>
+            <a href="/stn,bestsellery" rel="nofollow">
+             Bestsellery
+            </a>
+           </li>
+           <li>
+            <a href="/stn,marki">
+             Nasze marki
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="footer-accordion_tab col-2">
+         <div class="footer-accordion_tab_header">
+          <h4>
+           O Frisco
+          </h4>
+          <div class="chevron">
+          </div>
+         </div>
+         <div class="footer-accordion_tab_content">
+          <ul>
+           <li>
+            <a href="/stn,kdr" rel="nofollow">
+             KDR
+            </a>
+           </li>
+           <li>
+            <a href="/frisco-friends" rel="nofollow">
+             Frisco Friends
+            </a>
+           </li>
+           <li>
+            <a href="/stn,informacje-prasowe" rel="nofollow">
+             Aktualności
+            </a>
+           </li>
+           <li>
+            <a href="/stn,informacje-prasowe/art,kontakt" rel="nofollow">
+             Kontakt dla mediów
+            </a>
+           </li>
+           <li>
+            <a href="/stn,work" rel="nofollow">
+             Praca
+            </a>
+           </li>
+           <li>
+            <a href="/opinie">
+             Opinie
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="footer-accordion_tab col-2">
+         <div class="footer-accordion_tab_header">
+          <h4>
+           Informacje
+          </h4>
+          <div class="chevron">
+          </div>
+         </div>
+         <div class="footer-accordion_tab_content">
+          <ul>
+           <li>
+            <a href="/stn,pomoc" rel="nofollow">
+             Pomoc
+            </a>
+           </li>
+           <li>
+            <a href="/stn,pomoc/page,category/id,201596445" rel="nofollow">
+             FAQ
+            </a>
+           </li>
+           <li>
+            <a href="/stn,about" rel="nofollow">
+             Dane firmy
+            </a>
+           </li>
+           <li>
+            <a href="/stn,wszystkie-regulaminy" rel="nofollow">
+             Regulaminy
+            </a>
+           </li>
+           <li>
+            <a href="/stn,privacy" rel="nofollow">
+             Polityka prywatności i cookies
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+        <div class="footer-accordion_tab col-2 footer-accordion_tab_content">
+         <h4>
+          Kontakt
+         </h4>
+         <div>
+          <p class="email">
+           <a href="mailto:bok@frisco.pl">
+            bok@frisco.pl
+           </a>
+          </p>
+          <p class="tel">
+           <a href="tel:+48223315000">
+            (+ 48) 22 331 50 00
+           </a>
+          </p>
+          <p>
+           <span class="days">
+            pon. - pt.
+           </span>
+           7.00 - 22.00
+          </p>
+          <p>
+           <span class="days">
+            sob. - niedz.
+           </span>
+           8.00 - 21.00
+          </p>
+          <button class="button cta" type="button">
+           Napisz do nas
+          </button>
+         </div>
+        </div>
+        <div class="col-2 newsletter errors-below">
+         <div class="footer-accordion_tab_content">
+          <h4>
+           Newsletter
+          </h4>
+          <p>
+           Zapisz się do newslettera i odbierz 10 zł
+          </p>
+          <div class="form-step1">
+           <button class="button cta" type="button">
+            Odbierz
+           </button>
+           <p class="remarks">
+            Kupon jest jednorazowy i przeznaczony dla nowych subskrybentów.
+            <br/>
+            Aktywuje się przy zakupach od 100 zł.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="footer_bottom fluid-container">
+      <div class="tw-flex tw-items-center">
+       <h4 class="tw-text-frisco-brand tw-leading-[24px] tw-m-0 tw-text-[16px] tw-font-[700]">
+        Zmień język
+       </h4>
+       <div class="buttons-collection small" style="margin-left:20px">
+        <div class="button gray active">
+         Polski - PL
+        </div>
+        <div class="button gray">
+         English - EN
+        </div>
+       </div>
+      </div>
+      <div class="app-stores footer_bottom-badges">
+       <a href="https://play.google.com/store/apps/details?id=pl.frisco.app">
+        <img alt="Pobierz z Google Play" loading="lazy" src="https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto/v1602256184/NewFrisco/Others/app_lp_badge_google_play.png" style="width:108px;height:32px"/>
+       </a>
+       <a href="https://apps.apple.com/us/app/id628473425">
+        <img alt="Pobierz w App Store" loading="lazy" src="https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto/v1602256184/NewFrisco/Others/app_lp_badge_app_store.png" style="width:108px;height:32px"/>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div>
+    </div>
+    <div class="image-popups">
+    </div>
+    <div class="image-popups">
+    </div>
+    <div class="guest-voucher-tooltip">
+     <a class="popup_close">
+     </a>
+     <div class="guest-voucher-tooltip_content" style="color:#262626">
+      <div>
+       <p class="guest-voucher-tooltip_title">
+        Odbierz
+        <span class="guest-voucher-tooltip_title-amount-bg" style="color:#FF6A3D">
+         40 zł
+        </span>
+        na pierwsze zakupy!
+       </p>
+       <p class="tw-mt-[12px] tw-mb-[8px]">
+        Dostarczamy zakupy:
+       </p>
+       <div class="tw-grid tw-grid-cols-2 tw-gap-x-[24px] tw-gap-y-[8px]">
+        <div class="tw-flex tw-items-center">
+         <div class="icon-comp tw-mr-[8px] CheckCircleOutline" style='mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Check-circle.svg")no-repeat center/contain;-webkit-mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Check-circle.svg")no-repeat center/contain;background-color:#FF6A3D'>
+         </div>
+         pod same drzwi
+        </div>
+        <div class="tw-flex tw-items-center">
+         <div class="icon-comp tw-mr-[8px] CheckCircleOutline" style='mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Check-circle.svg")no-repeat center/contain;-webkit-mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Check-circle.svg")no-repeat center/contain;background-color:#FF6A3D'>
+         </div>
+         7 dni w tygodniu (6-23)
+        </div>
+        <div class="tw-flex tw-items-center">
+         <div class="icon-comp tw-mr-[8px] CheckCircleOutline" style='mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Check-circle.svg")no-repeat center/contain;-webkit-mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Check-circle.svg")no-repeat center/contain;background-color:#FF6A3D'>
+         </div>
+         na konkretną godzinę
+        </div>
+        <div class="tw-flex tw-items-center">
+         <div class="icon-comp tw-mr-[8px] CheckCircleOutline" style='mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Check-circle.svg")no-repeat center/contain;-webkit-mask:url("https://res.cloudinary.com/dj484tw6k/image/upload/v1557136692/NewFrisco/Others/icons/Check-circle.svg")no-repeat center/contain;background-color:#FF6A3D'>
+         </div>
+         vanami z chłodnią i mroźnią
+        </div>
+       </div>
+      </div>
+      <div class="tw-flex tw-justify-center tw-items-center">
+       <a class="button cta with-arrow guest-voucher-tooltip_button" href="/register?bottombar">
+        Załóż konto
+       </a>
+      </div>
+     </div>
+    </div>
+    <div id="modal-portal">
+    </div>
+    <div id="tooltips-wrapper">
+    </div>
+    <div id="dropdown-wrapper">
+    </div>
+   </div>
+  </div>
+  <script defer="" type="text/javascript">
+   var style = document.body.style;
+      var maskOk = (style.mask !== undefined || style.webkitMask !== undefined) &&
+                   (style.maskPosition !== undefined || style.webkitMaskPosition !== undefined) &&
+                   (style.maskRepeat !== undefined || style.webkitMaskRepeat !== undefined) &&
+                   (style.maskSize !== undefined || style.webkitMaskSize !== undefined);
+
+      if (!maskOk) {
+        document.documentElement.className += " no-css-mask";
+      }
+
+      window.addEventListener('DOMContentLoaded', function () {
+        document.documentElement.setAttribute("style", "--scrollbar-width: " + (window.innerWidth - document.body.clientWidth) + "px")
+      });
+
+      if(isSamsung) {
+        document.documentElement.setAttribute("style", "--product-box-width: 180px");
+      }
+
+      // Remove after adding correct polyfills
+      var unsuppButton = document.getElementById('unsupported-browser-button');
+
+      if (unsuppButton) {
+        unsuppButton.addEventListener('click', function() {
+          if (document.cookie.indexOf('should-skip-browser-check') === -1) {
+            document.cookie = 'should-skip-browser-check=1;expires=Fri, 31 Dec 9999 23:59:59 GMT'
+          }
+
+          location.href = '/'
+        });
+      }
+
+      // Disable CSS for mails
+      if (window.location.pathname.startsWith("/view-email/")) {
+        document.getElementById("container").style.setProperty("visibility", "visible");
+        document.onreadystatechange = function () {
+          (Array.from(document.styleSheets).find(function (x) {
+            return x.href && x.href.match(/core\.css/)
+          })).disabled = true
+        };
+      };
+
+      /* #54805 */
+      function MD5(r){function n(r,n){return r<<n|r>>>32-n}function t(r,n){var t,o,e,u,f;return e=2147483648&r,u=2147483648&n,f=(1073741823&r)+(1073741823&n),(t=1073741824&r)&(o=1073741824&n)?2147483648^f^e^u:t|o?1073741824&f?3221225472^f^e^u:1073741824^f^e^u:f^e^u} function o(r,o,e,u,f,i,a){return t(n(r=t(r,t(t(function(r,n,t){return r&n|~r&t}(o,e,u),f),a)),i),o)} function e(r,o,e,u,f,i,a){return t(n(r=t(r,t(t(function(r,n,t){return r&t|n&~t}(o,e,u),f),a)),i),o)} function u(r,o,e,u,f,i,a){return t(n(r=t(r,t(t(function(r,n,t){return r^n^t}(o,e,u),f),a)),i),o)} function f(r,o,e,u,f,i,a){return t(n(r=t(r,t(t(function(r,n,t){return n^(r|~t)}(o,e,u),f),a)),i),o)} function i(r){var n,t="",o="";for(n=0;n<=3;n++)t+=(o="0"+(r>>>8*n&255).toString(16)).substr(o.length-2,2);return t}var a,c,C,g,h,d,v,S,m,l=Array();for(l=function(r){for(var n,t=r.length,o=t+8,e=16*((o-o%64)/64+1),u=Array(e-1),f=0,i=0;i<t;)f=i%4*8,u[n=(i-i%4)/4]=u[n]|r.charCodeAt(i)<<f,i++;return f=i%4*8,u[n=(i-i%4)/4]=u[n]|128<<f,u[e-2]=t<<3,u[e-1]=t>>>29,u}(r=function(r){r=r.replace(/\r\n/g,"\n");for(var n="",t=0;t<r.length;t++){var o=r.charCodeAt(t);o<128?n+=String.fromCharCode(o):o>127&&o<2048?(n+=String.fromCharCode(o>>6|192),n+=String.fromCharCode(63&o|128)):( n+=String.fromCharCode(o>>12|224),n+=String.fromCharCode(o>>6&63|128),n+=String.fromCharCode(63&o|128))}return n}(r)),d=1732584193,v=4023233417,S=2562383102,m=271733878,a=0;a<l.length;a+=16)c=d,C=v,g=S,h=m,v=f(v=f(v=f(v=f(v=u(v=u(v=u(v=u(v=e(v=e(v=e(v=e(v=o(v=o(v=o(v=o(v,S=o(S,m=o(m,d=o(d,v,S,m,l[a+0],7,3614090360), v,S,l[a+1],12,3905402710),d,v,l[a+2],17,606105819),m,d,l[a+3],22,3250441966),S=o(S,m=o(m,d=o(d,v,S,m,l[a+4],7,4118548399),v,S,l[a+5],12,1200080426),d,v,l[a+6],17,2821735955),m,d,l[a+7],22,4249261313),S=o(S,m=o(m,d=o(d,v,S,m,l[a+8],7,1770035416),v,S,l[a+9],12,2336552879),d,v,l[a+10],17,4294925233),m,d,l[a+11],22,2304563134),S=o(S,m=o(m,d=o(d,v,S,m,l[a+12],7,1804603682),v,S,l[a+13],12,4254626195),d,v,l[a+14],17,2792965006),m,d,l[a+15],22,1236535329),S=e(S,m=e(m,d=e(d,v,S,m,l[a+1],5,4129170786),v,S,l[a+6],9,3225465664),d,v,l[a+11],14,643717713),m,d,l[a+0],20,3921069994), S=e(S,m=e(m,d=e(d,v,S,m,l[a+5],5,3593408605),v,S,l[a+10],9,38016083),d,v,l[a+15],14,3634488961),m,d,l[a+4],20,3889429448),S=e(S,m=e(m,d=e(d,v,S,m,l[a+9],5,568446438),v,S,l[a+14],9,3275163606),d,v,l[a+3],14,4107603335),m,d,l[a+8],20,1163531501),S=e(S,m=e(m,d=e(d,v,S,m,l[a+13],5,2850285829),v,S,l[a+2],9,4243563512),d,v,l[a+7],14,1735328473),m,d,l[a+12],20,2368359562),S=u(S,m=u(m,d=u(d,v,S,m,l[a+5],4,4294588738),v,S,l[a+8],11,2272392833),d,v,l[a+11],16,1839030562),m,d,l[a+14],23,4259657740),S=u(S,m=u(m,d=u(d,v,S,m,l[a+1],4,2763975236),v,S,l[a+4],11,1272893353),d,v,l[a+7],16,4139469664),m,d,l[a+10],23,3200236656),S=u(S,m=u(m,d=u(d,v,S,m,l[a+13],4,681279174),v,S,l[a+0],11,3936430074),d,v,l[a+3],16,3572445317),m,d,l[a+6],23,76029189),S=u(S,m=u(m,d=u(d,v,S,m,l[a+9],4,3654602809),v,S, l[a+12],11,3873151461),d,v,l[a+15],16,530742520),m,d,l[a+2],23,3299628645),S=f(S,m=f(m,d=f(d,v,S,m,l[a+0],6,4096336452),v,S,l[a+7],10,1126891415),d,v,l[a+14],15,2878612391),m,d,l[a+5],21,4237533241),S=f(S,m=f(m,d=f(d,v,S,m,l[a+12],6,1700485571),v,S,l[a+3],10,2399980690),d,v,l[a+10],15,4293915773),m,d,l[a+1],21,2240044497),S=f(S,m=f(m,d=f(d,v,S,m,l[a+8],6,1873313359),v,S, l[a+15],10,4264355552),d,v,l[a+6],15,2734768916),m,d,l[a+13],21,1309151649),S=f(S,m=f(m,d=f(d,v,S,m,l[a+4],6,4149444226),v,S,l[a+11],10,3174756917),d,v,l[a+2],15,718787259),m,d,l[a+9],21,3951481745),d=t(d,c),v=t(v,C),S=t(S,g),m=t(m,h);return(i(d)+i(v)+i(S)+i(m)).toLowerCase()};
+  </script>
+  <script defer="" src="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/js/jquery.min.js" type="text/javascript">
+  </script>
+  <script defer="" src="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/js/jquery.mobile.events.min.js" type="text/javascript">
+  </script>
+  <script defer="" src="https://www.frisco.pl/app/static/cdn/frisco-react-master-20231123-26837/browser.out/browser.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var _resources='["^ ","~:data",["^ ","0",["^ ","~:app/global-cart-promotions",[64,65],"~:popup/are-you-adult",false,"~:app/lang","~:pl","~:app/all-rules",["~#list",[["^ ","~:description",null,"~:consent",null,"~:gid",null,"~:id","3a086ac4-bd8f-4677-960c-84cc9b8ecb3b","~:container",null,"~:url","/regulamin/27-12-2022","~:optionalFrom","2022-12-28T00:00:00+01:00","~:obligatoryFrom","2023-01-01T00:00:00+01:00","~:merchant","FRS"],["^ ","^7","W dniu 01.01.2023 ulega zmianie regulamin FR24. Zapoznaj się ze zmianami i zaakceptuj treść nowego regulaminu.","^8","Akceptuję \u003Ca href=\u0027/stn,regulamin-fr24_27-12-2022?lang=pl\u0027\u003E Regulamin \u003C/a\u003E dokonywania zakupów w sklepie FR24 towarów umieszczonych w kategorii \u005C"Alkohol\u005C" na stronie www.frisco.pl","^9","fr24","^:","3a086acc-1304-4b0a-939d-0204cba3635c","^;","fr24_27-12-2022","^\u003C",null,"^=","2022-12-28T00:00:00+01:00","^\u003E","2023-01-01T00:00:00+01:00","^?","F24"]]],"~:cart/selected-delivery-method","Van","~:app/checkout-stage",1,"~:app/get",true,"~:side-box/state",false,"~:route/raw-comma-params",["^ "],"~:app/cms-profile-type","Home","~:route/name","~:page:index","~:app/alcohol-warning",false,"~:app/config",["^ ","FRISCO_CONTENT_URL","https://www.frisco.pl/app/content","FRISCO_API_URL","https://www.frisco.pl/app/commerce","COOKIE_DEBUG_BAR",false,"FRISCO_STATIC_URL","https://www.frisco.pl/app/static","tracking-enabled",true,"fb-app-id","409041405899358","pb-id","0LQW2soG","pb-host","semi.payback.pl"],"~:route/original-url","/","~:app/title-set",true,"~:app/lang-forced",false,"~:route/true-query","","~:app/van-available",true,"~:app/user-id",false,"~:route/config",["^ ","~:css-modules",["~#set",["/statics/css/usp.css"]],"~:page-wrapper",["^ ","~:class","home-page-wrapper","~:with-scroll-top-button?",true]],"~:app/future-rules",null,"~:app/allow-guest-banner",true,"~:app/device-type","bot","~:app/checkout-finished-stages",["^Z",[]],"~:app/server-user-id",false,"~:db/id",0,"~:app/exp-variants",["^ ","999000999",0,"iWF3tMOky4lzUsEeQL0DvN",0,"AAAAAAAAAAAAAAA2023",0],"~:app/current-rules",["^6",[["^ ","^7",null,"^8",null,"^9",null,"^:","3a086ac4-bd8f-4677-960c-84cc9b8ecb3b","^;",null,"^\u003C","/regulamin/27-12-2022","^=","2022-12-28T00:00:00+01:00","^\u003E","2023-01-01T00:00:00+01:00","^?","FRS"],["^ ","^7","W dniu 01.01.2023 ulega zmianie regulamin FR24. Zapoznaj się ze zmianami i zaakceptuj treść nowego regulaminu.","^8","Akceptuję \u003Ca href=\u0027/stn,regulamin-fr24_27-12-2022?lang=pl\u0027\u003E Regulamin \u003C/a\u003E dokonywania zakupów w sklepie FR24 towarów umieszczonych w kategorii \u005C"Alkohol\u005C" na stronie www.frisco.pl","^9","fr24","^:","3a086acc-1304-4b0a-939d-0204cba3635c","^;","fr24_27-12-2022","^\u003C",null,"^=","2022-12-28T00:00:00+01:00","^\u003E","2023-01-01T00:00:00+01:00","^?","F24"]]],"~:app/useragent",["^ ","isFlock",false,"isAndroid",false,"isKonqueror",false,"isTablet",false,"isBot","python","isWebkit",false,"isChromeOS",false,"geoIp",["^ "],"isCaptive",false,"isiPhone",false,"isLinux64",false,"isEpiphany",false,"os","unknown","isAndroidTablet",false,"isRaspberry",false,"isChrome",false,"isBada",false,"isElectron",false,"isOmniWeb",false,"isIE",false,"browser","python-requests","isWechat",false,"isAndroidNative",false,"isSmartTV",false,"isMobile",false,"isBlackberry",false,"isAlamoFire",false,"isIECompatibilityMode",false,"isLinux",false,"isPhantomJS",false,"isiPod",false,"isOpera",false,"isWindows",false,"isiPad",false,"isYaBrowser",false,"isFirefox",false,"silkAccelerated",false,"source","python-requests/2.31.0","isDesktop",false,"version","2.31.0","electronVersion","","isMobileNative",false,"isSeaMonkey",false,"isSamsung",false,"isAmaya",false,"isFacebook",false,"isUC",false,"isAuthoritative",false,"isSafari",false,"isWinJs",false,"isCurl",false,"platform","unknown","isEdge",false,"isMac",false,"isiPhoneNative",false,"isSilk",false,"isKindleFire",false],"~:app/stock-settings",["^ ","~:popup","Brak większej ilości w magazynie","~:checkout-reduced","Tym produktom zmniejszyliśmy zamówione ilości. Nie mamy obecnie tylu produktów w magazynie.","~:treshold",1],"~:app/view-layout","~:list","~:toasts/state",["^ "],"~:app/allow-henkel-banner",false,"~:app/mobile-menu",false,"~:app/ab-experiments",[66,67,68,69,70],"~:app/warehouse","WAW","~:app/day-products",[12,19],"~:app/loaded-css-lazy-modules",["^Z",["/statics/css/usp.css"]]],"1",["^ ","~:cms/keys",[["^ ","~:category","horizontal_bar"],["^ ","^2X","settings"],["^ ","^2X","newFrisco","~:name","header_links"],["^ ","^2X","newFrisco","^2Y","products-of-the-day"],["^ ","^2X","settings","^2Y","stock"],["^ ","^2X","menu_special"],["^ ","^2X","product-placements","^2Y","cart"]],"^17",1,"~:cms/many-containers",[2,10,21,23,55,57,63]],"2",["^ ","~:cms/key",["^ ","^2X","newFrisco","^2Y","header_links"],"~:cms/containers",[3],"^17",2],"3",["^ ","~:containerId","3a0dc0f8-da2a-42bb-ae5a-22d0a58419ee","~:categoryName","newFrisco","~:cms/sections",[4,5,6,7,8,9],"^;","header_links","~:tags",["^ "],"^17",3],"4",["^ ","~:cms-section/name","2","~:cms-section/products",[],"~:cms-section/tags",["^ ","dest-url","/stn,promocje","text","Promocje","text_en","Offers","priority","2"],"^17",4],"5",["^ ","^35","3","^36",[],"^37",["^ ","^38","/stn,nowosci","^39","Nowości","^3:","Newest","^3;","3"],"^17",5],"6",["^ ","^35","1","^36",[],"^37",["^ ","^38","/stn,settings/sub,vouchers","^39","Kupony rabatowe","^3:","Discount coupons","profile","home","__SETTINGS__is-office","0","^3;","1"],"^17",6],"7",["^ ","^35","6","^36",[],"^37",["^ ","^38","/biznes","^39","Dla Biura","^3:","For the office","^3;","6"],"^17",7],"8",["^ ","^35","5","^36",[],"^37",["^ ","^38","/frisco-friends","^39","Frisco Friends","^3:","Frisco Friends","^3;","5","^3=","0"],"^17",8],"9",["^ ","^35","4","^36",[],"^37",["^ ","^38","/stn,kdr","^39","KDR","^3:","KDR","^3=","0","^3;","4"],"^17",9],"10",["^ ","^2[",["^ ","^2X","newFrisco","^2Y","products-of-the-day"],"^30",[11],"^17",10],"11",["^ ","^31","3a0ee088-f73a-4c80-a661-a0bf30cf9b98","^32","newFrisco","~:cms/products",[12,19],"^;","products-of-the-day","^34",["^ ","title","Produkty polecane","title_en","Recommended products","subtitle","W tym tygodniu polecamy:","subtitle_en","In this week we recommend:"],"^17",11],"12",["^ ","~:product/is-membership-plan-discount",null,"~:product/hidden-for-delivery",null,"~:product/old-price",null,"~:product/categories",[13,14,15,16,17],"~:product/stocked?",true,"~:product/rations",[],"~:product/main-category","Środki czystości, chemia","~:product/grammage-gross","1.1 l","~:product/cart-promotions",[],"~:product/parent-paths",[4122,4121,3294,356,3553],"~:product/status","~:available","~:product/id","143115","~:product/is-worker-plan-discount",null,"~:product/price-before-first-decrease",null,"~:product/multipack-id",false,"~:product/grammage-gross-raw",1100,"~:product/substances",null,"~:product/items-count",1,"~:product/brand-name","SILAN","~:product/badges",[18],"~:product/singlepack-id",false,"~:product/vat-rate",23,"~:product/price-before-first-decrease?",false,"~:product/breadcrumbs",["^6",[3553,356,3294,4121,4122]],"~:product/merchant","FRS","~:product/price-after-promotion",null,"~:product/image-url","https://res.cloudinary.com/dj484tw6k/image/upload/v1689720606/143115.png","~:product/parameters",null,"~:product/_api-input-hash",-1562927834,"~:product/price",17.99,"~:product/is-cloned",null,"~:product/is-tobacco",false,"~:product/stock-qty",38,"~:product/is-billing-vatin-required",null,"~:product/price-valid-to",null,"~:product/is-promo-only",false,"~:product/is-favorite",false,"~:product/membership-price",null,"~:product/supplier","HENKEL","~:product/tags",["~:displayVariant","~:isAvailable","~:isPositioned","~:isStocked","~:isNotAlcohol","~:isBargain"],"~:product/rating",null,"~:product/producer","HENKEL CHEMIA","~:product/is-variable-weight",false,"~:product/low-price",null,"~:product/subbrand-name","Classic","~:product/bare-name","Płyn do płukania Fresh Sky 1.1L","~:product/is-water",false,"^17",12,"~:product/primary-category-id",4122,"~:product/is-multipack-only",null,"~:product/restrictions",[],"~:product/votes",null,"~:product/discount-percent",null,"~:product/resupply-at",null,"~:product/nutrition-elements",null,"~:product/name","SILAN Classic Płyn do płukania Fresh Sky 1.1L","~:product/multipack-size",null,"~:product/discount-report",null,"~:product/is-alcohol",false,"~:product/stickers",["^6",["badge_frisco_poleca"]],"~:product/validity-period",1762902000000,"~:product/origin-country","PL","~:product/ean","9000101098303","~:product/unit-price","16,35 / l","~:product/contest",null,"~:product/washing-cycles",null,"~:product/unrestricted-stock",38],"13",["^ ","~:category/name","Środki czystości, chemia","~:category/id",3553,"~:category/main",true,"~:category/path",["Środki czystości, chemia"],"~:category/path-ids",["^6",[3553]],"^17",13],"14",["^ ","^54","Pranie","^55",356,"^56",false,"^57",["Środki czystości, chemia","Pranie"],"^58",["^6",[3553,356]],"^17",14],"15",["^ ","^54","Do płukania","^55",3294,"^56",false,"^57",["Środki czystości, chemia","Pranie","Do płukania"],"^58",["^6",[3553,356,3294]],"^17",15],"16",["^ ","^54","Płyn","^55",4121,"^56",false,"^57",["Środki czystości, chemia","Pranie","Do płukania","Płyn"],"^58",["^6",[3553,356,3294,4121]],"^17",16],"17",["^ ","^54","1-2 l","^55",4122,"^56",false,"^57",["Środki czystości, chemia","Pranie","Do płukania","Płyn","1-2 l"],"^58",["^6",[3553,356,3294,4121,4122]],"^17",17],"18",["^ ","~:badge/name","najtaniej_w_sieci-405598065","~:badge/data",["^ ","~:img","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto,fl_progressive/ftp/badge/najtaniej1.png","~:href",null,"~:segment",["^Z",[]],"~:text","Frisco poleca"],"^17",18],"19",["^ ","^3C",null,"^3D",["^Z",["DPD"]],"^3E",7.59,"^3F",[],"^3G",true,"^3H",[],"^3I",null,"^3J","325 g","^3K",[],"^3L",[0],"^3M","^3N","^3O","144947","^3P",null,"^3Q",null,"^3R",false,"^3S",325,"^3T",null,"^3U",1,"^3V","INDYKPOL","^3W",[20],"^3X",false,"^3Y",0,"^3Z",false,"^3[",null,"^40","FRS","^41",null,"^42","https://res.cloudinary.com/dj484tw6k/image/upload/v1697809694/de150977-a9a4-46b5-a64f-d24402a21cc7.png","^43",null,"^44",-1548772334,"^45",5.99,"^46",null,"^47",false,"^48",16,"^49",null,"^4:","~m1701212100000","^4;",false,"^4\u003C",false,"^4=",null,"^4\u003E","INDYKPOL","^4?",["^4@","^4A","~:hasPromotion","^4B","^4C","^4D"],"^4F",null,"^4G","INDYKPOL","^4H",false,"^4I",7.59,"^4J",null,"^4K","Parówki Hot Dog Ekstra","^4L",false,"^17",19,"^4M",null,"^4N",null,"^4O",[],"^4P",null,"^4Q",21,"^4R",null,"^4S",null,"^4T","INDYKPOL Parówki Hot Dog Ekstra","^4U",null,"^4V","handel_gazetka_24_2023","^4W",false,"^4X",["^6",[]],"^4Y",1704150000000,"^4Z","PL","^4[","5901869018661","^50","18,43 / kg","^51",null,"^52",null,"^53",16],"20",["^ ","^59","super_cena","^5:",["^ ","^5;","https://res.cloudinary.com/dj484tw6k/image/upload/ftp/badge/van2.png","^5\u003C",null,"^5=",["^Z",[]],"^5\u003E","Promocja"],"^17",20],"21",["^ ","^2[",["^ ","^2X","settings","^2Y","stock"],"^30",[22],"^17",21],"22",["^ ","^31","0000f363-0000-0000-0000-000000000000","^32","settings","^;","stock","^34",["^ ","popup-text____alt_en","Only: :STOCK: pcs left in our warehouse","popup-text","Brak większej ilości w magazynie","popup-text____alt","W magazynie mamy tylko: :STOCK: szt.","checkout-reduced-text","Tym produktom zmniejszyliśmy zamówione ilości. Nie mamy obecnie tylu produktów w magazynie.","treshold","1","checkout-removed-text","Niestety produkty, które były w Twoim koszyku są już niedostępne.","popup-text_en","Limited stock in our warehouse","html",".","checkout-reduced-text_en","For these products we had to limit its quantity due to low stock in our warehouse.","checkout-removed-text_en","Unfortunately, the products you have placed in your cart are no longer available."],"^17",22],"23",["^ ","^2[",["^ ","^2X","product-placements","^2Y","cart"],"^30",[24],"^17",23],"24",["^ ","^31","3a0f036a-7d8c-4528-8fc6-d6aaeed9f2c7","^32","product-placements","^3\u003E",[25,30,37,40,50],"^;","cart","^34",["^ ","^3?","Polecane produkty","description","W tym tygodniu polecamy:"],"^17",24],"25",["^ ","^3C",null,"^3D",null,"^3E",15.69,"^3F",[26,27,28,29],"^3G",true,"^3H",[],"^3I","Spożywcze","^3J","1 kg","^3K",[],"^3L",[733,735,465,2404],"^3M","^3N","^3O","142404","^3P",null,"^3Q",null,"^3R",false,"^3S",1000,"^3T",null,"^3U",1,"^3V","BIO PLANET","^3W",[20],"^3X",false,"^3Y",0,"^3Z",false,"^3[",["^6",[2404,465,735,733]],"^40","FRS","^41",null,"^42","https://res.cloudinary.com/dj484tw6k/image/upload/v1681396203/142404_37662.jpg","^43",null,"^44",1025033783,"^45",13.99,"^46",null,"^47",false,"^48",55,"^49",null,"^4:","~m1701212340000","^4;",false,"^4\u003C",false,"^4=",null,"^4\u003E","BIOPLANET","^4?",["^4@","^4A","^5?","^4B","^4C","^4D","~:isOrganic","~:isVegetarian","~:isVegan"],"^4F",null,"^4G","BIO PLANET WINO","^4H",false,"^4I",15.69,"^4J",null,"^4K","Płatki owsiane błyskawiczne BIO","^4L",false,"^17",25,"^4M",733,"^4N",null,"^4O",[],"^4P",null,"^4Q",11,"^4R",null,"^4S",null,"^4T","BIO PLANET Płatki owsiane błyskawiczne BIO","^4U",null,"^4V","handel_gazetka_24_2023","^4W",false,"^4X",["^6",[]],"^4Y",1725746400000,"^4Z","UA","^4[","5902596171520","^50","13,99 / kg","^51",null,"^52",null,"^53",55],"26",["^ ","^54","Spożywcze","^55",2404,"^56",true,"^57",["Spożywcze"],"^58",["^6",[2404]],"^17",26],"27",["^ ","^54","Śniadaniowe","^55",465,"^56",false,"^57",["Spożywcze","Śniadaniowe"],"^58",["^6",[2404,465]],"^17",27],"28",["^ ","^54","Płatki","^55",735,"^56",false,"^57",["Spożywcze","Śniadaniowe","Płatki"],"^58",["^6",[2404,465,735]],"^17",28],"29",["^ ","^54","Owsiane","^55",733,"^56",false,"^57",["Spożywcze","Śniadaniowe","Płatki","Owsiane"],"^58",["^6",[2404,465,735,733]],"^17",29],"30",["^ ","^3C",null,"^3D",["^Z",["DPD"]],"^3E",11.99,"^3F",[31,32,33,34,35,36],"^3G",true,"^3H",[],"^3I","Świeże","^3J","180 g","^3K",[],"^3L",[11632,670,947,16,11,2403],"^3M","^3N","^3O","102623","^3P",null,"^3Q",null,"^3R",false,"^3S",180,"^3T",null,"^3U",1,"^3V","FORMAGIA","^3W",[20],"^3X",false,"^3Y",0,"^3Z",false,"^3[",["^6",[2403,11,16,947,670,11632]],"^40","FRS","^41",null,"^42","https://res.cloudinary.com/dj484tw6k/image/upload/v1643845790/102623.png","^43",null,"^44",-1859428167,"^45",9.49,"^46",null,"^47",false,"^48",101,"^49",null,"^4:","~m1701212340000","^4;",false,"^4\u003C",false,"^4=",null,"^4\u003E","EUROSER","^4?",["^4@","^4A","^5?","^4B","^4C","^4D"],"^4F",null,"^4G","EUROSER","^4H",false,"^4I",10.35,"^4J",null,"^4K","Ser twardy klinek","^4L",false,"^17",30,"^4M",11632,"^4N",null,"^4O",[],"^4P",null,"^4Q",8,"^4R",null,"^4S",null,"^4T","FORMAGIA Ser twardy klinek","^4U",null,"^4V","handel_gazetka_24_2023","^4W",false,"^4X",["^6",[]],"^4Y",1717884000000,"^4Z",null,"^4[","5902431271170","^50","52,72 / kg","^51",null,"^52",null,"^53",101],"31",["^ ","^54","Świeże","^55",2403,"^56",true,"^57",["Świeże"],"^58",["^6",[2403]],"^17",31],"32",["^ ","^54","Nabiał, jaja, sery","^55",11,"^56",false,"^57",["Świeże","Nabiał, jaja, sery"],"^58",["^6",[2403,11]],"^17",32],"33",["^ ","^54","Sery i twarogi","^55",16,"^56",false,"^57",["Świeże","Nabiał, jaja, sery","Sery i twarogi"],"^58",["^6",[2403,11,16]],"^17",33],"34",["^ ","^54","Żółte","^55",947,"^56",false,"^57",["Świeże","Nabiał, jaja, sery","Sery i twarogi","Żółte"],"^58",["^6",[2403,11,16,947]],"^17",34],"35",["^ ","^54","W kawałku","^55",670,"^56",false,"^57",["Świeże","Nabiał, jaja, sery","Sery i twarogi","Żółte","W kawałku"],"^58",["^6",[2403,11,16,947,670]],"^17",35],"36",["^ ","^54","Inne","^55",11632,"^56",false,"^57",["Świeże","Nabiał, jaja, sery","Sery i twarogi","Żółte","W kawałku","Inne"],"^58",["^6",[2403,11,16,947,670,11632]],"^17",36],"37",["^ ","^3C",null,"^3D",null,"^3E",null,"^3F",[13,38,39],"^3G",true,"^3H",[],"^3I","Środki czystości, chemia","^3J","50 g","^3K",[],"^3L",[4115,3552,3553],"^3M","~:unavailable","^3O","143205","^3P",null,"^3Q",null,"^3R",false,"^3S",50,"^3T",null,"^3U",1,"^3V","BREF","^3W",[18],"^3X",false,"^3Y",23,"^3Z",false,"^3[",["^6",[3553,3552,4115]],"^40","FRS","^41",null,"^42","https://res.cloudinary.com/dj484tw6k/image/upload/v1685141446/143205.png","^43",null,"^44",1369695701,"^45",17.99,"^46",null,"^47",false,"^48",0,"^49",null,"^4:",null,"^4;",false,"^4\u003C",false,"^4=",null,"^4\u003E","HENKEL","^4?",["^4@","^4B","^4C","^4D","^4E"],"^4F",null,"^4G","HENKEL CHEMIA","^4H",false,"^4I",null,"^4J","Wellness Serenity","^4K","Zawieszka do WC 2x50g","^4L",false,"^17",37,"^4M",4115,"^4N",null,"^4O",[],"^4P",null,"^4Q",null,"^4R","2023-11-27T00:00:00","^4S",null,"^4T","BREF Wellness Serenity Zawieszka do WC 2x50g","^4U",null,"^4V",null,"^4W",false,"^4X",["^6",["badge_frisco_poleca"]],"^4Y",null,"^4Z","RS","^4[","9000101587968","^50","359,80 / kg","^51",null,"^52",null,"^53",0],"38",["^ ","^54","Czyszczenie","^55",3552,"^56",false,"^57",["Środki czystości, chemia","Czyszczenie"],"^58",["^6",[3553,3552]],"^17",38],"39",["^ ","^54","Zawieszki toaletowe","^55",4115,"^56",false,"^57",["Środki czystości, chemia","Czyszczenie","Zawieszki toaletowe"],"^58",["^6",[3553,3552,4115]],"^17",39],"40",["^ ","^3C",null,"^3D",["^Z",["DPD"]],"^3E",10.99,"^3F",[41,42,43,41,44,45,46,47,48,49],"^3G",true,"^3H",[],"^3I","Mrożone","^3J","400 g","^3K",[],"^3L",[11048,155,152],"^3M","^5N","^3O","144759","^3P",null,"^3Q",10.99,"^3R",false,"^3S",400,"^3T",null,"^3U",1,"^3V","FROSTA","^3W",[20],"^3X",false,"^3Y",0,"^3Z",true,"^3[",["^6",[152,155,11048]],"^40","FRS","^41",null,"^42","https://res.cloudinary.com/dj484tw6k/image/upload/v1697064400/144759.png","^43",null,"^44",99764416,"^45",7.99,"^46",null,"^47",false,"^48",0,"^49",null,"^4:","~m1701212100000","^4;",false,"^4\u003C",false,"^4=",null,"^4\u003E","Meduza","^4?",["^4@","^5?","^4B","^4C","^4D"],"^4F",null,"^4G","FROSTA","^4H",false,"^4I",null,"^4J","VEGE BOWL","^4K","W stylu meksykańskim z ciecierzycą","^4L",false,"^17",40,"^4M",11048,"^4N",null,"^4O",[],"^4P",null,"^4Q",27,"^4R","2023-11-24T00:00:00","^4S",null,"^4T","FROSTA VEGE BOWL W stylu meksykańskim z ciecierzycą","^4U",null,"^4V","handel_gazetka_24_2023","^4W",false,"^4X",["^6",[]],"^4Y",null,"^4Z","DE","^4[","5900972001461","^50","19,97 / kg","^51",null,"^52",null,"^53",0],"41",["^ ","^54","Mrożone","^55",152,"^56",true,"^57",["Mrożone"],"^58",["^6",[152]],"^17",41],"42",["^ ","^54","Gotowe dania","^55",155,"^56",false,"^57",["Mrożone","Gotowe dania"],"^58",["^6",[152,155]],"^17",42],"43",["^ ","^54","Dania warzywne","^55",11048,"^56",false,"^57",["Mrożone","Gotowe dania","Dania warzywne"],"^58",["^6",[152,155,11048]],"^17",43],"44",["^ ","^54","Warzywa i owoce","^55",3631,"^56",false,"^57",["Mrożone","Warzywa i owoce"],"^58",["^6",[152,3631]],"^17",44],"45",["^ ","^54","Mieszanki","^55",3883,"^56",false,"^57",["Mrożone","Warzywa i owoce","Mieszanki"],"^58",["^6",[152,3631,3883]],"^17",45],"46",["^ ","^54","Mieszanki na patelnie","^55",10387,"^56",false,"^57",["Mrożone","Warzywa i owoce","Mieszanki","Mieszanki na patelnie"],"^58",["^6",[152,3631,3883,10387]],"^17",46],"47",["^ ","^54","Strefa Roślinna","^55",4336,"^56",true,"^57",["Strefa Roślinna"],"^58",["^6",[4336]],"^17",47],"48",["^ ","^54","Roślinne dania gotowe","^55",10635,"^56",false,"^57",["Strefa Roślinna","Roślinne dania gotowe"],"^58",["^6",[4336,10635]],"^17",48],"49",["^ ","^54","Dania obiadowe","^55",14620,"^56",false,"^57",["Strefa Roślinna","Roślinne dania gotowe","Dania obiadowe"],"^58",["^6",[4336,10635,14620]],"^17",49],"50",["^ ","^3C",null,"^3D",null,"^3E",null,"^3F",[51,52,53,54],"^3G",true,"^3H",[],"^3I","Drogeria","^3J","75 ml","^3K",[],"^3L",[3618,2120,1881,292],"^3M","^5N","^3O","144420","^3P",null,"^3Q",null,"^3R",false,"^3S",75,"^3T",null,"^3U",1,"^3V","COLGATE","^3W",[18],"^3X",false,"^3Y",23,"^3Z",false,"^3[",["^6",[292,1881,2120,3618]],"^40","FRS","^41",null,"^42","https://res.cloudinary.com/dj484tw6k/image/upload/v1697150939/144420.png","^43",null,"^44",-1115283628,"^45",7.99,"^46",null,"^47",false,"^48",0,"^49",null,"^4:",null,"^4;",false,"^4\u003C",false,"^4=",null,"^4\u003E","COLGATE","^4?",["^4@","^4B","^4C","^4D","^4E"],"^4F",null,"^4G","COLGATE","^4H",false,"^4I",null,"^4J","Advanced White","^4K","Wybielająca pasta do zębów z aktywnym węglem","^4L",false,"^17",50,"^4M",3618,"^4N",null,"^4O",[],"^4P",null,"^4Q",null,"^4R","2023-11-24T00:00:00","^4S",null,"^4T","COLGATE Advanced White Wybielająca pasta do zębów z aktywnym węglem","^4U",null,"^4V",null,"^4W",false,"^4X",["^6",["badge_frisco_poleca"]],"^4Y",null,"^4Z","PL","^4[","8718951253827","^50","106,53 / l","^51",null,"^52",null,"^53",0],"51",["^ ","^54","Drogeria","^55",292,"^56",true,"^57",["Drogeria"],"^58",["^6",[292]],"^17",51],"52",["^ ","^54","Do zębów","^55",1881,"^56",false,"^57",["Drogeria","Do zębów"],"^58",["^6",[292,1881]],"^17",52],"53",["^ ","^54","Pasty","^55",2120,"^56",false,"^57",["Drogeria","Do zębów","Pasty"],"^58",["^6",[292,1881,2120]],"^17",53],"54",["^ ","^54","Wybielające","^55",3618,"^56",false,"^57",["Drogeria","Do zębów","Pasty","Wybielające"],"^58",["^6",[292,1881,2120,3618]],"^17",54],"55",["^ ","^2[",["^ ","^2X","horizontal_bar"],"^30",[56],"^17",55],"56",["^ ","^31","0000fe25-0000-0000-0000-000000000000","^32","horizontal_bar","^;","darmowa_dostawa","^34",["^ ","pl_powracajacy_threshold","0","next_threshold","50","next_tekst_en","You have \u003Cb\u003E[value] PLN\u003Cb/\u003E left to cheaper delivery","^3;","2","waw_nowy_tekst_en","You have \u003Cb\u003E[value] PLN\u003Cb/\u003E left to free delivery","waw_powracajacy_threshold","50","pl_powracajacy_tekst_en","You have \u003Cb\u003E[value] PLN\u003Cb/\u003E left to free delivery","next_priority","1","pl_nowy_threshold","0","pl_powracajacy_tekst","Do darmowej dostawy brakuje Ci jeszcze \u003Cb\u003E[value] zł\u003Cb/\u003E","success_tekst_office","Gratulacje! Twoje zakupy dostarczymy za darmo.","waw_powracajacy_tekst_en","You have \u003Cb\u003E[value] PLN\u003Cb/\u003E left to free delivery","waw_powracajacy_tekst","Do darmowej dostawy brakuje Ci jeszcze \u003Cb\u003E[value] zł\u003Cb/\u003E","waw_nowy_tekst","Do darmowej dostawy brakuje Ci jeszcze \u003Cb\u003E[value] zł\u003Cb/\u003E","pl_nowy_tekst","Do darmowej dostawy brakuje Ci jeszcze \u003Cb\u003E[value] zł\u003Cb/\u003E","delivery_start","2016-09-05T00:00:00+00:00","success_tekst","Gratulacje! Twoje zakupy dostarczymy za darmo. Kupuj we Frisco regularnie, a w ramach programu korzyści \u005C"Frisco Owocuje\u005C" Twoje zakupy będziemy dostarczać bezpłatnie już od 200 zł. Szczegóły »","success_icon_url","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto/ftp/ikony/pack.png","success_url","/frisco-owocuje","waw_nowy_threshold","50","success_tekst_gold","Gratulacje! Twoje zakupy dostarczymy za darmo.","success_font_color","#000000","x_color","#000000","font_color","#00000","success_time","30","pl_nowy_tekst_en","You have \u003Cb\u003E[value] PLN\u003Cb/\u003E left to free delivery","success_x_color","x_color | #000000","success_bar_color","#cee2b9","delivery_end","2016-09-06T00:00:00+00:00","icon_url","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto/ftp/ikony/pack.png","next_tekst","Do tańszej dostawy brakuje Ci \u003Cb\u003E[value] zł\u003Cb/\u003E","bar_color","#f9cc2e"],"^17",56],"57",["^ ","^2[",["^ ","^2X","settings"],"^30",[58,59,60,61,62],"^17",57],"58",["^ ","^31","0000e503-0000-0000-0000-000000000000","^32","settings","^;","squares","^34",["^ ","timer-background-color","rgba(101, 101, 101, 0.75)","timer-font-size","18px","timer-text","OFERTA DNIA","timer-text-color","#ffffff","^5G","nil"],"^17",58],"59",["^ ","^31","0000f363-0000-0000-0000-000000000000","^32","settings","^;","stock","^34",["^ ","^5@","Only: :STOCK: pcs left in our warehouse","^5A","Brak większej ilości w magazynie","^5B","W magazynie mamy tylko: :STOCK: szt.","^5C","Tym produktom zmniejszyliśmy zamówione ilości. Nie mamy obecnie tylu produktów w magazynie.","^5D","1","^5E","Niestety produkty, które były w Twoim koszyku są już niedostępne.","^5F","Limited stock in our warehouse","^5G",".","^5H","For these products we had to limit its quantity due to low stock in our warehouse.","^5I","Unfortunately, the products you have placed in your cart are no longer available."],"^17",59],"60",["^ ","^31","0001227f-0000-0000-0000-000000000000","^32","settings","^;","footer","^34",["^ ","voucher_1_voucherCampaignName","NSL_Zapis_Pierwsze_zakupy_15zl","^5G",".","offers_url","https://www.frisco.pl/stn,akcje-promo/gazetka_24_2023_FRSC"],"^17",60],"61",["^ ","^31","00014352-0000-0000-0000-000000000000","^32","settings","^;","images","^34",["^ ","cloudinary","on","^5G","."],"^17",61],"62",["^ ","^31","3a0b8285-b704-4c46-bbf2-26d81d052e01","^32","settings","^;","header","^34",["^ ","mobile_delay","450","desktop_delay","450","scroll_timeout","100"],"^17",62],"63",["^ ","^2[",["^ ","^2X","menu_special"],"^30",[],"^17",63],"64",["^ ","~:cart-promotion/id","3a02f6c2-ff50-46e7-9006-5321f8c704af","~:cart-promotion/config",["^ ","~:campaignName","welcomebook_mobile_app_segmentff50-46e7","~:requirements",["^ ","~:user",["^ ","~:orders",["^ ","~:placedOrderCountFrom",0,"~:placedOrderCountTo",0],"~:segments",[["^ ","~:excluded",["promotion:welcomebook","commerce:OfficeAccount"]]]],"~:delivery",[["^ ","~:deliveryMethods",["Van"]]]],"~:pools",[],"~:effects",[["^ ","^5=",["^ ","^5=","promotion:welcomebook"]]],"~:isCumulative",true,"~:cartActivationLimit",1],"~:cart-promotion/pools-summaries",[],"~:cart-promotion/valid-to","2023-12-31T23:59:00+01:00","^17",64],"65",["^ ","^6L","3a0ded24-55b9-4276-83ac-b87fba04711f","^6M",["^ ","^6N","Sampling_welcome_book_NOWY55b9-4276","~:promotionType","Sampling","^6O",["^ ","^6P",["^ ","^6Q",["^ ","^6R",0,"^6S",0],"^6T",[["^ ","^6U",["commerce:OfficeAccount"]]]],"^6V",[["^ ","^6W",["Van"]]]],"^6X",[],"^6Y",[["^ ","~:sampleProduct",["^ ","~:productId","144654","~:quantity",1,"~:isHidden",true]]],"^6Z",false],"^70",[],"^71",null,"^17",65],"66",["^ ","~:ab/id","999000999","~:ab/capping",0,"~:ab/disable?",false,"~:ab/activation-event",null,"~:ab/description","Popup cookies","~:ab/task-id",50904,"~:ab/variants",[["^ ","~:ab-variant/id","VK0","~:ab-variant/value",0,"~:ab-variant/description","wersja domyślna","~:ab-variant/control?",true,"~:ab-variant/test?",false,"~:ab-variant/type","~:control","~:ab-variant/choosen?",true],["^ ","^7\u003E","VT1","^7?",1,"^7@","wersja domyślna","^7A",false,"^7B",true,"^7C","~:test","^7E",false]],"^17",66],"67",["^ ","^77","8888888888888888","^78",0,"^79",false,"^7:",null,"^7;","Test okienka cookies na mobile","^7\u003C",52637,"^7=",[["^ ","^7\u003E","VK0","^7?",0,"^7@","przyciski nieprzypięte","^7A",true,"^7B",false,"^7C","^7D","^7E",false],["^ ","^7\u003E","VT1","^7?",1,"^7@","przyciski przypięte","^7A",false,"^7B",true,"^7C","^7F","^7E",false]],"^17",67],"68",["^ ","^77","iWF3tMOky4lzUsEeQL0DvN","^78",0,"^79",false,"^7:",null,"^7;","Nowa belka nawigacji","^7\u003C",57936,"^7=",[["^ ","^7\u003E","VK0","^7?",0,"^7@","stara belka","^7A",true,"^7B",false,"^7C","^7D","^7E",true],["^ ","^7\u003E","VT1","^7?",1,"^7@","nowa belka","^7A",false,"^7B",true,"^7C","^7F","^7E",false]],"^17",68],"69",["^ ","^77","AAAAAAAAAAAAAAA2023","^78",0,"^79",false,"^7:",null,"^7;","test AA","^7\u003C",57936,"^7=",[["^ ","^7\u003E","VK0","^7?",0,"^7@","bez zmian","^7A",true,"^7B",false,"^7C","^7D","^7E",true],["^ ","^7\u003E","VT1","^7?",1,"^7@","bez zmian","^7A",false,"^7B",true,"^7C","^7F","^7E",false]],"^17",69],"70",["^ ","^77","IKU6S05aEoO8UvEvBxVbYY","^78",0,"^79",false,"^7:",null,"^7;","test rabatu 40zł","^7\u003C",59319,"^7=",[["^ ","^7\u003E","VK0","^7?",0,"^7@","bez zmian","^7A",true,"^7B",false,"^7C","^7D","^7E",false],["^ ","^7\u003E","VT1","^7?",1,"^7@","z belkami rabatowymi i zmodyfikowanym modułem rabatowym na PID","^7A",false,"^7B",true,"^7C","^7F","^7E",false]],"^17",70],"71",["^ ","^2[",["^ ","^2X","ribbon"],"^17",71,"^30",[]],"72",["^ ","^2[",["^ ","^2X","search-input","^2Y","placeholder"],"^17",72,"^30",[]],"73",["^ ","^2[",["^ ","^2X","settings","^2Y","header"],"^17",73,"^30",[62]],"74",["^ ","^2[",["^ ","^2X","PageHeader","^2Y","More-links"],"^17",74,"^30",[83]],"75",["^ ","^2[",["^ ","^2X","horizontal_bar","^2Y","darmowa_dostawa"],"^17",75,"^30",[56]],"76",["^ ","^2[",["^ ","^2X","horizontal_bar","^2Y","produkt_gratis"],"^17",76,"^30",[]],"77",["^ ","~:user/id",false,"^17",77],"78",["^ ","^2[",["^ ","^2Y","new-hp-content","^2X","HP"],"^17",78,"^30",[87]],"79",["^ ","^2[",["^ ","^2X","settings","^2Y","footer"],"^17",79,"^30",[60]],"80",["^ ","^2[",["^ ","^2X","chat","^2Y","chat"],"^17",80,"^30",[]],"81",["^ ","^2[",["^ ","^2X","pop-up"],"^17",81,"^30",[]],"82",["^ ","^2[",["^ ","^2X","user-popup"],"^17",82,"^30",[]],"83",["^ ","^31","3a0dc0f5-53b4-4039-9a1a-7c14077853c7","^32","PageHeader","^33",[84,85,86],"^;","More-links","^34",["^ "],"^17",83],"84",["^ ","^35","Link2","^36",[],"^37",["^ ","^3?","Diety i przepisy","url","/stn,akcje-promo/diety-i-przepisy","^3;","2","^3@","Diets and recipes","^3\u003C","home"],"^17",84],"85",["^ ","^35","Link3","^36",[],"^37",["^ ","url","/stn,aplikacja-frisco","^3?","Aplikacja","^3@","App","^3\u003C","home","^3;","1"],"^17",85],"86",["^ ","^35","Link4","^36",[],"^37",["^ ","url","/stn,lokalni-dostawcy?blk","^3?","Lokalni dostawcy","^3@","Local suppliers","^3;","3"],"^17",86],"87",["^ ","^31","3a060b1c-9fcb-44e6-84c5-40f9b7d61208","^32","HP","^33",[88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105],"^;","new-hp-content","^34",["^ "],"^17",87],"88",["^ ","^35","OtherCategory_1","^36",[],"^37",["^ ","id","3553","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/sr_czystosci_344x128px.jpg","icon","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427463/Ikony/SRODKI_CZYSTOSCI_CHEMIA_flat.svg"],"^17",88],"89",["^ ","^35","OtherCategory_2","^36",[],"^37",["^ ","id","292","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/drogeria_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427459/Ikony/DROGERIA_flat.svg"],"^17",89],"90",["^ ","^35","OtherCategory_3","^36",[],"^37",["^ ","id","147","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/kawa_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427461/Ikony/KAWA_HERBATTA_KAKAO_flat.svg"],"^17",90],"91",["^ ","^35","OtherCategory_4","^36",[],"^37",["^ ","id","165","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/alkohol_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427459/Ikony/ALKOHOLE_flat.svg"],"^17",91],"92",["^ ","^35","OtherCategory_5","^36",[],"^37",["^ ","id","406","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/mama_dziecko_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427461/Ikony/MAMA_I_DZIECKO_flat.svg"],"^17",92],"93",["^ ","^35","OtherCategory_6","^36",[],"^37",["^ ","id","4336","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/strefa_roslinna_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427463/Ikony/STREFA_ROSLINNA_flat.svg"],"^17",93],"94",["^ ","^35","OtherCategory_7","^36",[],"^37",["^ ","id","152","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/mrozone_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427461/Ikony/MROZONE_flat.svg"],"^17",94],"95",["^ ","^35","OtherCategory_8","^36",[],"^37",["^ ","id","2405","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/bio_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427459/Ikony/BIO_flat.svg"],"^17",95],"96",["^ ","^35","OtherCategory_9","^36",[],"^37",["^ ","id","2970","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422942/nowy%20hp/bakalie_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427459/Ikony/BAKALIE_PESTKI_ZIARNA_2_flat.svg"],"^17",96],"97",["^ ","^35","OtherCategory_10","^36",[],"^37",["^ ","id","353","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427459/Ikony/DOM_BIURO_AUTO_OGROD_flat.svg","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661498593/nowy%20hp/dom_ogord_344x128px.jpg"],"^17",97],"98",["^ ","^35","OtherCategory_11","^36",[],"^37",["^ ","id","369","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422943/nowy%20hp/zwierzeta_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427465/Ikony/ZWIERZETA_flat.svg"],"^17",98],"99",["^ ","^35","OtherCategory_12","^36",[],"^37",["^ ","id","331","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661422943/nowy%20hp/zdrowie_344x128px.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427463/Ikony/SPORT_I_ZDROWIE_flat.svg"],"^17",99],"100",["^ ","^35","MainCategory_1","^36",[],"^37",["^ ","id","2403","background_img_big","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290875/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/224x80-swieze.jpg","background_img_small","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290875/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/160x64-swieze.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427463/Ikony/SWIEZE_flat.svg"],"^17",100],"101",["^ ","^35","MainCategory_2","^36",[],"^37",["^ ","id","2404","^7I","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290879/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/224x80_spozywcze.jpg","^7J","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290879/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/160x64_spozywcze.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427463/Ikony/SPOZYWCZE_flat.svg"],"^17",101],"102",["^ ","^35","MainCategory_3","^36",[],"^37",["^ ","id","1","^7I","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290883/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/224x80-napoje.jpg","^7J","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290883/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/160x64-napoje.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427461/Ikony/NAPOJE_flat.svg"],"^17",102],"103",["^ ","^35","MainCategory_4","^36",[],"^37",["^ ","id","116","^7I","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290887/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/224x80-slodycze.jpg","^7J","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290887/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/160x64-slodycze.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427461/Ikony/SLODYCZE_I_PRZEKASKI_flat.svg"],"^17",103],"104",["^ ","^35","MainCategory_5","^36",[],"^37",["^ ","id","2","^7I","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290890/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/224x80.-piekarnia.jpg","^7J","https://res.cloudinary.com/dj484tw6k/image/upload/v1669290890/Frisco/Pliki%20Patryk/Grafiki%20na%20nowej%20HP/Nowe%20grafiki/160x64-piekarnia.jpg","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661427461/Ikony/PIEKARNIA_CUKIERNIA_flat.svg"],"^17",104],"105",["^ ","^35","FirstVoucherComponent","^36",[],"^37",["^ ","^7H","https://res.cloudinary.com/dj484tw6k/image/upload/v1661160118/Ikony/mdi_ticket-percent-outline_4.svg","background_img","https://res.cloudinary.com/dj484tw6k/image/upload/v1695809860/Frisco/Pliki%20Patryk/grafika_620x112.jpg","bacground_img_mobile","https://res.cloudinary.com/dj484tw6k/image/upload/v1695809860/Frisco/Pliki%20Patryk/grafika_288x112.jpg"],"^17",105],"106",["^ ","^2[",["^ ","^2X","newFrisco_HP","^2Y","rotator","~:no-embeding",true],"^17",106,"^30",[109,171]],"107",["^ ","^2[",["^ ","^2Y","usp-content","^2X","HP"],"^17",107,"^30",[190]],"108",["^ ","^2[",["^ ","^2X","newFrisco_HP","^2Y","seo-expandable-label"],"^17",108,"^30",[201]],"109",["^ ","^31","3a0ecb21-ec44-4b8d-af86-ff1aa298af24","^32","newFrisco_HP","^33",[110,120,127,128,133,134,135,142,149,155,164],"^;","rotator","^34",["^ ","__SETTINGS__delivery","VAN"],"^17",109],"110",["^ ","^35","2023-G24-friscowa-gazetka_24_2023-rotatorSGx-_ZZ_x","^36",[111,112,113,114,115,116,117,118,119],"^37",["^ ","__SETTINGS__warehouse","WAW,WA2,WRO,POZ,GDA,KRA","^38","/stn,akcje-promo/gazetka_24_2023_FRSC","^3;","5","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699966094/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/PROMO/1920x400_gazetka_rotator.jpg","banner-url","/stn,akcje-promo/gazetka_24_2023_FRSC","img_mobile","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699966093/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/PROMO/1280x218_gazetka_rotator.jpg","dest-url_app","/stn,akcje-promo/gazetka_24_2023_FRSC","^3?","Gazetka FRISCO","daily-rotation-exclude","1"],"^17",110],"111",["^ ","^3O","46041","^17",111],"112",["^ ","^3O","112455","^17",112],"113",["^ ","^3O","130801","^17",113],"114",["^ ","^3O","12044","^17",114],"115",["^ ","^3O","130153","^17",115],"116",["^ ","^3O","143019","^17",116],"117",["^ ","^3O","101373","^17",117],"118",["^ ","^3O","144950","^17",118],"119",["^ ","^3O","125991","^17",119],"120",["^ ","^35","2023-G24-friscowa-friscont-rotatorSGx-_ZZ_x","^36",[121,122,123,124,125,126],"^37",["^ ","^7O","WAW,WA2,WRO,GDA,KRA,POZ","^38","/stn,akcja-friscont/n,friscont?","^3;","3","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1695907007/Nowy_branding_2023/Friscontowe_ceny/Frisco_Friscontowe_ceny_1920x400_Rotator_HP.png","^7P","/stn,akcja-friscont/n,friscont?","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1695907004/Nowy_branding_2023/Friscontowe_ceny/Frisco_Friscontowe_ceny_1280x218_Rotator_HP.png","^7R","frisco://mobileapp/ActionPage/friscont","^7N","VAN","^3?","Friscontowe Ceny","^7S","1"],"^17",120],"121",["^ ","^3O","8546","^17",121],"122",["^ ","^3O","141759","^17",122],"123",["^ ","^3O","131553","^17",123],"124",["^ ","^3O","13730","^17",124],"125",["^ ","^3O","137","^17",125],"126",["^ ","^3O","5754","^17",126],"127",["^ ","^35","2023-G24-friscowa-odbierz-bon=wroc_165pln-rotatorSGx-_ZZ_x","^36",[],"^37",["^ ","^7O","WAW, GDA, WA2, WRO,KRA,POZ","^38","/165","^3;","1","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1695968668/Nowy_branding_2023/Odbierz%20165/Frisco_165_z%C5%82_1920x400_Rotator_1.png","^7P","/165","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1695968665/Nowy_branding_2023/Odbierz%20165/Frisco_Friscontowe_ceny_1280x218_Rotator.png","^3?","Odbierz kupony 165 zł","__SETTINGS__no-app","1","^7S","1","__SETTINGS__has-history","0"],"^17",127],"128",["^ ","^35","2023-G24-producencka-coca_cola_G24_2023-rotatorSGx-_ZZ_x","^36",[129,130,131,132],"^37",["^ ","^3;","6","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699444660/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Coca-Cola/CC_XMAS_Frisco2_rotator_desktop_1920x400_TF.jpg","^7P","/stn,akcja-coca_cola_G24_2023/n,coca_cola_G24_2023?rotsg","^38","/stn,akcja-coca_cola_G24_2023/n,coca_cola_G24_2023?rotsg","^7R","frisco://mobileapp/ActionPage/coca_cola_G24_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699444660/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Coca-Cola/CC_XMAS_Frisco2_rotator_mobile_1280x218_TF.jpg","^7O","WRO,POZ,KRA,GDA,WAW,WA2","^3?","Coca-Cola"],"^17",128],"129",["^ ","^3O","112191","^17",129],"130",["^ ","^3O","141830","^17",130],"131",["^ ","^3O","112183","^17",131],"132",["^ ","^3O","40573","^17",132],"133",["^ ","^35","2023-G24-friscowa-konkurs_frisco_Q4_2023-rotatorSGx-_ZZ_x","^36",[],"^37",["^ ","^7O","WAW,WA2,WRO,POZ,KRA,GDA","^38","/stn,konkurs/n,konkurs_frisco_Q4_2023","^3;","4","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1698672625/NewFrisco/BANERY/Konkursy/FRISCO_KONKURS_Q4_2023/POPRAWIONE/1920x400_konkursQ4_cta.jpg","^7P","/stn,konkurs/n,konkurs_frisco_Q4_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1698672631/NewFrisco/BANERY/Konkursy/FRISCO_KONKURS_Q4_2023/POPRAWIONE/1280x218_konkursQ4_cta.jpg","^7R","/stn,konkurs/n,konkurs_frisco_Q4_2023","^3?","Szansa na wygraną 8.000 zł!","^7S","1"],"^17",133],"134",["^ ","^35","2023-G24-friscowa-kupon_500-rotatorSGx-_ZZ_x","^36",[],"^37",["^ ","^7O","WAW,WA2,WRO,POZ,GDA,KRA","^38","https://www.frisco.pl/stn,settings/sub,vouchers","^3;","2","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699366270/Banery%20do%20gazetek%202023/2023%20Gazetka%2023/500/1920x400_500-z_%C3%A9.jpg","^7P","https://www.frisco.pl/stn,settings/sub,vouchers","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/q_auto:best/v1699366570/Banery%20do%20gazetek%202023/2023%20Gazetka%2023/500/1280x218_500zl.jpg","^7R","frisco://mobileapp/Vouchers","^3?","Zgarnij 500 zł","__SETTINGS__included-segments","dynamic:Akcja500","^7S","1"],"^17",134],"135",["^ ","^35","2023-G24-producencka-garden_gourmet_G24_2023-rotatorSGx-_ZZ_x","^36",[136,137,138,139,140,141],"^37",["^ ","^3;","7","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699445515/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Nestle/2023_10_26_GG_smak_ro%C5%9Blinnej_kuchni_FRISCO_banner_desktop_1920x400_ok.jpg","^7P","/stn,akcja-garden_gourmet_G24_2023/n,garden_gourmet_G24_2023?rotsg","^38","/stn,akcja-garden_gourmet_G24_2023/n,garden_gourmet_G24_2023?rotsg","^7R","frisco://mobileapp/ActionPage/garden_gourmet_G24_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699445515/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Nestle/2023_10_25_GG_smak_ro%C5%9Blinnej_kuchni_FRISCO_banner_mobile_1280x218_ok.jpg","^7O","WRO,POZ,KRA","^3?","Garden Gourmet"],"^17",135],"136",["^ ","^3O","130757","^17",136],"137",["^ ","^3O","140834","^17",137],"138",["^ ","^3O","136441","^17",138],"139",["^ ","^3O","130765","^17",139],"140",["^ ","^3O","141590","^17",140],"141",["^ ","^3O","136442","^17",141],"142",["^ ","^35","2023-G24-producencka-nescafe_G24_2023-rotatorSGx-_ZZ_x","^36",[143,144,145,146,147,148],"^37",["^ ","^3;","8","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699346609/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Nestle/2023-10-25_NESCAFE_refill_Rotator_1920x400.jpg","^7P","/stn,akcja-nescafe_G24_2023/n,nescafe_G24_2023?rotsg","^38","/stn,akcja-nescafe_G24_2023/n,nescafe_G24_2023?rotsg","^7R","frisco://mobileapp/ActionPage/nescafe_G24_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699346610/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Nestle/2023-10-25_NESCAFE_refill_Rotator_mobile_1280x218.jpg","^7O","WAW,WA2,WRO,POZ,GDA","^3?","Nescafé"],"^17",142],"143",["^ ","^3O","142940","^17",143],"144",["^ ","^3O","119661","^17",144],"145",["^ ","^3O","112731","^17",145],"146",["^ ","^3O","4967","^17",146],"147",["^ ","^3O","142939","^17",147],"148",["^ ","^3O","142913","^17",148],"149",["^ ","^35","2023-G24-producencka-henkel_black_week_G24_2023-rotatorSGx-_ZZ_x","^36",[150,151,152,153,154],"^37",["^ ","^3;","9","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699975137/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Henkel/nowe%20BW/jeszcze%20nowsze/HENKEL-BLACK-FRIDAY-11.22-1920x400_Rotator-5.jpg","^7P","/stn,akcja-henkel_black_week_G24_2023/n,henkel_black_week_G24_2023?rotsg","^38","/stn,akcja-henkel_black_week_G24_2023/n,henkel_black_week_G24_2023?rotsg","^7R","frisco://mobileapp/ActionPage/henkel_black_week_G24_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699975072/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Henkel/nowe%20BW/jeszcze%20nowsze/HENKEL-BLACK-FRIDAY-11.22-1280x218mobile_LP_Rotator-5.jpg","^7O","WRO,POZ,KRA,GDA,WAW,WA2","^3?","Black Week"],"^17",149],"150",["^ ","^3O","135065","^17",150],"151",["^ ","^3O","141517","^17",151],"152",["^ ","^3O","141266","^17",152],"153",["^ ","^3O","137229","^17",153],"154",["^ ","^3O","36411","^17",154],"155",["^ ","^35","2023-G24-producencka-danio_actimel_G24_2023-rotatorSGx-_ZZ_x","^36",[156,157,158,159,160,161,162,163],"^37",["^ ","^3;","10","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699966575/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Danone/ACTIMEL_DANIO_DRUGI_50_1920x400_Rotator.jpg","^7P","/stn,akcja-danio_actimel_G24_2023/n,danio_actimel_G24_2023?rotsg","^38","/stn,akcja-danio_actimel_G24_2023/n,danio_actimel_G24_2023?rotsg","^7R","frisco://mobileapp/ActionPage/danio_actimel_G24_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699966573/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Danone/ACTIMEL_DANIO_DRUGI_50_1280x218mobile_rotator.jpg","^7O","WRO,POZ,KRA,GDA,WAW,WA2","^3?","Actimel & Danio"],"^17",155],"156",["^ ","^3O","139435","^17",156],"157",["^ ","^3O","40682","^17",157],"158",["^ ","^3O","14362","^17",158],"159",["^ ","^3O","40781","^17",159],"160",["^ ","^3O","139438","^17",160],"161",["^ ","^3O","133372","^17",161],"162",["^ ","^3O","139446","^17",162],"163",["^ ","^3O","136383","^17",163],"164",["^ ","^35","2023-G24-friscowa-high_protein_2023-rotatorSGx-_ZZ_x","^36",[165,166,167,168,169,170],"^37",["^ ","^7O","WAW,WA2,WRO,GDA,KRA,POZ","^38","/stn,akcja-high_protein_2023/n,high_protein_2023?rotsg","^3;","11","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1700136317/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/High%20protein/1920x400_highprotein_cta.jpg","^7P","/stn,akcja-high_protein_2023/n,high_protein_2023?rotsg","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1700136288/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/High%20protein/1280x218_highprotein_cta.jpg","^7R","frisco://mobileapp/ActionPage/high_protein_2023","^7N","VAN","^3?","Produkty wysokobiałkowe","^7S","1"],"^17",164],"165",["^ ","^3O","144854","^17",165],"166",["^ ","^3O","144179","^17",166],"167",["^ ","^3O","144638","^17",167],"168",["^ ","^3O","141549","^17",168],"169",["^ ","^3O","144640","^17",169],"170",["^ ","^3O","113499","^17",170],"171",["^ ","^31","3a0ee03d-e3a2-4605-ad01-2e7b163d5c36","^32","newFrisco_HP","^33",[172,176,178,183,184,188],"^;","rotator","^34",["^ ","^7N","DPD"],"^17",171],"172",["^ ","^35","2023-G24-friscowa-gazetka_24_2023-rotatorSGx-_ZZ_x","^36",[118,119,173,174,175,117],"^37",["^ ","^7O","WAW,WA2,WRO,POZ,GDA,KRA","^38","https://www.frisco.pl/stn,promocje","^3;","5","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699966094/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/PROMO/1920x400_gazetka_rotator.jpg","^7P","https://www.frisco.pl/stn,promocje","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699966093/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/PROMO/1280x218_gazetka_rotator.jpg","^7R","https://www.frisco.pl/stn,promocje","^3?","Gazetka FRISCO","^7S","1"],"^17",172],"173",["^ ","^3O","143534","^17",173],"174",["^ ","^3O","140531","^17",174],"175",["^ ","^3O","143157","^17",175],"176",["^ ","^35","2023-G24-friscowa-friscont-rotatorSGx-_ZZ_x","^36",[125,123,122,177],"^37",["^ ","^7O","WAW,WA2,WRO,GDA,KRA,POZ","^38","/stn,akcja-friscont/n,friscont?","^3;","3","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1695907007/Nowy_branding_2023/Friscontowe_ceny/Frisco_Friscontowe_ceny_1920x400_Rotator_HP.png","^7P","/stn,akcja-friscont/n,friscont?","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1695907004/Nowy_branding_2023/Friscontowe_ceny/Frisco_Friscontowe_ceny_1280x218_Rotator_HP.png","^7R","frisco://mobileapp/ActionPage/friscont","^3?","Friscontowe Ceny","^7S","1"],"^17",176],"177",["^ ","^3O","1091","^17",177],"178",["^ ","^35","2023-G24-producencka-coca_cola_G24_2023-rotatorSGx-_ZZ_x","^36",[179,130,132,180,129,131,181,182],"^37",["^ ","^3;","6","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699444660/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Coca-Cola/CC_XMAS_Frisco2_rotator_desktop_1920x400_TF.jpg","^7P","/stn,akcja-coca_cola_G24_2023/n,coca_cola_G24_2023?rotsg","^38","/stn,akcja-coca_cola_G24_2023/n,coca_cola_G24_2023?rotsg","^7R","frisco://mobileapp/ActionPage/coca_cola_G24_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699444660/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Coca-Cola/CC_XMAS_Frisco2_rotator_mobile_1280x218_TF.jpg","^7O","WRO,POZ,KRA,GDA,WAW,WA2","^3?","Coca-Cola"],"^17",178],"179",["^ ","^3O","141832","^17",179],"180",["^ ","^3O","15740","^17",180],"181",["^ ","^3O","7073","^17",181],"182",["^ ","^3O","858","^17",182],"183",["^ ","^35","2023-G24-friscowa-konkurs_frisco_Q4_2023-rotatorSGx-_ZZ_x","^36",[],"^37",["^ ","^7O","WAW,WA2,WRO,POZ,KRA,GDA","^38","/stn,konkurs/n,konkurs_frisco_Q4_2023","^3;","4","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1698672625/NewFrisco/BANERY/Konkursy/FRISCO_KONKURS_Q4_2023/POPRAWIONE/1920x400_konkursQ4_cta.jpg","^7P","/stn,konkurs/n,konkurs_frisco_Q4_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1698672631/NewFrisco/BANERY/Konkursy/FRISCO_KONKURS_Q4_2023/POPRAWIONE/1280x218_konkursQ4_cta.jpg","^7R","/stn,konkurs/n,konkurs_frisco_Q4_2023","^3?","Szansa na wygraną 8.000 zł!","^7S","1"],"^17",183],"184",["^ ","^35","2023-G24-producencka-nescafe_G24_2023-rotatorSGx-_ZZ_x","^36",[143,185,186,187,146],"^37",["^ ","^3;","8","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699346609/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Nestle/2023-10-25_NESCAFE_refill_Rotator_1920x400.jpg","^7P","/stn,akcja-nescafe_G24_2023/n,nescafe_G24_2023?rotsg","^38","/stn,akcja-nescafe_G24_2023/n,nescafe_G24_2023?rotsg","^7R","frisco://mobileapp/ActionPage/nescafe_G24_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699346610/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Nestle/2023-10-25_NESCAFE_refill_Rotator_mobile_1280x218.jpg","^7O","WRO,POZ,KRA,GDA,WAW,WA2","^3?","Nescafé"],"^17",184],"185",["^ ","^3O","8030","^17",185],"186",["^ ","^3O","10551","^17",186],"187",["^ ","^3O","120079","^17",187],"188",["^ ","^35","2023-G24-producencka-henkel_black_week_G24_2023-rotatorSGx-_ZZ_x","^36",[151,152,189,153,154],"^37",["^ ","^3;","9","bcg","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699875786/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Henkel/nowe%20BW/HENKEL-BLACK-FRIDAY-11.22-1920x400_Rotator_3.jpg","^7P","/stn,akcja-henkel_black_week_G24_2023/n,henkel_black_week_G24_2023?rotsg","^38","/stn,akcja-henkel_black_week_G24_2023/n,henkel_black_week_G24_2023?rotsg","^7R","frisco://mobileapp/ActionPage/henkel_black_week_G24_2023","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/f_auto,q_auto:low/v1699875784/Banery%20do%20gazetek%202023/2023%20Gazetka%2024/Henkel/nowe%20BW/HENKEL-BLACK-FRIDAY-11.22-1280x218mobile_LP_Rotator_3.jpg","^7O","WRO,POZ,KRA,GDA,WAW,WA2","^3?","Black Week"],"^17",188],"189",["^ ","^3O","114137","^17",189],"190",["^ ","^31","3a060b1d-6832-4040-abd5-c5c4042169e8","^32","HP","^33",[191,192,193,194,195,196,197,198,199,200],"^;","usp-content","^34",["^ "],"^17",190],"191",["^ ","^35","UserNotLoggedHeader","^36",[],"^37",["^ ","title.md","\u003Cp\u003EZakupy z \u003Cstrong\u003EFrisco\u003C/strong\u003E są proste!\u003C/p\u003E","text.md","\u003Cp\u003ESzybkie i wygodne zakupy spożywcze są w zasięgu kilku kliknięć. Załóż konto i zacznij robić zakupy na własnych zasadach czyli...jak chcesz, gdzie chcesz i kiedy chcesz!\u003C/p\u003E","title_en.md","\u003Cp\u003EShopping with \u003Cstrong\u003EFrisco\u003C/strong\u003E is easy !\u003C/p\u003E","text_en.md","\u003Cp\u003EFast and convenient grocery shopping is just a few clicks away. Create an account and start shopping on your own terms ie. how you want, where you want and when you want!\u003C/p\u003E"],"^17",191],"192",["^ ","^35","UserNotLoggedTile_1","^36",[],"^37",["^ ","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661328151/Frisco/Pliki%20Patryk/108x108_kalendarz.jpg","^7W","\u003Cp\u003EZarezerwuj dostawę\u003C/p\u003E","^7X","\u003Cp\u003E\u003Ca href=\u005C"login\u005C"\u003EZaloguj się\u003C/a\u003E, by wybrać odpowiedni termin dostawy\u003C/p\u003E","shape","box","^7Y","\u003Cp\u003EBook a delivery\u003C/p\u003E","^7Z","\u003Cp\u003E\u003Ca href=\u005C"login\u005C"\u003ELog in\u003C/a\u003E to select a suitable delivery date\u003C/p\u003E"],"^17",192],"193",["^ ","^35","UserNotLoggedTile_2","^36",[],"^37",["^ ","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661328203/Frisco/Pliki%20Patryk/108x108_koszyk.jpg","^7W","\u003Cp\u003EDodaj produkty\u003C/p\u003E","^7X","\u003Cp\u003EPrzejrzyj \u003Ca href=\u005C"stn,categories\u005C"\u003Ekategorie sklepu\u003C/a\u003E i dodaj to, co Cię interesuje\u003C/p\u003E","^7[","box","^7Y","\u003Cp\u003EAdd products\u003C/p\u003E","^7Z","\u003Cp\u003EBrowse \u003Ca href=\u005C"stn,categories\u005C"\u003Eshop categories\u003C/a\u003E and add what interests you\u003C/p\u003E"],"^17",193],"194",["^ ","^35","UserNotLoggedTile_3","^36",[],"^37",["^ ","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661328123/Frisco/Pliki%20Patryk/108x108_karta.jpg","^7W","\u003Cp\u003EOpłać zamówienie\u003C/p\u003E","^7X","\u003Cp\u003EDopasuj sposób płatności i opłać zamówienie \u003Ca href=\u005C"stn,cart\u005C"\u003Ew koszyku\u003C/a\u003E\u003C/p\u003E","^7[","box","^7Y","\u003Cp\u003EPay for your order\u003C/p\u003E","^7Z","\u003Cp\u003EAdjust your payment method and pay for your order \u003Ca href=\u005C"stn,cart\u005C"\u003Ein the shopping cart\u003C/a\u003E\u003C/p\u003E"],"^17",194],"195",["^ ","^35","UserNotLoggedTile_4","^36",[],"^37",["^ ","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661328223/Frisco/Pliki%20Patryk/108x108_torba.jpg","^7W","\u003Cp\u003EOdbierz zakupy\u003C/p\u003E","^7X","\u003Cp\u003EZakupy dostarczymy na wskazany przez Ciebie adres\u003C/p\u003E","^7[","box","^7Y","\u003Cp\u003EPick up your shopping\u003C/p\u003E","^7Z","\u003Cp\u003EWe will deliver your purchases to the address you specify\u003C/p\u003E"],"^17",195],"196",["^ ","^35","UserNotLoggedTile_5","^36",[],"^37",["^ ","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661328640/Frisco/Pliki%20Patryk/108x108_Van.png","link_text_en","Read more","^7[","horizontal","^7X","\u003Cp\u003ESprawdź warunki darmowej dostawy. Dostawa Frisco Vanem jest dostępna w wybranych aglomeracjach.\u003C/p\u003E","link_href","stn,dostawa","^7Y","\u003Cp\u003ECosts and supply areas\u003C/p\u003E","^7W","\u003Cp\u003EKoszty i obszary dostaw\u003C/p\u003E","link_text","Czytaj więcej","^7Z","\u003Cp\u003ECheck the conditions for free delivery. Frisco Van delivery is available in selected agglomerations.\u003C/p\u003E"],"^17",196],"197",["^ ","^35","UserNotLoggedTile_5","^36",[],"^37",["^ ","img","https://res.cloudinary.com/dj484tw6k/image/upload/v1661328638/Frisco/Pliki%20Patryk/108x108_monety.png","^80","Read more","^7[","horizontal","^7X","\u003Cp\u003EWybierz dogodną metodę płatności. Płać online lub kartą przy odbiorze.\u003C/p\u003E","^81","stn,metody-platnosci","^7Y","\u003Cp\u003EPayment methods\u003C/p\u003E","^7W","\u003Cp\u003EMetody płatności\u003C/p\u003E","^82","Czytaj więcej","^7Z","\u003Cp\u003EChoose a convenient payment method. Pay online or by card on delivery.\u003C/p\u003E"],"^17",197],"198",["^ ","^35","UserWithoutOrdersHeader","^36",[],"^37",["^ ","^7W","\u003Cp\u003EOszczędź 40 zł!\u003C/p\u003E","^7X","\u003Cp\u003ENa start mamy dla Ciebie prezent w postaci kuponu. Miłych zakupów!\u003C/p\u003E"],"^17",198],"199",["^ ","^35","B2BUserWithoutOrdersContent","^36",[],"^37",["^ ","button_text","Oszczędź 40zł","voucher_id","FFS4SSSJ52","^7X","\u003Cp\u003ECzęść z kuponów będzie pojawiać się na Twoim koncie automatycznie, ale możesz również je dodawać samodzielnie poprzez wpisanie odpowiedniego kodu w sekcji \u003Ca href=\u005C"https://www.frisco.pl/stn,settings/sub,vouchers\u005C"\u003EMoje Kupony Rabatowe\u003C/a\u003E lub \u003Cstrong\u003Eprzy płatności.\u003C/strong\u003E\u003C/p\u003E","voucher_description","we wszystkich kategoriach","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/v1688382596/Frisco/Pliki%20Patryk/288x254.jpg","voucher_title","40 zł na pierwsze zamówienie","^7W","\u003Cp\u003EAktywuj kupon rabatowy\u003C/p\u003E","img_big","https://res.cloudinary.com/dj484tw6k/image/upload/v1688382596/Frisco/Pliki%20Patryk/540x254_B2B.jpg","img_medium","https://res.cloudinary.com/dj484tw6k/image/upload/v1688382596/Frisco/Pliki%20Patryk/276x254.jpg","text2.md","\u003Cp\u003ECzęść z kuponów będzie pojawiać się na Twoim koncie automatycznie, ale możesz również je dodawać samodzielnie poprzez wpisanie odpowiedniego kodu w sekcji \u003Ca href=\u005C"https://www.frisco.pl/stn,settings/sub,vouchers\u005C"\u003EMoje Kupony Rabatowe.\u003C/a\u003E lub \u003Cstrong\u003Eprzy płatności.\u003C/strong\u003E\u003Cbr\u003E\u003Cbr\u003E\u005CnAktywuj kupon \u003Cstrong\u003E40 zł na pierwsze zamówienie\u003C/strong\u003E klikając przycisk poniżej.\u003C/p\u003E","title_icon","https://res.cloudinary.com/dj484tw6k/image/upload/v1661160118/Ikony/mdi_ticket-percent-outline_4.svg"],"^17",199],"200",["^ ","^35","B2CUserWithoutOrdersContent","^36",[],"^37",["^ ","^83","Oszczędź 40zł","^84","FFS4SSSJ52","^7X","\u003Cp\u003ECzęść z kuponów będzie pojawiać się na Twoim koncie automatycznie, ale możesz również je dodawać samodzielnie poprzez wpisanie odpowiedniego kodu w sekcji \u003Ca href=\u005C"https://www.frisco.pl/stn,settings/sub,vouchers\u005C"\u003EMoje Kupony Rabatowe\u003C/a\u003E lub \u003Cstrong\u003Eprzy płatności.\u003C/strong\u003E\u003C/p\u003E","^85","we wszystkich kategoriach","^7Q","https://res.cloudinary.com/dj484tw6k/image/upload/v1695809860/Frisco/Pliki%20Patryk/grafika_288x254.jpg","^86","40 zł na pierwsze zamówienie","^7W","\u003Cp\u003EAktywuj kupon rabatowy\u003C/p\u003E","^87","https://res.cloudinary.com/dj484tw6k/image/upload/v1695809861/Frisco/Pliki%20Patryk/grafika_540x254.jpg","^88","https://res.cloudinary.com/dj484tw6k/image/upload/v1695809861/Frisco/Pliki%20Patryk/grafika_276x254.jpg","^89","\u003Cp\u003ECzęść z kuponów będzie pojawiać się na Twoim koncie automatycznie, ale możesz również je dodawać samodzielnie poprzez wpisanie odpowiedniego kodu w sekcji \u003Ca href=\u005C"https://www.frisco.pl/stn,settings/sub,vouchers\u005C"\u003EMoje Kupony Rabatowe.\u003C/a\u003E lub \u003Cstrong\u003Eprzy płatności.\u003C/strong\u003E\u003Cbr\u003E\u003Cbr\u003E\u005CnAktywuj kupon \u003Cstrong\u003E40 zł na pierwsze zamówienie\u003C/strong\u003E klikając przycisk poniżej.\u003C/p\u003E","^8:","https://res.cloudinary.com/dj484tw6k/image/upload/v1661160118/Ikony/mdi_ticket-percent-outline_4.svg"],"^17",200],"201",["^ ","^31","39f98868-606a-496b-ad92-94ac3a969990","^32","newFrisco_HP","^;","seo-expandable-label","^34",["^ ","content","\u003Cdiv class=\u005C"expandable-label_content\u005C"\u003E\u005Cn    \u003Cspan\u003EWiemy, jak cenny jest Twój czas, dlatego w supermarkecie online frisco.pl zrobisz \u003Cstrong\u003Ezakupy z dostawą do domu\u003C/strong\u003E lub biura wprost ze swojego komputera czy smartfona. Przygotowaliśmy dla Ciebie szeroką ofertę produktów spożywczych, kosmetyków, artykułów dla zwierząt, chemii gospodarczej i środków czystości, artykułów biurowych, a także zestawów prezentowych. Gwarantujemy jakość delikatesów w cenach na poziomie hipermarketów! \u003C/span\u003E\u005Cn    \u003Ch2\u003E\u003Cb\u003ESklep spożywczy online — duży wybór, gwarancja świeżości\u003C/b\u003E\u003C/h2\u003E\u005Cn    \u003Cspan\u003EDołożyliśmy wszelkich starań, aby asortyment frisco.pl był wszechstronny i dopasowany do Twoich potrzeb. W naszym sklepie kupisz różnego rodzaju \u003Cstrong\u003Eprodukty spożywcze\u003C/strong\u003E: warzywa i owoce, mięso, wędliny, świeże pieczywo, nabiał, jaja, ryby oraz owoce morza. W Strefie Roślinnej prezentujemy ofertę dla wegetarian i wegan, a w kategorii BIO znajdziesz wyselekcjonowane produkty organiczne i ekologiczne. \u003C/span\u003E\u005Cn    \u003Ch2\u003E\u003Cb\u003EZakupy do domu — szybkie dostawy w Twoim mieście\u003C/b\u003E\u003C/h2\u003E\u005Cn    \u003Cspan\u003EWychodząc naprzeciw oczekiwaniom naszych klientów, zapewniamy krótki czas oczekiwania na zamówienie. Korzystając z frisco.pl, zrobisz \u003Cstrong\u003Ezakupy online\u003C/strong\u003E bez wychodzenia z domu, zgodnie z Twoim harmonogramem. Możesz wybrać termin dostawy na jutro i mieć pewność, że kurier dowiezie zakupy bezpośrednio do drzwi Twojego domu lub pod inny wskazany adres.\u003C/span\u003E\u005Cn    \u003Ch2\u003E\u003Cb\u003ETanie zakupy przez internet – promocje i oferty specjalne\u003C/b\u003E\u003C/h2\u003E\u005Cn    \u003Cspan\u003EWybierając Frisco, nie przepłacasz. Na naszych stałych i nowych klientów codziennie czekają atrakcyjne \u003Cstrong\u003Epromocje\u003C/strong\u003E i \u003Cstrong\u003Eoferty specjalne\u003C/strong\u003E. Wejdź na frisco.pl i sprawdź aktualne zniżki na ulubione artykuły. Dodatkowo, w wielu przypadkach możesz liczyć na darmową dostawę. Dołącz do grona naszych przyjaciół z programem lojalnościowym i przekonaj się, jakie korzyści zyskujesz, robiąc zakupy w naszym supermarkecie online.\u003C/span\u003E\u005Cn    \u003Ch2\u003E\u003Cb\u003EWysokiej jakości polskie produkty\u003C/b\u003E\u003C/h2\u003E\u005Cn    \u003Cspan\u003EWspółpracujemy z lokalnymi producentami i dostawcami, dzięki czemu w naszej ofercie znajdziesz certyfikowane polskie wyroby. Na smakoszy czekają między innymi: miody z kujawskich pasiek, nabiał z tradycyjnego gospodarstwa, kaszubskie oleje, domowe kiszonki, produkty z mazurskiej wędzarni, mięso z Mazowsza i Podlasia, naturalne soki znad Dunajca oraz pyszna kawa wypalana metodą rzemieślniczą w najstarszej w Polsce palarni kawy.\u003C/span\u003E\u005Cn\u003Ch2\u003E\u003Cb\u003EAplikacja Frisco — wygodne zakupy online \u003C/b\u003E\u003C/h2\u003E\u005Cn\u003Cspan\u003EZakupy na frisco.pl są komfortowe i bezpieczne. Zrobisz je na stronie internetowej za pomocą komputera lub na urządzeniu mobilnym, korzystając także z aplikacji dostępnej na Google Play i App Store. Płacąc za zamówienie, masz do wyboru takie formy płatności jak BLIK, przelew, karta płatnicza online,  portfele elektroniczne Google Pay lub Apple Pay, czy płatność kartą przy odbiorze. Zamówienie możesz zaplanować na wybrany przez siebie dzień o dogodnej porze, nawet następnego dnia. Korzystając z aplikacji zyskujesz dostęp do dodatkowych funkcjonalności, np. możesz śledzić swoje zamówienie, wyszukiwać produkty po kodzie kreskowym.\u005Cn\u003C/span\u003E\u005Cn\u003Ch2\u003E\u003Cb\u003EZakupy z dostawą do domu we Wrocławiu\u003C/b\u003E\u003C/h2\u003E\u005Cn\u003Cspan\u003EKierowcy Frisco Van dowożą zamówienia w województwie dolnośląskim, dzięki czemu nasza oferta jest dostępna również dla mieszkańców Wrocławia i okolic. We frisco.pl zamówisz wszystko to, czego nie może zabraknąć w Twoim domu — od kawy i śniadania, przez karmę dla domowego pupila, po środki czystości i detergenty. \u003C/span\u003E\u005Cn\u003Ch2\u003E\u003Cb\u003EZakupy spożywcze online w Gdańsku\u003C/b\u003E\u003C/h2\u003E\u005Cn\u003Cspan\u003EWrzeszcz, Przymorze, Brzeźno – teraz zakupy w \u003Cstrong\u003Einternetowym sklepie\u003C/strong\u003E możesz zrobić w każdej dzielnicy Gdańska! Nasz Frisco Van dowiezie pod Twoje drzwi wszystkie niezbędne produkty – nabiał, owoce, warzywa, czy też mięso i pieczywo. Niezależnie od warunków atmosferycznych, otrzymasz swoje produkty w nienaruszonym stanie, przez 7 dni w tygodniu od 6:00 do 23:00. Wystarczy kilka kliknięć, a już następnego dnia otrzymasz zamówienie.\u003C/span\u003E\u005Cn\u003Ch2\u003E\u003Cb\u003EZamawiaj zakupy z dostawą w Gdyni\u003C/b\u003E\u003C/h2\u003E\u005Cn\u003Cspan\u003EMieszkańcu Trójmiasta, czy wiedziałeś, że \u003Cstrong\u003Ezakupy spożywcze\u003C/strong\u003E w Gdyni możesz zrobić w domu za pomocą kilku kliknięć? Po prostu wybierz interesujące Cię produkty, złóż zamówienie, a nasz kierowca dowiezie Twoje zakupy spożywcze pod drzwi. Działamy przez cały tydzień od rana do późnych godzin nocnych, abyś mógł cieszyć się świeżymi produktami na śniadanie oraz po powrocie z pracy. \u005Cn\u003C/span\u003E\u005Cn\u003Ch2\u003E\u003Cb\u003ESupermarket online w Sopocie\u003C/b\u003E\u003C/h2\u003E\u005Cn\u003Cspan\u003EDzięki nowym centrom dystrybucyjnym Frisco w województwie pomorskim zakupy online w Sopocie stały się jeszcze łatwiejsze. Aby zrealizować zamówienie, wystarczy na stronie sklepu dodać produkty do koszyka, wybrać sposób płatności i czekać na dostawę pod same drzwi. To takie proste! Nasi kurierzy rozwożą produkty przez cały tydzień w godzinach 6:00-23:00, żebyś mógł zjeść świeże owoce z samego rana lub przyrządzić ciepłą kolację wieczorem.\u005Cn\u003C/span\u003E\u005Cn    \u003Ch2\u003E\u003Cb\u003EDostawa zakupów w Poznaniu\u003C/b\u003E\u003C/h2\u003E\u005Cn    \u003Cspan\u003EChcesz zrobić zakupy online z dostawą do domu w Poznaniu? Zdecyduj się na atrakcyjną ofertę frisco.pl! Nasz kierowca dojedzie do każdej dzielnicy, niezależnie od warunków pogodowych. Oszczędź sobie czasu i odpocznij po pracy, a my skompletujemy zakupy za Ciebie. Wystarczy, że wybierzesz interesujące Cię owoce, mięso, pieczywo lub mrożonki, zapłacisz i gotowe. Wybierz dogodny dla Ciebie termin dostawy, nawet następnego dnia. \u003C/span\u003E\u005Cn        \u003Ch2\u003E\u003Cb\u003EZakupy online w Warszawie\u003C/b\u003E\u003C/h2\u003E\u005Cn    \u003Cspan\u003EOd 2006 roku dostarczamy \u003Cstrong\u003Ezakupy spożywcze online\u003C/strong\u003E dla klientów z Warszawy i okolic. Dostawy realizowane są w godzinach 6:00 - 23:00 przez 7 dni w tygodniu (wyjątkiem są dni świąteczne). Nasze Frisco Vany umożliwiają bezpieczną dostawę produktów świeżych — pieczywa, mięs, nabiału, warzyw i owoców.­ \u003C/span\u003E\u005Cn    \u003Ch2\u003E\u003Cb\u003ESupermarket online w Katowicach\u003C/b\u003E\u003C/h2\u003E\u005Cn    \u003Cspan\u003EMieszkasz w Katowicach i nie chcesz tracić czasu na czekanie w długich kolejkach? Zrób zamówienie we frisco.pl i przekonaj się sam, dlaczego jest to o wiele lepsze niż tradycyjne zakupy. Dowozimy produkty pod Twoje drzwi lub inną wskazaną lokalizację przez 7 dni w tygodniu.  Zarezerwuj optymalny dla Ciebie termin dostawy, nawet następnego dnia. \u005CnNasz kurier radzi sobie podczas każdej pogody – zakupy spożywcze dostarcza w nienaruszonym stanie.\u003C/span\u003E\u005Cn  \u003Ch2\u003E\u003Cb\u003EZakupy z dostawą do domu dostępne w całej Polsce\u005Cn\u003C/b\u003E\u003C/h2\u003E\u005Cn    \u003Cspan\u003EAby klienci z całej Polski mogli skorzystać z bogatej oferty sklepu frisco.pl, przygotowaliśmy propozycję także dla nich. Po podaniu kodu pocztowego nasz system zweryfikuje, czy Twój adres znajduje się w strefie dostaw Frisco Vanem. Jeśli nie, oferta online frisco.pl automatycznie dopasuje się tak, aby wyświetlać produkty dostępne w dostawie ogólnopolskiej. Zamówienie zostanie wtedy dostarczone do Twojego domu lub pracy przez profesjonalną firmę kurierską DPD. \u005Cn\u003C/span\u003E\u005Cn\u003C/div\u003E","^3?","\u003Ch1\u003E\u003Cb\u003EZakupy spożywcze online — wybierz Frisco.pl\u003C/b\u003E\u003C/h1\u003E"],"^17",201],"202",["^ ","~:products-set/ids",["^6",[]],"^17",202,"~:products-set/products",null],"203",["^ ","^2[",["^ ","^2X","ProductLabels"],"^17",203,"^30",[204]],"204",["^ ","^31","3a01c6b2-60ac-414a-8a30-acef346d52ea","^32","ProductLabels","^;","VatDiscount","^34",["^ ","^39","Cena z 0% VAT"],"^17",204]],"~:counter",205,"~:index",["~#cmap",[["^3O","130757"],136,["^3O","137229"],153,["^3O","14362"],158,["^3O","40781"],159,["^3O","13730"],124,["^6L","3a02f6c2-ff50-46e7-9006-5321f8c704af"],64,["^55",4336],47,["^2[",["^ ","^2X","chat","^2Y","chat"]],80,["^2[",["^ ","^2X","search-input","^2Y","placeholder"]],72,["^59","super_cena"],20,["^3O","143115"],12,["^2[",["^ ","^2X","settings"]],57,["^3O","136383"],163,["^3O","143019"],116,["^55",4115],39,["^3O","113499"],170,["^3O","144759"],40,["^55",2403],31,["^77","999000999"],66,["^2[",["^ ","^2X","newFrisco_HP","^2Y","seo-expandable-label"]],108,["^3O","139438"],160,["^3O","8546"],121,["^3O","144638"],167,["^55",733],29,["^55",3631],44,["^3O","130801"],113,["^3O","139435"],156,["^3O","8030"],185,["^55",4122],17,["^3O","114137"],189,["^3O","125991"],119,["^55",14620],49,["^3O","136441"],138,["^59","najtaniej_w_sieci-405598065"],18,["^3O","137"],125,["^3O","143157"],175,["^55",3294],15,["^55",947],34,["^55",11632],36,["^8\u003C",["^6",[]]],202,["^3O","136442"],141,["^3O","142404"],25,["^55",11048],43,["^3O","140834"],137,["^55",2120],53,["^3O","144179"],166,["^2[",["^ ","^2X","newFrisco_HP","^2Y","rotator","^7M",true]],106,["^3O","144854"],165,["^2[",["^ ","^2X","settings","^2Y","header"]],73,["^3O","143534"],173,["^55",1881],52,["^3O","10551"],186,["^3O","120079"],187,["^3O","119661"],144,["^3O","15740"],180,["^55",735],28,["^3O","36411"],154,["^3O","141832"],179,["^55",10635],48,["^55",3883],45,["^55",292],51,["^3O","142939"],147,["^3O","12044"],114,["^2[",["^ ","^2X","user-popup"]],82,["^2[",["^ ","^2X","ProductLabels"]],203,["^3O","143205"],37,["^3O","144420"],50,["^3O","139446"],162,["^3O","144947"],19,["^3O","144640"],169,["^55",11],32,["^2[",["^ ","^2Y","usp-content","^2X","HP"]],107,["^3O","112183"],131,["^3O","858"],182,["^3O","142913"],148,["^3O","141517"],151,["^2[",["^ ","^2X","pop-up"]],81,["^55",3618],54,["^55",670],35,["^55",2404],26,["^B",true],0,["^55",356],14,["^3O","140531"],174,["^3O","130153"],115,["^3O","112191"],129,["^77","8888888888888888"],67,["^77","IKU6S05aEoO8UvEvBxVbYY"],70,["^3O","141590"],140,["^3O","141266"],152,["^55",152],41,["^2[",["^ ","^2X","horizontal_bar","^2Y","produkt_gratis"]],76,["^2[",["^ ","^2X","settings","^2Y","stock"]],21,["^2W",[["^ ","^2X","horizontal_bar"],["^ ","^2X","settings"],["^ ","^2X","newFrisco","^2Y","header_links"],["^ ","^2X","newFrisco","^2Y","products-of-the-day"],["^ ","^2X","settings","^2Y","stock"],["^ ","^2X","menu_special"],["^ ","^2X","product-placements","^2Y","cart"]]],1,["^2[",["^ ","^2X","product-placements","^2Y","cart"]],23,["^3O","40573"],132,["^3O","1091"],177,["^3O","40682"],157,["^55",465],27,["^3O","141549"],168,["^55",155],42,["^2[",["^ ","^2X","settings","^2Y","footer"]],79,["^77","AAAAAAAAAAAAAAA2023"],69,["^3O","112455"],112,["^2[",["^ ","^2X","horizontal_bar","^2Y","darmowa_dostawa"]],75,["^7G",false],77,["^3O","112731"],145,["^3O","130765"],139,["^3O","7073"],181,["^55",3553],13,["^2[",["^ ","^2X","horizontal_bar"]],55,["^2[",["^ ","^2X","menu_special"]],63,["^2[",["^ ","^2X","newFrisco","^2Y","products-of-the-day"]],10,["^3O","46041"],111,["^2[",["^ ","^2X","ribbon"]],71,["^3O","133372"],161,["^3O","131553"],123,["^77","iWF3tMOky4lzUsEeQL0DvN"],68,["^3O","101373"],117,["^55",4121],16,["^3O","5754"],126,["^2[",["^ ","^2Y","new-hp-content","^2X","HP"]],78,["^6L","3a0ded24-55b9-4276-83ac-b87fba04711f"],65,["^55",3552],38,["^3O","135065"],150,["^3O","141830"],130,["^2[",["^ ","^2X","PageHeader","^2Y","More-links"]],74,["^55",10387],46,["^3O","102623"],30,["^55",16],33,["^3O","142940"],143,["^2[",["^ ","^2X","newFrisco","^2Y","header_links"]],2,["^3O","144950"],118,["^3O","4967"],146,["^3O","141759"],122]],"~:ref-reverses",["^ ","~i2",["^ ","~i1",1],"~i66",["^ ","~i0",1],"~i67",["^ ","~i0",1],"~i68",["^ ","~i0",1],"~i69",["^ ","~i0",1],"~i70",["^ ","~i0",1],"~i10",["^ ","~i1",1],"~i21",["^ ","~i1",1],"~i23",["^ ","~i1",1],"~i55",["^ ","~i1",1],"~i57",["^ ","~i1",1],"~i63",["^ ","~i1",1]]]';
+  </script>
+  <noscript>
+   <img src="/trace-no-script"/>
+  </noscript>
+ </body>
+</html>

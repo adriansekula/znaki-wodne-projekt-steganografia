@@ -1,0 +1,2400 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   PWN Moc wiedzy - PWN Moc Wiedzy
+  </title>
+  <base href="https://www.pwn.pl/"/>
+  <meta content="index,follow" name="robots"/>
+  <meta content="PWN od początku swojego istnienia jest źródłem wiarygodnej, rzetelnej wiedzy. W Grupie PWN dobrze rozumiemy wagę naszego zobowiązania i cenimy tradycję, na której wychowały się pokolenia Polaków. Jednocześnie od lat konsekwentnie się doskonalimy, ponieważ wierzymy, że dzięki ciągłemu rozwojowi i zdobywaniu nowych kompetencji lepiej odpowiadamy na potrzeby naszych Klientów. Jesteśmy nowoczesną, otwartą na wyzwania organizacją. Naszą wizją jest, aby każdy mógł uczyć się w najlepszy dla siebie sposób. W tym celu wnikliwie obserwujemy zmiany zachodzące w świecie nauki, edukacji i biznesu, a uzyskaną w ten sposób wiedzę wykorzystujemy w naszych przedsięwzięciach. Chcemy stale rozwijać nowe obszary działalności, tworzyć różnorodne, innowacyjne rozwiązania edukacyjne i – dzięki naszym produktom oraz usługom – wspierać naszych Klientów w edukacji, pogłębianiu wiedzy oraz doskonaleniu przez całe życie. Naszą pasją jest wiedza. Poznaj z nami jej moc." name="description"/>
+  <meta content="" name="keywords"/>
+  <meta content="Agencja Interaktywna Migomedia" name="author"/>
+  <meta content="PWN Moc wiedzy - PWN Moc Wiedzy" property="og:title">
+   <meta content="PWN od początku swojego istnienia jest źródłem wiarygodnej, rzetelnej wiedzy. W Grupie PWN dobrze rozumiemy wagę naszego zobowiązania i cenimy tradycję, na której wychowały się pokolenia Polaków. Jednocześnie od lat konsekwentnie się doskonalimy, ponieważ wierzymy, że dzięki ciągłemu rozwojowi i zdobywaniu nowych kompetencji lepiej odpowiadamy na potrzeby naszych Klientów. Jesteśmy nowoczesną, otwartą na wyzwania organizacją. Naszą wizją jest, aby każdy mógł uczyć się w najlepszy dla siebie sposób. W tym celu wnikliwie obserwujemy zmiany zachodzące w świecie nauki, edukacji i biznesu, a uzyskaną w ten sposób wiedzę wykorzystujemy w naszych przedsięwzięciach. Chcemy stale rozwijać nowe obszary działalności, tworzyć różnorodne, innowacyjne rozwiązania edukacyjne i – dzięki naszym produktom oraz usługom – wspierać naszych Klientów w edukacji, pogłębianiu wiedzy oraz doskonaleniu przez całe życie. Naszą pasją jest wiedza. Poznaj z nami jej moc." property="og:description">
+    <meta content="https://www.pwn.pl/" property="og:url">
+     <link href="assets/css/5182624e5731.css" rel="stylesheet"/>
+     <script src="assets/js/3959c0fc0203.js">
+     </script>
+     <link href="templates/pwn/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+      <link href="templates/pwn/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css"/>
+      <link href="templates/pwn/css/style.css?v=1" media="screen" rel="stylesheet" type="text/css"/>
+      <!-- <link rel="stylesheet" type="text/css" href="templates/pwn/css/consolidation-modal.css" media="screen" /> -->
+      <link href="templates/pwn/css/style-responsive1.css" media="screen" rel="stylesheet" type="text/css"/>
+      <link href="templates/pwn/css/style-responsive2.css?v=1" media="screen" rel="stylesheet" type="text/css"/>
+      <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+      <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+      <!-- Google Tag Manager -->
+      <script>
+       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NLMNG8K');
+      </script>
+      <!-- End Google Tag Manager -->
+      <script data-cmp-ab="1" type="text/javascript">
+       window.cmp_customlanguages=[{"l":"PL-POLSKA","i":"pl","r":0,"t":"PL"},{"l":"AA","i":"xy","r":0,"t":"AA"}];
+      </script>
+      <script data-cmp-ab="1" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="1" data-cmp-host="b.delivery.consentmanager.net" src="https://cdn.consentmanager.net/delivery/autoblocking/d6d7adf0b17af.js" type="text/javascript">
+      </script>
+      <script>
+       var migo=migo||{};migo.getWidth=function (){if (self.innerHeight){return self.innerWidth;}if (document.documentElement&&document.documentElement.clientHeight){return document.documentElement.clientWidth;}if (document.body){return document.body.clientWidth;}}document.cookie='browserWidth='+migo.getWidth()+';path=/';
+      </script>
+      <script src="templates/pwn/js/bootstrap.min.js">
+      </script>
+      <script src="templates/pwn/js/waypoints/lib/jquery.waypoints.min.js">
+      </script>
+      <script src="templates/pwn/js/scripts.js?v=1">
+      </script>
+      <!--[if lt IE 9]><script src="assets/html5shiv/3.7.0/html5shiv-printshiv.js"></script><script src="assets/respond/1.4.2/respond.min.js"></script><![endif]-->
+     </link>
+    </meta>
+   </meta>
+  </meta>
+  <meta content="9b9d2dee58510228902fb7c27ec4aa4019f05fde8beb35e64bcd990439632e04" name="body_hash"/>
+ </head>
+ <body class="unknown other strona-glowna" id="top">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NLMNG8K" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="cookiewarning" style="display: none; z-index: 999; position: fixed; bottom: 0; left: 0; background-color: #ddd; text-align: center; padding: 10px 0;">
+   <div style="margin: 0 auto; position: relative; color: #000;">
+    <p>
+     Strona korzysta z plików cookies w celu realizacji usług i zgodnie z
+     <a href="pliki-cookie" title="pliki-cookie">
+      Polityką Plików Cookies
+     </a>
+     . Możesz określić warunki przechowywania lub dostępu do plików cookies w Twojej przeglądarce.
+    </p>
+    <div class="cookie-close" onclick="JavaScript:doAccept();" style="cursor: pointer; text-indent: -999em; overflow: hidden; width: 29px; height: 27px; padding: 5px; background: url('templates/pwn/img/ico_close.png') center center no-repeat;">
+     zamknij
+    </div>
+   </div>
+  </div>
+  <script language="JavaScript" src="templates/pwn/js/cookieswarning.js" type="text/javascript">
+  </script>
+  <div id="wrapper">
+   <header id="header">
+    <nav class="main-navbar navbar navbar-default navbar-fixed-top">
+     <div class="container">
+      <!-- indexer::stop -->
+      <div class="navbar-header">
+       <button class="navbar-toggle collapsed" data-target="#gorne-menu" data-toggle="collapse" type="button">
+        <span class="sr-only">
+         Toggle navigation
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+       </button>
+       <a class="pwn-logo navbar-brand" href="strona-glowna">
+       </a>
+      </div>
+      <div class="navbar-collapse collapse navbar-right" id="gorne-menu">
+       <ul class="nav navbar-nav pages-socials">
+        <li class="sibling page page-tresc page-onas sibling first">
+         <a class="sibling" href="o-nas" role="menuitem" title="O nas">
+          O nas
+         </a>
+        </li>
+        <li class="sibling page page-aktualnosci sibling">
+         <a class="sibling" href="aktualnosci" role="menuitem" title="Aktualności">
+          Aktualności
+         </a>
+        </li>
+        <li class="sibling page page-kariera page-tresc sibling">
+         <a class="sibling" href="kariera" role="menuitem" title="Kariera">
+          Kariera
+         </a>
+        </li>
+        <li class="sibling page page-zasoby sibling last">
+         <a class="sibling" href="zasoby" role="menuitem" title="Zasoby">
+          Zasoby
+         </a>
+        </li>
+        <li class="sibling page page-kontakt">
+         <a class="sibling" href="strona-glowna#kontakt" role="menuitem" title="Kontakt">
+          Kontakt
+         </a>
+        </li>
+        <li class="lang">
+         <a href="/home">
+          ENG
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://www.instagram.com/pwnwydawnictwo/" role="menuitem" target="_blank" title="Instagram">
+          <i class="fa fa-instagram first">
+          </i>
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://www.facebook.com/WydawnictwoPWN/" role="menuitem" target="_blank" title="Facebook">
+          <i class="fa fa-facebook-square">
+          </i>
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://www.linkedin.com/company/wydawnictwo-naukowe-pwn" role="menuitem" target="_blank" title="Linkedin">
+          <i class="fa fa-linkedin-square">
+          </i>
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://www.youtube.com/channel/UCVvnMwQzyx8w4RUp4ltLuUg" role="menuitem" target="_blank" title="Youtube">
+          <i class="fa fa-youtube-square">
+          </i>
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://twitter.com/PWNwydawnictwo" role="menuitem" target="_blank" title="Twitter">
+          <i class="fa fa-twitter-square last">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <ul class="nav navbar-nav edu-biz-pasja">
+        <li>
+         <a class="top-edykacja" href="strona-glowna#edukacja">
+          Edukacja
+         </a>
+        </li>
+        <li>
+         <a class="top-uslugi" href="strona-glowna#uslugi">
+          Usługi
+         </a>
+        </li>
+        <li>
+         <a class="top-pasja" href="strona-glowna#pasja">
+          Pasja
+         </a>
+        </li>
+       </ul>
+      </div>
+      <!-- indexer::continue -->
+     </div>
+    </nav>
+    <nav id="menu_rozwijane">
+     <div class="container">
+      <!-- indexer::stop -->
+      <nav class="mod_navigation block">
+       <h3>
+        Portale Grupy PWN
+       </h3>
+       <a class="invisible" href="#skipNavigation94">
+        Pomiń nawigacje
+       </a>
+       <ul class="level_1" role="menubar">
+        <li class="submenu first">
+         <a aria-haspopup="true" class="submenu first" href="#" role="menuitem" title="E-commerce">
+          E-commerce
+         </a>
+         <ul class="level_2" role="menu">
+          <li class="submenu first">
+           <a aria-haspopup="true" class="submenu first" href="http://ksiegarnia.pwn.pl" role="menuitem" target="_blank" title="Księgarnia Internetowa PWN">
+            Księgarnia Internetowa PWN
+           </a>
+           <ul class="level_3" role="menu">
+            <li class="first">
+             <a class="first" href="http://ksiegarnia.pwn.pl/podreczniki-akademickie" role="menuitem" target="_blank" title="Podręczniki akademickie">
+              Podręczniki akademickie
+             </a>
+            </li>
+            <li>
+             <a href="http://ksiegarnia.pwn.pl/Ksiazki/Slowniki,2196853,k.html" role="menuitem" target="_blank" title="Słowniki">
+              Słowniki
+             </a>
+            </li>
+            <li>
+             <a href="http://ksiegarnia.pwn.pl/podreczniki" role="menuitem" target="_blank" title="Podręczniki szkolne">
+              Podręczniki szkolne
+             </a>
+            </li>
+            <li>
+             <a href="http://ksiegarnia.pwn.pl/ebooki" role="menuitem" target="_blank" title="Ebooki i audiobooki">
+              Ebooki i audiobooki
+             </a>
+            </li>
+            <li class="last">
+             <a class="last" href="http://ksiegarnia.pwn.pl/Zabawki/Edukacyjne,2198486,k.html" role="menuitem" target="_blank" title="Zabawki edukacyjne">
+              Zabawki edukacyjne
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="submenu">
+           <a aria-haspopup="true" class="submenu" href="http://www.wydawnictwopzwl.pl" role="menuitem" target="_blank" title="Księgarnia Medyczna PZWL">
+            Księgarnia Medyczna PZWL
+           </a>
+           <ul class="level_3" role="menu">
+            <li class="first">
+             <a class="first" href="http://pzwl.pl/medycyna" role="menuitem" target="_blank" title="Medycyna">
+              Medycyna
+             </a>
+            </li>
+            <li>
+             <a href="http://pzwl.pl/dziedziny-okolomedyczne" role="menuitem" target="_blank" title="Dziedziny okołomedyczne">
+              Dziedziny okołomedyczne
+             </a>
+            </li>
+            <li class="last">
+             <a class="last" href="http://pzwl.pl/dla-pacjenta" role="menuitem" target="_blank" title="Dla pacjenta">
+              Dla pacjenta
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="last">
+           <a class="last" href="http://www.ibuk.pl" role="menuitem" target="_blank" title="Ibuk.pl">
+            Ibuk.pl
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="submenu last">
+         <a aria-haspopup="true" class="submenu last" href="#" role="menuitem" title="Portale wiedzy">
+          Portale wiedzy
+         </a>
+         <ul class="level_2" role="menu">
+          <li class="first">
+           <a class="first" href="http://sjp.pwn.pl" role="menuitem" target="_blank" title="Słownik Języka Polskiego PWN">
+            Słownik Języka Polskiego PWN
+           </a>
+          </li>
+          <li>
+           <a href="http://encyklopedia.pwn.pl" role="menuitem" target="_blank" title="Encyklopedia PWN">
+            Encyklopedia PWN
+           </a>
+          </li>
+          <li>
+           <a href="http://translatica.pl" role="menuitem" target="_blank" title="Translatica">
+            Translatica
+           </a>
+          </li>
+          <li>
+           <a href="https://edu.pwn.pl/" role="menuitem" target="_blank" title="Edu PWN">
+            Edu PWN
+           </a>
+          </li>
+          <li>
+           <a href="http://www.biblionetka.pl" role="menuitem" target="_blank" title="Biblionetka">
+            Biblionetka
+           </a>
+          </li>
+          <li>
+           <a href="https://edu.pzwl.pl/" role="menuitem" target="_blank" title="Edu PZWL">
+            Edu PZWL
+           </a>
+          </li>
+          <li>
+           <a href="https://sjp.pwn.pl/poradnia" role="menuitem" target="_blank" title="Poradnia Językowa">
+            Poradnia Językowa
+           </a>
+          </li>
+          <li>
+           <a href="https://nursing.com.pl/" role="menuitem" target="_blank" title="nursing.com.pl">
+            nursing.com.pl
+           </a>
+          </li>
+          <li>
+           <a href="http://www.twojaksiegarnia.pl" role="menuitem" target="_blank" title="Twoja Księgarnia">
+            Twoja Księgarnia
+           </a>
+          </li>
+          <li>
+           <a href="https://www.supermemo.com/pl" role="menuitem" target="_blank" title="SuperMemo">
+            SuperMemo
+           </a>
+          </li>
+          <li>
+           <a href="https://akademia.pwn.pl/" role="menuitem" target="_blank" title="Akademia PWN">
+            Akademia PWN
+           </a>
+          </li>
+          <li class="last">
+           <a class="last" href="https://psychologia.pwn.pl/" role="menuitem" target="_blank" title="Psychologia PWN">
+            Psychologia PWN
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <a class="invisible" id="skipNavigation94">
+       </a>
+      </nav>
+      <!-- indexer::continue -->
+     </div>
+    </nav>
+   </header>
+   <div id="container">
+    <div id="main">
+     <div class="inside">
+      <div class="mod_article first last block" id="strona-glowna">
+       <div class="mod_BootstrapCarousel glowny-slajder tekst-z-cieniem">
+        <!-- sequence ================================================== -->
+        <div class="sequence-kontener" id="sequence_60">
+         <ul class="sequence-canvas">
+          <li class="slider-item">
+           <div class="slider-bg" style="background-image: url('assets/images/6/Teraz_Polska_2048x542_20230602_v2-679ff376.png')">
+           </div>
+           <div class="container" style="">
+            <div class="info">
+            </div>
+           </div>
+          </li>
+          <li class="slider-item">
+           <div class="slider-bg" style="background-image: url('assets/images/a/Centrum%20Szkolen%20i%20Rozwoju%20PWN_banerki-01-a573390a.png')">
+           </div>
+           <div class="container" style="">
+            <div class="info">
+            </div>
+           </div>
+          </li>
+          <li class="slider-item">
+           <div class="slider-bg" style="background-image: url('assets/images/9/2048x542%20%E2%80%93%201-a556f359.png')">
+           </div>
+           <div class="container" style="">
+            <div class="info">
+             <p>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="slider-item">
+           <div class="slider-bg" style="background-image: url('assets/images/7/2048x542_PWN_FPC_2022_slider%20na%20pwn.pl-0695e8f7.png')">
+           </div>
+           <div class="container" style="">
+            <div class="info">
+             <p>
+              .
+             </p>
+            </div>
+           </div>
+          </li>
+          <li class="slider-item">
+           <div class="slider-bg" style="background-image: url('assets/images/a/2016_06_03_BanerGlowny_08-3bf2f7ca.jpg')">
+           </div>
+           <div class="container" style="">
+            <div class="info">
+             <p>
+              Wiedza, z której korzystasz
+             </p>
+             <h1>
+              przez całe życie
+             </h1>
+            </div>
+           </div>
+          </li>
+         </ul>
+         <a class="left carousel-control sequence-prev" href="javascript:void(0);">
+          <div class="slajder-prev slajder-icon">
+          </div>
+          <span class="sr-only">
+           Poprzedni
+          </span>
+         </a>
+         <a class="right carousel-control sequence-next" href="javascript:void(0);">
+          <div class="slajder-next slajder-icon">
+          </div>
+          <span class="sr-only">
+           Następny
+          </span>
+         </a>
+        </div>
+        <!-- /.sequence -->
+       </div>
+       <div class="ce_ContainerStart ikony-rzad-wstep">
+        <div class="ce_ContainerStart container">
+         <div class="ce_ContainerStart row">
+          <div class="col-sm-4">
+           <div class="ce_image block" id="ikona-1-wiedza" style="visibility: hidden;">
+            <figure class="image_container">
+             <a href="strona-glowna#edukacja">
+              <img class="tlo active" src="templates/pwn/img/ikona_1_tlo_niebieskie.jpg"/>
+              <img class="tlo" src="templates/pwn/img/ikona_1_tlo_szare.jpg"/>
+              <img alt="" class="ikona" height="100" src="files/ikonki/ikona_1_1.jpg" width="126"/>
+              <h2>
+               Rzetelne źródła wiedzy
+              </h2>
+              <figcaption class="caption">
+               Zapewniamy zawsze aktualną wiedzę i skuteczne rozwiązania edukacyjne
+              </figcaption>
+             </a>
+            </figure>
+           </div>
+          </div>
+          <div class="col-sm-4">
+           <div class="ce_image block" id="ikona-2-partnerstwo" style="visibility: hidden;">
+            <figure class="image_container">
+             <a href="strona-glowna#uslugi">
+              <img class="tlo active" src="templates/pwn/img/ikona_1_tlo_niebieskie.jpg">
+               <img class="tlo" src="templates/pwn/img/ikona_1_tlo_szare.jpg"/>
+               <img alt="" class="ikona" height="100" src="files/ikonki/ikona_1_2.jpg" width="126"/>
+               <h2>
+                Wiarygodny Partner w biznesie
+               </h2>
+               <figcaption class="caption">
+                Oferujemy usługi wydawnicze, dystrybucyjne oraz logistyczne
+               </figcaption>
+              </img>
+             </a>
+            </figure>
+           </div>
+          </div>
+          <div class="col-sm-4">
+           <div class="ce_image block" id="ikona-3-pasja" style="visibility: hidden;">
+            <figure class="image_container">
+             <a href="strona-glowna#pasja">
+              <img class="tlo active" src="templates/pwn/img/ikona_1_tlo_niebieskie.jpg">
+               <img class="tlo" src="templates/pwn/img/ikona_1_tlo_szare.jpg"/>
+               <img alt="" class="ikona" height="100" src="files/ikonki/ikona_1_3.jpg" width="126"/>
+               <h2>
+                Pasja w działaniu
+               </h2>
+               <figcaption class="caption">
+                Nasze produkty i usługi tworzą ludzie z pasją
+               </figcaption>
+              </img>
+             </a>
+            </figure>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="ce_OnlyTemplate niebieski-wstep" style="background: url('/templates/pwn/img/obrazek_niebieskidonapisow.jpg') no-repeat scroll center center transparent;">
+        <div class="kontener-img">
+        </div>
+        <div class="ce_image container block">
+         <figure class="image_container">
+          <img alt="" class="img-responsive" height="160" src="files/obrazki/napis_1.png" width="712"/>
+         </figure>
+        </div>
+       </div>
+       <div class="ce_ContainerStart nasze-marki">
+        <div class="ce_ContainerStart container">
+         <h2 class="ce_headline naglowek">
+          nasze MARKI
+         </h2>
+         <div class="mod_BootstrapCarousel">
+          <!-- Carousel ================================================== -->
+          <div class="carousel slide" data-ride="carousel" id="carousel_62">
+           <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+             <div class="carousel-inner" role="listbox">
+              <div class="item active">
+               <div class="row">
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="https://nursing.com.pl/" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/Logo_Nursing_PZWL.jpg">
+                  </img>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="http://pzwl.pl/" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/pzwl.png">
+                  </img>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="https://jezykiobce.pwn.pl/e-akademia" target="_blank">
+                  <img class="img-responsive" src="files/aktualnosci/Aktualnosci_2022/19.12/logo.png"/>
+                 </a>
+                </div>
+               </div>
+              </div>
+              <div class="item">
+               <div class="row">
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="https://psychologia.pwn.pl/" target="_blank">
+                  <img class="img-responsive" src="files/aktualnosci/Aktualnosci_2022/16.12/Psychologia%20pwn.jpg"/>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="https://ai.pwn.pl/" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/logo-PWN-AI-rgb.png"/>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="https://www.supermemo.com/" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/SMW_logo-sm.png"/>
+                 </a>
+                </div>
+               </div>
+              </div>
+              <div class="item">
+               <div class="row">
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="http://pe.wszpwn.com.pl/pages/main/main.smnet#id=5634" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/akademia.png"/>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="http://www.azymut.pl/pl/" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/azymut.png"/>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="http://libra.ibuk.pl/" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/ibuk-libra.png"/>
+                 </a>
+                </div>
+               </div>
+              </div>
+              <div class="item">
+               <div class="row">
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="http://www.ibuk.pl/" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/ibuk.png"/>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="https://edu.pwn.pl/" target="_blank">
+                  <img class="img-responsive" src="files/aktualnosci/Aktualnosci_2022/16.12/edu.pwn.pl_logo_2021%282%29.png"/>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="https://edu.pzwl.pl/" target="_blank">
+                  <img class="img-responsive" src="files/aktualnosci/Aktualnosci_2022/16.12/edu.pzwl.pl_logo_2021%20%282%29.png"/>
+                 </a>
+                </div>
+               </div>
+              </div>
+              <div class="item">
+               <div class="row">
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="http://www.ksiegarnienaukowe.pl" target="_blank">
+                  <img class="img-responsive" src="files/obrazki/ksiegarnie-pwn.png"/>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="https://publikujznami.pwn.pl/" target="_blank">
+                  <img class="img-responsive" src="files/aktualnosci/Aktualnosci_2022/pzn/Publikuj%20z%20PWN_v02.png"/>
+                 </a>
+                </div>
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="http://www.wydawnictwopzwl.pl/" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/pzwl.png"/>
+                 </a>
+                </div>
+               </div>
+              </div>
+              <div class="item">
+               <div class="row">
+                <div class="item-inner col-sm-4">
+                 <a class="img-a" href="http://pe.wszpwn.com.pl/pages/main/main.smnet#id=5634" target="_blank">
+                  <img class="img-responsive" src="files/ikonki/akademia.png"/>
+                 </a>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <a class="left carousel-control" data-slide="prev" href="#carousel_62" role="button">
+            <div class="slajder-prev slajder-icon">
+            </div>
+            <span class="sr-only">
+             Poprzedni
+            </span>
+           </a>
+           <a class="right carousel-control" data-slide="next" href="#carousel_62" role="button">
+            <div class="slajder-next slajder-icon">
+            </div>
+            <span class="sr-only">
+             Następny
+            </span>
+           </a>
+          </div>
+          <!-- /.carousel -->
+         </div>
+        </div>
+       </div>
+       <div class="ce_ContainerStart dzial edukacja" id="edukacja">
+        <div class="ce_image naglowek first block">
+         <figure class="image_container">
+          <img alt="" height="74" src="files/ikonki/ikona_2_0.jpg" width="58"/>
+          <figcaption class="caption">
+           Edukacja
+          </figcaption>
+         </figure>
+        </div>
+        <div class="ce_FullWidthRandomImage tekst-z-cieniem full-width-image">
+         <!-- sequence ================================================== -->
+         <div class="sequence-div" id="sequence_395">
+          <ul class="sequence-canvas">
+           <li class="slider-item active">
+            <div class="slider-bg" style="background-image: url('files/banery_podstron/2016_06_03_Edukacja_20.jpg');">
+            </div>
+            <div class="napis container height-100">
+             <div class="html-header">
+              <h3>
+               Wierzymy w edukację dostosowaną do
+              </h3>
+              <h2>
+               indywidualnych potrzeb
+              </h2>
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <!-- /.sequence -->
+        </div>
+        <div class="ce_ContainerStart akordion">
+         <div aria-multiselectable="true" class="ce_ContainerStart container hidden-530minus dzial_ikony" id="edukacjaIkony">
+          <div class="row">
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="edukacja1" data-lacza="lacze1,lacze4,lacze7,lacze10,lacze13,lacze2,lacze5,lacze12" href="strona-glowna#edukacja1" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_2_1.jpg" width="89"/>
+              </div>
+              <div class="caption">
+               Publikacje i materiały edukacyjne
+              </div>
+             </a>
+            </div>
+           </div>
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="edukacja2" data-lacza="lacze15,lacze9" href="strona-glowna#edukacja2" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_2_2.jpg" width="78"/>
+              </div>
+              <div class="caption">
+               Słowniki i encyklopedie online
+              </div>
+             </a>
+            </div>
+           </div>
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="edukacja3" data-lacza="lacze14,lacze6,lacze17,lacze18" href="strona-glowna#edukacja3" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_2_3.jpg" width="78"/>
+              </div>
+              <div class="caption">
+               E-learning – języki obce
+              </div>
+             </a>
+            </div>
+           </div>
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="edukacja4" data-lacza="lacze8,lacze11,lacze16" href="strona-glowna#edukacja4" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="65" src="files/ikonki/ikona_2_4.jpg" width="78"/>
+              </div>
+              <div class="caption">
+               Konferencje
+              </div>
+             </a>
+            </div>
+           </div>
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="edukacja5" data-lacza="lacze3" href="strona-glowna#edukacja5" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_2_5.jpg" width="77"/>
+              </div>
+              <div class="caption">
+               Wypożyczalnia książek online
+              </div>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="ce_sliderStart hidden-sm hidden-md hidden-530plus hidden-lg container dzial_ikony block" id="edukacjaIkony">
+          <div class="content-slider" data-config="0,300,0,">
+           <div class="slider-wrapper">
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="edukacja1" data-lacza="lacze1,lacze4,lacze7,lacze10,lacze13,lacze2,lacze5,lacze12" href="strona-glowna#edukacja1" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_2_1.jpg" width="89"/>
+               </div>
+               <div class="caption">
+                Publikacje i materiały edukacyjne
+               </div>
+              </a>
+             </div>
+            </div>
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="edukacja2" data-lacza="lacze15,lacze9" href="strona-glowna#edukacja2" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_2_2.jpg" width="78"/>
+               </div>
+               <div class="caption">
+                Słowniki i encyklopedie online
+               </div>
+              </a>
+             </div>
+            </div>
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="edukacja3" data-lacza="lacze14,lacze6,lacze17,lacze18" href="strona-glowna#edukacja3" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_2_3.jpg" width="78"/>
+               </div>
+               <div class="caption">
+                E-learning – języki obce
+               </div>
+              </a>
+             </div>
+            </div>
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="edukacja4" data-lacza="lacze8,lacze11,lacze16" href="strona-glowna#edukacja4" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="65" src="files/ikonki/ikona_2_4.jpg" width="78"/>
+               </div>
+               <div class="caption">
+                Konferencje
+               </div>
+              </a>
+             </div>
+            </div>
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="edukacja5" data-lacza="lacze3" href="strona-glowna#edukacja5" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_2_5.jpg" width="77"/>
+               </div>
+               <div class="caption">
+                Wypożyczalnia książek online
+               </div>
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <nav class="slider-control">
+           <a class="slider-prev" href="#">
+            Poprzednie
+           </a>
+           <span class="slider-menu">
+           </span>
+           <a class="slider-next" href="#">
+            Następne
+           </a>
+          </nav>
+         </div>
+         <div class="ce_ContainerStart container-fluid teksty">
+          <div class="row">
+           <img class="arrow_selection" src="/templates/pwn/img/dzial_strzalka_dol.png">
+            <div class="row-dzial collapse" id="edukacja1" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                Publikacje i materiały edukacyjne PWN dostarczają rzetelnej wiedzy oraz korzystają z innowacyjnych rozwiązań na wszystkich poziomach kształcenia.
+               </p>
+               <p>
+                Wiodącymi publikacjami są podręczniki akademickie, publikacje naukowe, popularno-naukowe, książki dla profesjonalistów, słowniki języka polskiego i inne produkty referencyjne, czyli służące poszerzaniu wiedzy czytelników.
+               </p>
+               <p>
+                Specjalizujemy się również w wydawaniu materiałów do nauki języków obcych w szkołach podstawowych oraz szkołach ponadpodstawowych. Nasze publikacje wyróżniają najwyższa jakość oraz wiarygodność, poparte wieloletnią współpracą z ekspertami niemalże wszystkich dziedzin nauki.
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="row-dzial collapse" id="edukacja2" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                Słowniki i encyklopedie PWN to naturalny wybór w przypadku osób poszukujących wiedzy.
+               </p>
+               <p>
+                PWN dostarcza zasobów, które pozwalają naszym użytkownikom odnosić sukcesy w szkole, pracy zawodowej oraz życiu codziennym. Naszym celem jest umożliwienie odkrywania znaczenia słów, jak również ułatwienie ich nauki. Oferujemy dostęp do setek tysięcy definicji, synonimów, przykładowych zdań, porad językowych oraz tłumaczeń w swoich serwisach online: bezpłatnych -
+                <a href="http://www.sjp.pwn.pl">
+                 www.sjp.pwn.pl
+                </a>
+                ,
+                <a href="http://www.encyklopedia.pwn.pl">
+                 www.encyklopedia.pwn.pl
+                </a>
+                i
+                <a href="http://www.translatica.pl">
+                 www.translatica.pl
+                </a>
+                oraz płatnych -
+                <a href="https://oxford.pwn.pl/" target="_blank">
+                 https://www.oxford.pwn.pl/
+                </a>
+                i
+                <a href="https://usjp.pwn.pl/" target="_blank">
+                 https://www.usjp.pwn.pl/
+                </a>
+                .
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="row-dzial collapse" id="edukacja3" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                <strong>
+                 SuperMemo World - ucz się szybko i zapomnij o zapominaniu!
+                </strong>
+               </p>
+               <p>
+                Zapewniamy wygodne i efektywne rozwiązania wspomagające proces nauki
+                <strong>
+                 ,
+                </strong>
+                oparte na unikalnej metodzie optymalizacji powtórek SuperMemo. SuperMemo World dotrzymuje kroku coraz szybciej rozwijającym się technologiom mobilnym i udostępnia najpopularniejsze
+                <strong>
+                 kursy językowe
+                </strong>
+                na urządzenia mobilne z systemem Android i iOS. Dzięki temu użytkownicy smartfonów i tabletów mogą wykorzystywać każdą, pozornie niesprzyjającą nauce okoliczność, do utrwalania wiedzy.
+               </p>
+               <p>
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="row-dzial collapse" id="edukacja4" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                <strong>
+                 Instytut PWN
+                </strong>
+                dostarcza sprawdzonej wiedzy oraz konkretnych umiejętności. Skupiamy się na usługach szkoleniowych i konferencyjnych, kierowanych do profesjonalistów:
+                <br/>
+                - z branży medycznej (lekarze, pielęgniarki i położne, fizjoterapeuci oraz zarządzający ochroną zdrowia),
+                <br/>
+                - z sektora uczelni wyższych (wykładowcy, kadra zarządzająca oraz działy administracji),
+                <br/>
+                - z sektora oświaty (nauczyciele, psycholodzy, pedagodzy oraz dyrektorzy szkół i przedszkoli),
+                <br/>
+                - z dziedziny szeroko pojętego biznesu (specjaliści z zakresu prawa, marketingu oraz  zagadnień ścisłych).
+                <br/>
+                Organizujemy zarówno szkolenia, warsztaty i konferencje otwarte, jak i spotkania zamknięte, realizowane na indywidualne zamówienie konkretnej firmy lub instytucji.
+               </p>
+               <p>
+                Zapraszamy:
+                <a href="http://instytutpwn.pl/" target="_blank">
+                 http://instytutpwn.pl/
+                </a>
+               </p>
+               <p>
+               </p>
+               <p>
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="row-dzial collapse" id="edukacja5" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                <a href="http://ibuk.pl/">
+                 IBUK.pl
+                </a>
+                to największa w Polsce wypożyczalnia oraz Księgarnia Internetowa z ebookami i audiobookami. W jej ofercie znajduje się ponad 95 tys. tytułów naukowych, akademickich i profesjonalnych oraz beletrystyka. Posiadamy publikacje naukowe z wielu dziedzin, wśród nich ebooki z zakresu nauk ekonomicznych, humanistycznych, matematyczno-przyrodniczych, społecznych. Oferujemy wypożyczenie e-booków z takich kategorii jak ekonomia, zarządzanie, pedagogika, psychologia, medycyna czy prawo. Ebooki można kupić lub wypożyczyć pojedynczo lub w korzystnych abonamentach. Tytuły w ofercie dostępne są w formatach epub, mobi, pdf oraz mp3. Do zabezpieczania używamy watermarków oraz Adobe DRM.
+               </p>
+              </div>
+             </div>
+            </div>
+           </img>
+          </div>
+         </div>
+        </div>
+        <!-- indexer::stop -->
+        <nav class="mod_navigation block">
+         <div class="container">
+          <div class="row">
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-0">
+            <a class="lacze lacze1 first" href="https://jezykiobce.pwn.pl/strona-glowna" role="menuitem" target="_blank" title="Nauka języków obcych">
+             Nauka języków obcych
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-1">
+            <a class="lacze lacze2" href="http://ksiegarnia.pwn.pl/Ksiazki/Literatura-faktu,2196926,k.html" role="menuitem" target="_blank" title="Literatura faktu i popularnonaukowa">
+             Literatura faktu i popularnonaukowa
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-2">
+            <a class="lacze lacze3" href="http://www.ibuk.pl/" role="menuitem" target="_blank" title="Ibuk.pl">
+             Ibuk.pl
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-3">
+            <a class="lacze lacze5" href="https://czasopisma.pzwl.pl" role="menuitem" target="_blank" title="Czasopisma">
+             Czasopisma
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-4">
+            <a class="lacze lacze6" href="http://www.supermemo.pl/" role="menuitem" target="_blank" title="SuperMemo">
+             SuperMemo
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-5">
+            <a class="lacze lacze7" href="http://ksiegarnia.pwn.pl/podreczniki-akademickie" role="menuitem" target="_blank" title="Podręczniki akademickie">
+             Podręczniki akademickie
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-6">
+            <a class="lacze lacze8" href="http://www.instytutpwn.pl/" role="menuitem" target="_blank" title="Konferencje i szkolenia">
+             Konferencje i szkolenia
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-7">
+            <a class="lacze lacze9" href="https://sjp.pwn.pl/" role="menuitem" target="_blank" title="Słowniki i encyklopedie online">
+             Słowniki i encyklopedie online
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-8">
+            <a class="lacze lacze10" href="http://pzwl.pl/medycyna" role="menuitem" target="_blank" title="Publikacje medyczne">
+             Publikacje medyczne
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-9">
+            <a class="lacze lacze12" href="https://jezykiobce.pwn.pl/e-akademia" role="menuitem" target="_blank" title="Akademia PWN">
+             Akademia PWN
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-10">
+            <a class="lacze lacze15" href="https://translatica.pl/" role="menuitem" target="_blank" title="Translatica">
+             Translatica
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-11">
+            <a class="lacze lacze17 last" href="https://nursing.com.pl/" role="menuitem" target="_blank" title="Nursing">
+             Nursing
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+          </div>
+         </div>
+        </nav>
+        <!-- indexer::continue -->
+        <div class="ce_ContainerStart statystyki">
+         <div class="ce_ContainerStart container">
+          <div class="row">
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             71
+            </div>
+            <div class="podpis">
+             lat doświadczenia
+            </div>
+           </div>
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             400
+            </div>
+            <div class="podpis">
+             nowych tytułów rocznie
+            </div>
+           </div>
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             44,6 mln
+            </div>
+            <div class="podpis">
+             odwiedzających portale wiedzy
+            </div>
+           </div>
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             99%
+            </div>
+            <div class="podpis">
+             publikacji naukowych w wersji elektronicznej
+            </div>
+           </div>
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             266 tys.
+            </div>
+            <div class="podpis">
+             fanów w social mediach
+            </div>
+           </div>
+           <div class="dotyczy col-xs-12">
+            * dane dla całej Grupy PWN, 2021 r.
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="ce_ContainerStart" id="kupuj-online">
+        <div class="ce_ContainerStart container container-like-header">
+         <div class="ce_image obrazek first block">
+          <figure class="image_container">
+           <img alt="" class="img-responsive" height="421" src="assets/images/b/baner-urzadzenia-ce8b93db.png" width="650"/>
+          </figure>
+         </div>
+         <div class="tekst-kupuj">
+          <h2>
+           Kupuj online
+          </h2>
+          <div class="opis">
+           Wybierz sklep internetowy dla siebie
+          </div>
+          <!-- indexer::stop -->
+          <div class="mod_navigation block">
+           <div class="kontener-lacze">
+            <a class="lacze lacze1 first" href="http://ksiegarnia.pwn.pl" role="menuitem" target="_blank" title="ksiegarnia.pwn.pl">
+             ksiegarnia.pwn.pl
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze">
+            <a class="lacze lacze4" href="http://pzwl.pl" role="menuitem" target="_blank" title="pzwl.pl">
+             pzwl.pl
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze">
+            <a class="lacze lacze2 last" href="http://www.ibuk.pl" role="menuitem" target="_blank" title="ibuk.pl">
+             ibuk.pl
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+          </div>
+          <!-- indexer::continue -->
+          <h4>
+           Pokaż kategorie publikacji w Księgarni PWN
+          </h4>
+          <a class="lacze pokaz-wszyskie" href="#">
+           Pokaż wszystkie
+           <i class="fa fa-square">
+           </i>
+          </a>
+         </div>
+        </div>
+        <div class="collapse ce_OnlyTemplate kupujonline-pozostale container-fluid" style="">
+         <!-- indexer::stop -->
+         <div class="mod_navigation block" style="">
+          <div class="container container-like-header">
+           <h4>
+            Wybierz kategorię publikacji w Księgarni PWN
+           </h4>
+           <div class="row dis-flex">
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-0">
+             <a class="lacze lacze2 first" href="http://ksiegarnia.pwn.pl/podreczniki-akademickie" role="menuitem" target="_blank" title="Publikacje akademickie">
+              Publikacje akademickie
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-1">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/podreczniki" role="menuitem" target="_blank" title="Podręczniki szkolne">
+              Podręczniki szkolne
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-2">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/wydawnictwo-pwn" role="menuitem" target="_blank" title="Publikacje PWN">
+              Publikacje PWN
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-3">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Jezyki-obce,2196883,k.html" role="menuitem" target="_blank" title="Języki obce">
+              Języki obce
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-4">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Slowniki,2196853,k.html" role="menuitem" target="_blank" title="Słowniki">
+              Słowniki
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-5">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Encyklopedie-i-leksykony,2196894,k.html" role="menuitem" target="_blank" title="Encyklopedie i leksykony">
+              Encyklopedie i leksykony
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-6">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/ebooki" role="menuitem" target="_blank" title="Ebooki">
+              Ebooki
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-7">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/kategoria/157305/audiobooki.html" role="menuitem" target="_blank" title="Audiobooki">
+              Audiobooki
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-8">
+             <a class="lacze" href="http://ksiegarnia.pwn.pl/zabawki" role="menuitem" target="_blank" title="Zabawki i gry">
+              Zabawki i gry
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-9">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Informatyka-Komputery,2195903,k.html" role="menuitem" target="_blank" title="Informatyka">
+              Informatyka
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-10">
+             <a class="lacze" href="http://ksiegarnia.pwn.pl/Ksiazki/Matematyka,2195868,k.html" role="menuitem" target="_blank" title="Matematyka">
+              Matematyka
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-11">
+             <a class="lacze" href="http://ksiegarnia.pwn.pl/Ksiazki/Nauki-ekonomiczne,2195748,k.html" role="menuitem" target="_blank" title="Ekonomia">
+              Ekonomia
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-12">
+             <a class="lacze" href="http://ksiegarnia.pwn.pl/Ksiazki/Nauki-humanistyczne,2195458,k.html" role="menuitem" target="_blank" title="Nauki humanistyczne">
+              Nauki humanistyczne
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-13">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Psychologia-Psychoterapia,2195654,k.html" role="menuitem" target="_blank" title="Psychologia">
+              Psychologia
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-14">
+             <a class="lacze" href="http://ksiegarnia.pwn.pl/ksiazki" role="menuitem" target="_blank" title="Książki">
+              Książki
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-15">
+             <a class="lacze" href="http://ksiegarnia.pwn.pl/Ksiazki/Ksiazki-dla-dzieci-i-mlodziezy,2196982,k.html" role="menuitem" target="_blank" title="Książki dla dzieci i młodzieży">
+              Książki dla dzieci i młodzieży
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-16">
+             <a class="lacze lacze3" href="http://ksiegarnia.pwn.pl/Ksiazki/Literatura-faktu,2196926,k.html" role="menuitem" target="_blank" title="Literatura faktu">
+              Literatura faktu
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-17">
+             <a class="lacze lacze3" href="http://ksiegarnia.pwn.pl/Ksiazki/Poradniki,2197004,k.html" role="menuitem" target="_blank" title="Poradniki">
+              Poradniki
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-18">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Publikacje-specjalistyczne,2195974,k.html" role="menuitem" target="_blank" title="Publikacje specjalistyczne">
+              Publikacje specjalistyczne
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-19">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Albumy,2196904,k.html" role="menuitem" target="_blank" title="Albumy">
+              Albumy
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-20">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Przewodniki-turystyczne-mapy,2196905,k.html" role="menuitem" target="_blank" title="Przewodniki turystyczne, mapy">
+              Przewodniki turystyczne, mapy
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-21">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/Ksiazki/Fizyka-Astronomia,2195854,k.html" role="menuitem" target="_blank" title="Fizyka">
+              Fizyka
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-22">
+             <a class="lacze" href="http://ksiegarnia.pwn.pl/Gry-planszowe-i-logiczne/Gry-planszowe-i-logiczne,2198452,k.html" role="menuitem" target="_blank" title="Gry planszowe">
+              Gry planszowe
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-23">
+             <a class="lacze" href="http://ksiegarnia.pwn.pl/Zabawki/Edukacyjne,2198486,k.html" role="menuitem" target="_blank" title="Zabawki edukacyjne">
+              Zabawki edukacyjne
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-24">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/kategoria/125216/biologia.html" role="menuitem" target="_blank" title="Biologia">
+              Biologia
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-25">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/kategoria/150629/wydawnictwa-profesjonalne-pwn.html" role="menuitem" target="_blank" title="Wydawnictwa profesjonalne">
+              Wydawnictwa profesjonalne
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-26">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/kategoria/156669/publikacje-specjalistyczne.html" role="menuitem" target="_blank" title="Literatura fachowa">
+              Literatura fachowa
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-27">
+             <a class="lacze lacze4" href="http://ksiegarnia.pwn.pl/kategoria/125029/atlasy-tematyczne.html" role="menuitem" target="_blank" title="Atlasy tematyczne">
+              Atlasy tematyczne
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-28">
+             <a class="lacze lacze3" href="http://ksiegarnia.pwn.pl/kategoria/162217/literatura-naukowa-i-popularnonaukowa.html" role="menuitem" target="_blank" title="Literatura naukowa i popularnonaukowa">
+              Literatura naukowa i popularnonaukowa
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-29">
+             <a class="lacze lacze3" href="http://ksiegarnia.pwn.pl/kategoria/129766/literatura-piekna.html" role="menuitem" target="_blank" title="Literatura piękna">
+              Literatura piękna
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-30">
+             <a class="lacze lacze3" href="http://ksiegarnia.pwn.pl/kategoria/160985/czasopisma.html" role="menuitem" target="_blank" title="Czasopisma">
+              Czasopisma
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-31">
+             <a class="lacze lacze3" href="http://ksiegarnia.pwn.pl/Nowosci,65568770,h.html" role="menuitem" target="_blank" title="Nowości">
+              Nowości
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-32">
+             <a class="lacze lacze3" href="http://ksiegarnia.pwn.pl/Zapowiedzi,65568769,h.html" role="menuitem" target="_blank" title="Zapowiedzi">
+              Zapowiedzi
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+            <div class="kontener-lacze col-xs-12 col-sm-6 index-33">
+             <a class="lacze last" href="http://ksiegarnia.pwn.pl/Bestsellery,65568768,h.html" role="menuitem" target="_blank" title="Bestsellery">
+              Bestsellery
+              <i class="fa fa-chevron-right">
+              </i>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <!-- indexer::continue -->
+        </div>
+       </div>
+       <div class="ce_ContainerStart dzial uslugi" id="uslugi">
+        <div class="ce_image naglowek first block">
+         <figure class="image_container">
+          <img alt="" height="64" src="files/ikonki/ikona_3_0.jpg" width="75"/>
+          <figcaption class="caption">
+           Usługi
+          </figcaption>
+         </figure>
+        </div>
+        <div class="ce_FullWidthRandomImage tekst-z-cieniem full-width-image">
+         <!-- sequence ================================================== -->
+         <div class="sequence-div" id="sequence_407">
+          <ul class="sequence-canvas">
+           <li class="slider-item active">
+            <div class="slider-bg" style="background-image: url('files/banery_podstron/2016_06_03_Uslugi_11.jpg');">
+            </div>
+            <div class="napis container height-100">
+             <div class="html-header">
+              <h3>
+               Stawiamy sobie
+              </h3>
+              <h2>
+               ambitne cele
+              </h2>
+             </div>
+            </div>
+           </li>
+          </ul>
+         </div>
+         <!-- /.sequence -->
+        </div>
+        <div class="ce_ContainerStart akordion">
+         <div aria-multiselectable="true" class="ce_ContainerStart container hidden-530minus dzial_ikony" id="uslugiIkony">
+          <div class="row">
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="uslugi1" data-lacza="lacze7,lacze5" href="strona-glowna#uslugi1" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_1.jpg" width="77"/>
+              </div>
+              <div class="caption">
+               Usługi wydawnicze i self publishing
+              </div>
+             </a>
+            </div>
+           </div>
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="uslugi4" data-lacza="lacze8,lacze3,lacze16" href="strona-glowna#uslugi4" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_9.jpg" width="85"/>
+              </div>
+              <div class="caption">
+               Dystrybucja i logistyka
+              </div>
+             </a>
+            </div>
+           </div>
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="uslugi3" data-lacza="lacze2" href="strona-glowna#uslugi3" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_3.jpg" width="72"/>
+              </div>
+              <div class="caption">
+               Drukarnia cyfrowa
+              </div>
+             </a>
+            </div>
+           </div>
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="uslugi2" data-lacza="lacze6,lacze17" href="strona-glowna#uslugi2" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_55.jpg" width="72"/>
+              </div>
+              <div class="caption">
+               Biuro tłumaczeń
+              </div>
+             </a>
+            </div>
+           </div>
+           <div class="col-xs-5ths kol-ikona">
+            <div class="ce_image block">
+             <a aria-expanded="true" data-collapseid="uslugi5" data-lacza="lacze9" href="strona-glowna#uslugi5" style="visibility: hidden;">
+              <div class="img-wrapper">
+               <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_45.jpg" width="72"/>
+              </div>
+              <div class="caption">
+               Wypożyczalnia dla firm i bibliotek
+              </div>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="ce_sliderStart hidden-sm hidden-md hidden-530plus hidden-lg container dzial_ikony block" id="uslugiIkony">
+          <div class="content-slider" data-config="0,300,0,">
+           <div class="slider-wrapper">
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="uslugi1" data-lacza="lacze7,lacze5" href="strona-glowna#uslugi1" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_1.jpg" width="77"/>
+               </div>
+               <div class="caption">
+                Usługi wydawnicze i self publishing
+               </div>
+              </a>
+             </div>
+            </div>
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="uslugi4" data-lacza="lacze8,lacze3,lacze16" href="strona-glowna#uslugi4" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_9.jpg" width="85"/>
+               </div>
+               <div class="caption">
+                Dystrybucja i logistyka
+               </div>
+              </a>
+             </div>
+            </div>
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="uslugi3" data-lacza="lacze2" href="strona-glowna#uslugi3" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_3.jpg" width="72"/>
+               </div>
+               <div class="caption">
+                Drukarnia cyfrowa
+               </div>
+              </a>
+             </div>
+            </div>
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="uslugi2" data-lacza="lacze6,lacze17" href="strona-glowna#uslugi2" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_55.jpg" width="72"/>
+               </div>
+               <div class="caption">
+                Biuro tłumaczeń
+               </div>
+              </a>
+             </div>
+            </div>
+            <div class="col-xs-5ths kol-ikona">
+             <div class="ce_image block">
+              <a aria-expanded="true" data-collapseid="uslugi5" data-lacza="lacze9" href="strona-glowna#uslugi5" style="visibility: hidden;">
+               <div class="img-wrapper">
+                <img alt="" class="img-responsive" height="61" src="files/ikonki/ikona_3_45.jpg" width="72"/>
+               </div>
+               <div class="caption">
+                Wypożyczalnia dla firm i bibliotek
+               </div>
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <nav class="slider-control">
+           <a class="slider-prev" href="#">
+            Poprzednie
+           </a>
+           <span class="slider-menu">
+           </span>
+           <a class="slider-next" href="#">
+            Następne
+           </a>
+          </nav>
+         </div>
+         <div class="ce_ContainerStart container-fluid teksty">
+          <div class="row">
+           <img class="arrow_selection" src="/templates/pwn/img/dzial_strzalka_dol.png">
+            <div class="row-dzial collapse" id="uslugi1" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                Grupa PWN świadczy kompleksowe, a zarazem zindywidualizowane usługi edytorsko-wydawnicze. Publikujemy w języku polskim oraz językach obcych. Gwarantujemy usługę składu, druku oraz konwersji do formatów elektronicznych. Nasza oferta obejmuje opiekę marketingową, usługi dystrybucyjno-sprzedażowe oraz obsługę księgową zleconych projektów (rozliczenia z autorami, kontrahentami oraz dystrybutorami).
+               </p>
+               <p>
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="row-dzial collapse" id="uslugi4" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                Nowoczesne centrum logistyczne Azymutu, zlokalizowane w Strykowie koło Łodzi (z magazynem o powierzchni 25 000 m kw.), specjalizuje się w realizacji usług dystrybucyjnych. Wydawcom oferujemy możliwość poprowadzenia gospodarki magazynowej zarówno w zakresie przyjmowania dostaw i składowania towarów, jak i w zakresie ewidencji towarowej oraz raportowania stanów magazynowych. Szeroka gama oferowanych przez nas narzędzi – takich jak na przykład specjalny terminal internetowy w siedzibie Wydawcy czy system urządzeń mobilnych na potrzeby przedstawicieli handlowych – umożliwia błyskawiczne składanie zamówień z dowolnego zakątka kraju.
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="row-dzial collapse" id="uslugi3" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                Posiadamy nowoczesną drukarnię cyfrową, umożliwiającą zaoferowanie kompleksowych usług druku cyfrowego, w tym również usługi POD (druku na żądanie). Innowacyjne urządzenia cyfrowe do druku arkuszowego i kolorowego rolowego, a także introligatornia wyposażona w wysokiej klasy maszyny do oprawy miękkiej i twardej, zapewniają najwyższą jakość, pozwalając jednocześnie na realizację zleceń w bardzo krótkich terminach.
+               </p>
+               <p>
+                Uzupełnienie naszego procesu produkcji stanowi platforma web2print, służąca wymianie informacji pomiędzy drukarnią a wydawcą. Za pomocą powyższego interfejsu możliwe jest nie tylko samo zlecenie druku, lecz także skuteczne zarządzanie pracami oraz sporządzanie raportów.
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="row-dzial collapse" id="uslugi2" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                Biuro Tłumaczeń PWN to jeden z największych i najbardziej cenionych przez klientów dostawców usług tłumaczeniowych na polskim rynku. Oferujemy najwyższą jakość przekładu, szeroki wachlarz obsługiwanych języków i branż oraz korzystne ceny i krótkie terminy realizacji tłumaczeń specjalistycznych, zwykłych oraz uwierzytelnionych.
+                <br/>
+                Korzystamy z nowoczesnych narzędzi informatycznych, a nasza oferta obejmuje teraz także innowacyjną usługę tłumaczenia automatycznego wysokiej jakości, skierowaną do klientów biznesowych i korporacyjnych, działających na arenie międzynarodowej w obrębie wyspecjalizowanych obszarów.
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="row-dzial collapse" id="uslugi5" style="display: none;">
+             <div class="container">
+              <div class="ce_text block">
+               <p>
+                IBUK Libra to wirtualna czytelnia, zbudowana na potrzeby bibliotek, firm oraz instytucji, umożliwiająca grupowy dostęp online do wybranego zestawu zasobów. Serwis umożliwia utworzenie własnej kolekcji publikacji, dostosowanej do potrzeb konkretnego klienta. Platforma powstała w 2007 roku.
+               </p>
+              </div>
+             </div>
+            </div>
+           </img>
+          </div>
+         </div>
+        </div>
+        <!-- indexer::stop -->
+        <nav class="mod_navigation block">
+         <div class="container">
+          <div class="row">
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-0">
+            <a class="lacze lacze8 first" href="http://www.azymut.pl/pl/LOGISTYKA-DLA-E-COMMERCE.html" role="menuitem" target="_blank" title="Usługi logistyczne">
+             Usługi logistyczne
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-1">
+            <a class="lacze lacze16" href="http://www.azymut.pl/pl/USLUGI-DYSTRYBUCYJNE.html" role="menuitem" target="_blank" title="Dystrybucja">
+             Dystrybucja
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-2">
+            <a class="lacze lacze2" href="http://www.azymut.pl/pl/DRUKARNIA-CYFROWA.html" role="menuitem" target="_blank" title="Drukarnia cyfrowa">
+             Drukarnia cyfrowa
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-3">
+            <a class="lacze lacze7" href="http://www.publikujznami.pl/" role="menuitem" target="_blank" title="Custom publishing">
+             Custom publishing
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-4">
+            <a class="lacze lacze3" href="http://ksiegarnienaukowe.pl/" role="menuitem" target="_blank" title="Sieć księgarń">
+             Sieć księgarń
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-5">
+            <a class="lacze lacze6" href="http://tlumaczenia-pwn.pl/" role="menuitem" target="_blank" title="Biuro tłumaczeń">
+             Biuro tłumaczeń
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-6">
+            <a class="lacze lacze9" href="https://libra.ibuk.pl" role="menuitem" target="_blank" title="IBUK Libra">
+             IBUK Libra
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+           <div class="kontener-lacze col-xs-12 col-sm-4 index-7">
+            <a class="lacze lacze17 last" href="https://translaide.pl/" role="menuitem" target="_blank" title="TranslAide">
+             TranslAide
+             <i class="fa fa-chevron-right">
+             </i>
+            </a>
+           </div>
+          </div>
+         </div>
+        </nav>
+        <!-- indexer::continue -->
+        <div class="ce_ContainerStart statystyki">
+         <div class="ce_ContainerStart container">
+          <div class="row">
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             4,6 mln
+            </div>
+            <div class="podpis">
+             wydrukowanych książek
+            </div>
+           </div>
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             453
+            </div>
+            <div class="podpis">
+             pracowników
+            </div>
+           </div>
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             34,5 tys.
+            </div>
+            <div class="podpis">
+             tytułów w wypożyczalni ibuk.pl
+            </div>
+           </div>
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             2,3 mln
+            </div>
+            <div class="podpis">
+             sesji w e-czytelni Ibuk Libra
+            </div>
+           </div>
+           <div class="ce_Statystyka col-sm-5ths block">
+            <div class="liczba" style="visibility: hidden">
+             579 tys.
+            </div>
+            <div class="podpis">
+             użytkowników w e-czytelni Ibuk Libra
+            </div>
+           </div>
+           <div class="dotyczy col-xs-12">
+            * dane dla całej Grupy PWN, 2021 r.
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="ce_ContainerStart container pasja dzial" id="pasja">
+        <div class="ce_image naglowek first block">
+         <figure class="image_container">
+          <img alt="" height="63" src="files/ikonki/ikona_4_0.jpg" width="82"/>
+          <figcaption class="caption">
+           Pasja
+          </figcaption>
+         </figure>
+        </div>
+        <div class="ce_text last block">
+         <p style="text-align: justify;">
+          Wszystkie nasze wydawnicze działania realizujemy z pasji do przekazywania wiedzy i do dzielenia się nią z każdym, kto tej wiedzy poszukuje. Od lat tworzymy zespoły, którym nie jest obojętna najwyższa jakość i rzetelność przekazywanych informacji. Stanowimy społeczność odznaczającą się miłością do nauki i do książek, i dlatego wiele satysfakcji sprawia nam tworzenie i wydawanie publikacji zmieniających kształt naukowego świata i mających realny wpływ na rozwój intelektualny w naszym kraju.
+          <br/>
+          <br/>
+         </p>
+         <p style="text-align: justify;">
+          Jesteśmy świadomi jak wiele zależy od materiałów i źródeł w rzeczywistości, w której królują nowoczesne technologie, a dostęp do wiedzy jest powszechny. Nasze publikacje poddawane są bardzo szczegółowej weryfikacji, tak by zawierały tylko sprawdzone i pewne informacje. Zapraszamy do współpracy naukowców i najwyższej jakości ekspertów z różnorodnych obszarów nauki od psychologii, przez naukę języków obcych po nauki ścisłe.
+         </p>
+         <p>
+          <img alt="" height="576" src="files/aktualnosci/Aktualnosci_2022/pasja/wachlarz_Pasja.png" style="display: block; margin-left: auto; margin-right: auto;" width="576"/>
+         </p>
+         <p style="text-align: justify;">
+          Nasze podręczniki akademickie z wielu dziedzin takich jak psychologia, medycyna czy nauki techniczne należą już do klasyki, wykorzystywane są przez kolejne pokolenia wykładowców i studentów oraz profesjonalistów. Obok działalności wydawniczej organizujemy również szkolenia skierowane do środowiska akademickiego oraz różnorodnych grup zawodowych, m.in. lekarzy, pielęgniarek i położnych.
+          <br/>
+          <br/>
+         </p>
+         <p style="text-align: justify;">
+          Wspólne działania z takimi podmiotami jak Cambridge University Press, Koalicja AI w Zdrowiu czy Fundacja Powszechnego Czytania dodają nam skrzydeł i niezmiernie się cieszymy, że możemy łączyć naszą merytoryczną, wydawniczą współpracę z doraźnymi akcjami, które promują czytelnictwo czy też aktywnie wspierają rozwój medycyny.
+         </p>
+         <p>
+          <br/>
+          <img alt="" height="2314" src="files/aktualnosci/Aktualnosci_2022/nowy baner/infografika.png" width="743"/>
+         </p>
+        </div>
+       </div>
+       <div class="ce_ContainerStart kontakt" id="kontakt">
+        <h2 class="ce_headline container naglowek first last">
+         Kontakt
+        </h2>
+        <div class="ce_FullWidthImage obrazek">
+         <div class="kontener-img" style="background: url('files/aktualnosci/Aktualnosci_2022/nowy%20baner/kolaz-kontakt-2048x400.png') no-repeat scroll center center transparent;height:400px;">
+         </div>
+        </div>
+        <div class="ce_ContainerStart container container-like-header gorny-row">
+         <div class="row">
+          <div class="ce_ContainerStart col-xs-12 col-sm-4 lewa-od-obrazka">
+           <div class="ce_ContainerStart row">
+            <div class="ce_text col-360-12 col-xs-6 col-sm-12 block">
+             <h3 style="text-align: left;">
+              PWN
+             </h3>
+             <p style="text-align: left;">
+              ul. G. Daimlera 2
+             </p>
+             <p style="text-align: left;">
+              02-460 Warszawa
+             </p>
+             <p style="text-align: left;">
+              <a href="http://www.pwn.pl" target="_blank">
+               www.pwn.pl
+              </a>
+             </p>
+            </div>
+            <div class="ce_text col-360-12 col-xs-6 col-sm-12 block">
+             <h3 style="text-align: left;">
+              Recepcja
+             </h3>
+             <p style="text-align: left;">
+              Pn.-pt. 9:00 - 16:00
+             </p>
+             <p style="text-align: left;">
+              tel. 22 695 43 21
+             </p>
+             <p style="text-align: left;">
+              <span lang="PL">
+               <a href="mailto:recepcja@pwn.pl">
+                recepcja@pwn.pl
+               </a>
+              </span>
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="ce_image col-xs-12 col-sm-8 mapka block">
+           <figure class="image_container">
+            <div class="diva">
+             <img alt="https://www.google.pl/maps/place/Wydawnictwo+Naukowe+PWN+S.A./@52.2223189,21.009253,13z/data=!4m5!1m2!2m1!1spwn+!3m1!1s0x471933265933b8ad:0x2e70381ca3a457b6" class="img-responsive" height="238" src="files/obrazki/mapka-bez-lupy.png" width="590"/>
+             <img class="lupa" src="/templates/pwn/img/lupka-icon.png">
+              <a class="ramka" href="https://www.google.pl/maps/place/Wydawnictwo+Naukowe+PWN+S.A./@52.2223189,21.009253,13z/data=!4m5!1m2!2m1!1spwn+!3m1!1s0x471933265933b8ad:0x2e70381ca3a457b6" target="_blank">
+              </a>
+             </img>
+            </div>
+           </figure>
+          </div>
+         </div>
+        </div>
+        <div class="ce_ContainerStart container container-like-header">
+         <div class="ce_ContainerStart row">
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="o-nas#dane-spolek" rel="" title="Kontakty spółek Grupy PWN">
+            Kontakty spółek Grupy PWN
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="pwn-dla-firm" rel="" title="PWN dla firm">
+            PWN dla firm
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="kontakt-autorzy" rel="" title="Kontakt dla autorów PWN">
+            Kontakt dla autorów PWN
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-push-12 wiecej-collapse wiecej-bok block">
+           <a class="hyperlink_txt" href="#" rel="" title="">
+            <span class="pokaz">
+             <i class="fa fa-angle-down">
+             </i>
+             Biura obsługi klienta
+            </span>
+            <span class="ukryj">
+             <i class="fa fa-angle-up">
+             </i>
+             Biura obsługi klienta
+            </span>
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="dla-akcjonariuszy" rel="" title="Informacje dla akcjonariuszy">
+            Informacje dla akcjonariuszy
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="kontakt-jezyki-obce" rel="" title="Kontakt dla autorów Języki Obce">
+            Kontakt dla autorów Języki Obce
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="polaczenie-spolek" rel="" title="Połączenie spółek Grupy PWN">
+            Połączenie spółek Grupy PWN
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="o-nas#dla-mediow" rel="" title="Kontakt dla mediów">
+            Kontakt dla mediów
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="kontakt-pzwl" rel="" title="Kontakt dla autorów PZWL">
+            Kontakt dla autorów PZWL
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="o-nas#kontakt-inspektor" rel="" title="Kontakt do Inspektora Ochrony Danych">
+            Kontakt do Inspektora Ochrony Danych
+           </a>
+          </div>
+          <div class="ce_hyperlink col-md-4 xcol-xs-12 xcol-xs-pull-12 wiecej-collapse block">
+           <a class="hyperlink_txt" href="propozycje-wydawnicze" rel="" title="Propozycje wydawnicze">
+            Propozycje wydawnicze
+           </a>
+          </div>
+         </div>
+        </div>
+        <div class="ce_ContainerStart container container-like-header container-bok extra-bok extra-collapse">
+         <div class="row">
+          <div class="ce_text col-360-12 col-xs-6 col-sm-4 text-left first block">
+           <h3>
+            Księgarnia Internetowa PWN
+           </h3>
+           <p>
+            Biuro Obsługi Klienta
+           </p>
+           <p>
+            pn.-pt. 9:00-17:00
+           </p>
+           <p>
+            tel. 42 680 44 88
+           </p>
+           <p>
+            <a href="mailto:ksiegarnia@pwn.pl" rel="noreferrer" target="_blank">
+             ksiegarnia@pwn.pl
+            </a>
+           </p>
+           <p>
+            <a href="mailto:wysylka@pwn.com.pl" rel="noreferrer" target="_blank">
+             wysylka@pwn.com.pl
+            </a>
+           </p>
+          </div>
+          <div class="ce_text col-360-12 col-xs-6 col-sm-4 text-left block">
+           <h3>
+            Księgarnia Internetowa PZWL
+           </h3>
+           <p>
+            Biuro Obsługi Klienta
+           </p>
+           <p>
+            pn.-pt. 9:00-17:00
+           </p>
+           <p>
+            tel. 42 680 44 88
+           </p>
+           <p>
+            <a href="mailto:wysylkowa@pzwl.pl" rel="noreferrer" target="_blank">
+             wysylkowa@pzwl.pl
+            </a>
+           </p>
+          </div>
+          <div class="ce_text col-360-12 col-xs-6 col-sm-4 text-left block">
+           <h3>
+            IBUK.pl
+           </h3>
+           <p>
+           </p>
+           <p>
+            Biuro Obsługi Klienta
+           </p>
+           <p>
+            pn.-pt. 9:00-17:00
+           </p>
+           <p>
+            tel. 42 680 44 88
+           </p>
+           <p>
+            <a href="mailto:pomoc@ibuk.pl" rel="noreferrer" target="_blank">
+             pomoc@ibuk.pl
+            </a>
+           </p>
+          </div>
+          <div class="ce_text block">
+           <h3 style="text-align: left;">
+            Języki Obce PWN
+            <br/>
+            (Wydawnictwo Szkolne PWN)
+           </h3>
+           <p style="text-align: left;">
+            Biuro Obsługi Klienta
+           </p>
+           <p style="text-align: left;">
+            pn.-pt. 8:00-16:00
+           </p>
+           <p style="text-align: left;">
+            tel. 22 69 54 800
+           </p>
+           <p style="text-align: left;">
+            faks 22 695 48 06
+           </p>
+           <p style="text-align: left;">
+            <a href="mailto:bok.wsz@pwn.pl">
+             bok.wsz@pwn.pl
+            </a>
+           </p>
+          </div>
+          <div class="ce_text col-360-12 col-xs-6 col-sm-4 text-left block">
+           <h3>
+            Biuro Sprzedaży Biznesowej
+           </h3>
+           <h6>
+            Wydawnictwo Naukowe PWN
+           </h6>
+           <h6>
+            Wydawnictwo Lekarskie PZWL
+           </h6>
+           <h6>
+           </h6>
+           <p>
+            Michał Zugaj
+           </p>
+           <p>
+            pn.-pt. 8:00-16:00
+           </p>
+           <p>
+            tel. 22 695 41 95
+           </p>
+           <p>
+            <a href="mailto:Michal.Zugaj@pwn.pl">
+             michal.zugaj@pwn.pl
+            </a>
+           </p>
+           <p>
+            <a href="mailto:bok@pwn.pl">
+             bok@pwn.pl
+            </a>
+           </p>
+           <p>
+           </p>
+          </div>
+          <div class="ce_text col-360-12 col-xs-6 col-sm-4 text-left last block">
+           <h3>
+            Biuro Reklamy
+           </h3>
+           <p>
+           </p>
+           <h6>
+            Wydawnictwo Naukowe PWN
+           </h6>
+           <h6>
+            Wydawnictwo Lekarskie PZWL
+           </h6>
+           <h6>
+           </h6>
+           <p>
+            Marta Połoncarz-Kępka
+           </p>
+           <p>
+            pn.-pt. 8:00-16:00
+           </p>
+           <p>
+            <a href="mailto:anna.chreptowicz@pzwl.pl">
+             marta.poloncarz-kepka@pwn.pl
+            </a>
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- indexer::stop -->
+   <footer id="footer">
+    <div class="arrow-up">
+     <i class="fa fa-chevron-up">
+     </i>
+    </div>
+    <div class="container container-like-header">
+     <div class="main-row row">
+      <div class="col-sm-3">
+       <div class="row">
+        <div class="col-xs-6 col-sm-12">
+         <ul class="list-unstyled edu-biz-pasja">
+          <li>
+           <a class="edukacja" href="strona-glowna#edukacja">
+            Edukacja
+           </a>
+          </li>
+          <li>
+           <a class="biznes" href="strona-glowna#uslugi">
+            Usługi
+           </a>
+          </li>
+          <li>
+           <a class="pasja" href="strona-glowna#pasja">
+            Pasja
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="col-xs-6 col-sm-12">
+         <ul class="list-unstyled strony">
+          <li class="sibling page page-tresc page-onas sibling first">
+           <a class="sibling" href="o-nas" role="menuitem" title="O nas">
+            O nas
+           </a>
+          </li>
+          <li class="sibling page page-aktualnosci sibling">
+           <a class="sibling" href="aktualnosci" role="menuitem" title="Aktualności">
+            Aktualności
+           </a>
+          </li>
+          <li class="sibling page page-kariera page-tresc sibling">
+           <a class="sibling" href="kariera" role="menuitem" title="Kariera">
+            Kariera
+           </a>
+          </li>
+          <li class="sibling page page-zasoby sibling last">
+           <a class="sibling" href="zasoby" role="menuitem" title="Zasoby">
+            Zasoby
+           </a>
+          </li>
+          <li class="sibling page">
+           <a class="sibling" href="strona-glowna#kontakt" id="stopka-kontakt" role="menuitem" title="Kontakt">
+            Kontakt
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-7">
+       <div class="kontener-lacza">
+        <ul class="lacza list-unstyled list-inline level_1" role="menubar">
+         <li class="nasze-serwisy">
+          <span>
+           NASZE SERWISY
+          </span>
+         </li>
+         <li class="first">
+          <a class="first" href="http://www.pwn.pl/pp" role="menuitem" target="_blank" title="Polityka Prywatności">
+           Polityka Prywatności
+          </a>
+         </li>
+         <li>
+          <a href="https://jezykiobce.pwn.pl/strona-glowna" role="menuitem" target="_blank" title="Języki Obce PWN">
+           Języki Obce PWN
+          </a>
+         </li>
+         <li>
+          <a href="http://pzwl.pl" role="menuitem" target="_blank" title="PZWL Wydawnictwo Lekarskie">
+           PZWL Wydawnictwo Lekarskie
+          </a>
+         </li>
+         <li>
+          <a href="http://www.instytutpwn.pl/" role="menuitem" target="_blank" title="Instytut PWN">
+           Instytut PWN
+          </a>
+         </li>
+         <li>
+          <a href="https://psychologia.pwn.pl/" role="menuitem" target="_blank" title="Psychologia PWN">
+           Psychologia PWN
+          </a>
+         </li>
+         <li>
+          <a href="http://www.azymut.pl" role="menuitem" target="_blank" title="OSDW Azymut">
+           OSDW Azymut
+          </a>
+         </li>
+         <li>
+          <a href="http://pe.wszpwn.com.pl/pages/main/main.smnet#id=5634" role="menuitem" target="_blank" title="Akademia PWN">
+           Akademia PWN
+          </a>
+         </li>
+         <li>
+          <a href="http://ksiegarnia.pwn.pl" role="menuitem" target="_blank" title="Księgarnia internetowa PWN">
+           Księgarnia internetowa PWN
+          </a>
+         </li>
+         <li>
+          <a href="http://libra.ibuk.pl/" role="menuitem" target="_blank" title="IBUK Libra">
+           IBUK Libra
+          </a>
+         </li>
+         <li>
+          <a href="http://ksiegarnienaukowe.pl/" role="menuitem" target="_blank" title="Księgarnie naukowe">
+           Księgarnie naukowe
+          </a>
+         </li>
+         <li>
+          <a href="http://www.biblionetka.pl/" role="menuitem" target="_blank" title="Biblionetka.pl">
+           Biblionetka.pl
+          </a>
+         </li>
+         <li>
+          <a href="https://edu.pwn.pl/" role="menuitem" target="_blank" title="Edu PWN">
+           Edu PWN
+          </a>
+         </li>
+         <li>
+          <a href="https://edu.pzwl.pl/" role="menuitem" target="_blank" title="Edu PZWL">
+           Edu PZWL
+          </a>
+         </li>
+         <li>
+          <a href="https://www.ibuk.pl/" role="menuitem" target="_blank" title="Ibuk">
+           Ibuk
+          </a>
+         </li>
+         <li>
+          <a href="http://www.tlumaczenia-pwn.pl/" role="menuitem" target="_blank" title="Biuro Tłumaczeń PWN">
+           Biuro Tłumaczeń PWN
+          </a>
+         </li>
+         <li>
+          <a href="http://www.supermemo.pl/" role="menuitem" target="_blank" title="Kursy językowe SuperMemo">
+           Kursy językowe SuperMemo
+          </a>
+         </li>
+         <li>
+          <a href="http://translatica.pl/" role="menuitem" target="_blank" title="Słowniki obcojęzyczne">
+           Słowniki obcojęzyczne
+          </a>
+         </li>
+         <li>
+          <a href="http://oxford.pwn.pl/" role="menuitem" target="_blank" title="PWN Oxford">
+           PWN Oxford
+          </a>
+         </li>
+         <li>
+          <a href="http://sjp.pwn.pl/" role="menuitem" target="_blank" title="Słowniki języka polskiego">
+           Słowniki języka polskiego
+          </a>
+         </li>
+         <li class="last">
+          <a class="last" href="https://usjp.pwn.pl/" role="menuitem" target="_blank" title="Uniwersalny SJP">
+           Uniwersalny SJP
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="col-sm-2 col-socials">
+       <ul class="list-unstyled list-inline">
+        <li class="sibling social">
+         <a href="https://www.instagram.com/pwnwydawnictwo/" role="menuitem" target="_blank" title="Instagram">
+          <i class="fa fa-instagram first">
+          </i>
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://www.facebook.com/WydawnictwoPWN/" role="menuitem" target="_blank" title="Facebook">
+          <i class="fa fa-facebook-square">
+          </i>
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://www.linkedin.com/company/wydawnictwo-naukowe-pwn" role="menuitem" target="_blank" title="Linkedin">
+          <i class="fa fa-linkedin-square">
+          </i>
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://twitter.com/PWNwydawnictwo" role="menuitem" target="_blank" title="Twitter">
+          <i class="fa fa-twitter-square">
+          </i>
+         </a>
+        </li>
+        <li class="sibling social">
+         <a href="https://www.youtube.com/channel/UCVvnMwQzyx8w4RUp4ltLuUg" role="menuitem" target="_blank" title="Youtube">
+          <i class="fa fa-youtube-square last">
+          </i>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </footer>
+   <div class="underfooter">
+    <div class="container container-like-header">
+     <div class="row">
+      <div class="col-sm-3 copyright">
+       © 2023 PWN
+      </div>
+      <div class="col-sm-9">
+       <div class="kontener-poboczne">
+        <!-- indexer::stop -->
+        <ul class="list-unstyled list-inline level_1" role="menubar">
+         <li class="first">
+          <a class="first" href="zasady-ochrony-prywatnosci" role="menuitem" title="Zasady ochrony prywatności">
+           Zasady ochrony prywatności
+          </a>
+         </li>
+         <li>
+          <a href="warunki-korzystania" role="menuitem" title="Warunki korzystania">
+           Warunki korzystania
+          </a>
+         </li>
+         <li class="page-pliki-cookie page-tresc last">
+          <a class="page-pliki-cookie page-tresc last" href="pliki-cookie" role="menuitem" title="Pliki cookie">
+           Pliki cookie
+          </a>
+         </li>
+        </ul>
+        <!-- indexer::continue -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="migomedia">
+    <div class="container container-like-header">
+     <a class="sb-signet bazaczek" href="http://studio.bazaczek.pl" target="_blank">
+      design: Studio Bazaczek
+     </a>
+     <span class="podzialka visible-xs-inline">
+      |
+     </span>
+     <!-- indexer::stop -->
+     <a class="autor-migo" href="http://www.migomedia.pl" target="_blank" title="Agencja Interaktywna Migomedia">
+      code: Agencja Interaktywna Migomedia
+     </a>
+     <!-- indexer::continue -->
+    </div>
+   </div>
+   <!-- indexer::continue -->
+  </div>
+  <script src="assets/jquery/ui/1.10.4/jquery-ui.min.js">
+  </script>
+  <script>
+   (function($){$(document).ready(function(){$(document).accordion({heightStyle: 'content',header: 'div.toggler',collapsible: true});var activate=function(tog){var tgs=$('div.toggler');tgs.removeClass('active');tog.addClass('active');tgs.next('div.accordion').attr('aria-hidden','true');tog.next('div.accordion').attr('aria-hidden','false');};$('div.toggler').focus(function(){$('div.toggler').attr('tabindex',0);$(this).attr('tabindex',-1);}).blur(function(){$(this).attr('tabindex',0);}).click(function(){activate($(this));}).keypress(function(event){if (event.keyCode==13) activate($(this));});});})(jQuery);
+  </script>
+  <script src="assets/jquery/colorbox/1.5.8/js/colorbox.min.js">
+  </script>
+  <script>
+   (function($){$(document).ready(function(){$('a[data-lightbox]').map(function(){$(this).colorbox({loop: false,rel: $(this).attr('data-lightbox'),maxWidth: '95%',maxHeight: '95%'});});});})(jQuery);
+  </script>
+  <script src="assets/jquery/mediaelement/2.14.2/js/mediaelement-and-player.min.js">
+  </script>
+  <script>
+   (function($){$(document).ready(function(){$('video,audio').mediaelementplayer({pluginPath: '/assets/jquery/mediaelement/2.14.2/',flashName: 'legacy/flashmediaelement.swf',silverlightName: 'legacy/silverlightmediaelement.xap'});});})(jQuery);
+  </script>
+  <script src="assets/swipe/2.0/js/swipe.min.js">
+  </script>
+  <script>
+   (function($){$(document).ready(function(){$('.ce_sliderStart').each(function(i,cte){var s=$('.content-slider',cte)[0],c=s.getAttribute('data-config').split(',');new Swipe(s,{'auto':parseInt(c[0]),'speed':parseInt(c[1]),'startSlide':parseInt(c[2]),'continuous':parseInt(c[3]),'menu':$('.slider-control',cte)[0]});});});})(jQuery);
+  </script>
+  <script src="assets/jquery/tablesorter/2.0.5/js/tablesorter.js">
+  </script>
+  <script>
+   (function($){$(document).ready(function(){$('.ce_table .sortable').each(function(i,table){$(table).tablesorter();});});})(jQuery);
+  </script>
+  <script>
+   setTimeout(function(){var e=function(e,t){try{var n=new XMLHttpRequest}catch(r){return}n.open("GET",e,!0),n.onreadystatechange=function(){this.readyState==4&&this.status==200&&typeof t=="function"&&t(this.responseText)},n.send()},t="system/cron/cron.";e(t+"txt",function(n){parseInt(n||0)<Math.round(+(new Date)/1e3)-3600&&e(t+"php")})},5e3);
+  </script>
+  <script src="/templates/pwn/js/plugins_slajder.js">
+  </script>
+  <script>
+   (function($){
+    	  $(document).ready(function(){
+            var sequence1=$(".sequence-kontener").sequence({
+                autoPlay: true,
+                autoPlayDelay: 0,
+                animateStartingFrameIn: true,
+                nextButton: true,
+                prevButton: true}).data("sequence");
+            var sequence2=$(".dzial .sequence-div").sequence({
+                autoPlay: true,
+                autoPlayDelay: 6000,
+                animateStartingFrameIn: false,}).data("sequence");})})(jQuery);
+  </script>
+  <div class="device-xs visible-xs">
+  </div>
+  <div class="device-sm visible-sm">
+  </div>
+  <div class="device-md visible-md">
+  </div>
+  <div class="device-lg visible-lg">
+  </div>
+  <!-- Consolidation Popup -->
+  <div class="modal fade consolidation-modal" id="consolidationModal" role="dialog" tabindex="-1">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+       <span aria-hidden="true">
+        ×
+       </span>
+      </button>
+     </div>
+     <div class="modal-body">
+      <p>
+       Szanowni Państwo,
+      </p>
+      <p>
+       uprzejmie informujemy, że w związku z rozwojem działalności spółek wydawniczych Grupy PWN, z dniem 1 kwietnia 2022 r. doszło do przejęcia przez spółkę Wydawnictwo Naukowe PWN S.A. spółek Wydawnictwo Szkolne PWN sp. z o.o. oraz PZWL Wydawnictwo Lekarskie sp. z o.o.
+      </p>
+      <p>
+       <strong>
+        Z tym dniem spółka Wydawnictwo Naukowe PWN S.A. weszła z mocy prawa we wszelkie prawa i obowiązki przejmowanych spółek, co oznacza także, że stanie się administratorem danych osobowych
+       </strong>
+       , których administratorem była dotychczas spółka Wydawnictwo Szkolne PWN sp. z o.o. lub PZWL Wydawnictwo Lekarskie sp. z o.o.
+      </p>
+      <p>
+       Zmiana administratora nie wpływa na zakres świadczonych dla Państwa usług ani na przysługujące Państwu prawa. Zakres oraz cele przetwarzania danych nie uległy zmianie. Z pełną informacją dotyczącą szczegółowych zasad oraz celów przetwarzania Państwa danych osobowych można zapoznać się w
+       <a class="cm-modal-link" href="/polaczenie-spolek-polityka-prywatnosci">
+        Polityce Prywatności.
+       </a>
+      </p>
+      <p>
+       W razie jakichkolwiek pytań zapraszamy do kontaktu pod adresem: G. Daimlera 2, 02-460 Warszawa lub e-mail: iod@pwn.pl
+      </p>
+      <p>
+       Klikając "Zamknij" potwierdzają Państwo, że zapoznali się z treścią komunikatu.
+      </p>
+     </div>
+     <div class="modal-footer">
+      <button class="btn btn-default btn-consolidation-acc" data-dismiss="modal" type="button">
+       Zamknij
+      </button>
+     </div>
+    </div>
+    <!-- /.modal-content -->
+   </div>
+   <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  <!-- END Consolidation Popup -->
+  <!--<script type="text/javascript" src="templates/pwn/js/consolidation-modal.js"></script>-->
+  <script type="text/javascript">
+   var gaJsHost=(("https:"==document.location.protocol) ? "https://ssl.": "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));var pageTracker=_gat._getTracker("UA-2651769-1");pageTracker._setDomainName("pwn.pl");pageTracker._initData();pageTracker._trackPageview();setTimeout('pageTracker._trackEvent(\'CzasUzytkownika\',\'BezOdrzucen\',\'Powyzej 10 sekund\')',10000);
+  </script>
+  <!-- -->
+  <script type="text/javascript">
+   var google_tag_params={ecomm_prodid: 'REPLACE_WITH_VALUE',ecomm_pagetype: 'REPLACE_WITH_VALUE',ecomm_totalvalue: 'REPLACE_WITH_VALUE',};
+  </script>
+  <script type="text/javascript">
+   /*<![CDATA[/
+    var google_conversion_id=1057688233;var google_custom_params=window.google_tag_params;var google_remarketing_only=true;/]]>*/
+  </script>
+  <script src="//www.googleadservices.com/pagead/conversion.js" type="text/javascript">
+  </script>
+  <noscript>
+   <div style="display:inline;">
+    <img alt="" height="1" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1057688233/?guid=ON&amp;script=0" style="border-style:none;" width="1"/>
+   </div>
+  </noscript>
+ </body>
+</html>

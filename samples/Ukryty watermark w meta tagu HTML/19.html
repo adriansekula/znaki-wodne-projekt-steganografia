@@ -1,0 +1,2913 @@
+<!DOCTYPE html>
+<html class="no-js">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="" name="description"/>
+  <meta content="width=device-width,minimum-scale=1" name="viewport"/>
+  <title>
+   WolneLektury.pl
+  </title>
+  <link href="https://static.wolnelektury.pl/img/favicon.3006ae3525d7.png" rel="icon" type="image/png"/>
+  <link href="https://static.wolnelektury.pl/opensearch.dda9c02fec5d.xml" rel="search" title="Wolne Lektury" type="application/opensearchdescription+xml"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="https://static.wolnelektury.pl/css/compressed/main.2d9b33337fe5.css" media="all" rel="stylesheet" type="text/css">
+   <!-- Matomo -->
+   <script type="text/javascript">
+    var _paq = window._paq || [];
+  
+    _paq.push(['setCustomVariable', '1', "layout", "on", "visit"]);
+  
+    _paq.push(['setCustomVariable', '2', "sowka", "off", "visit"]);
+  
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://piwik.nowoczesnapolska.org.pl/nocas/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+   </script>
+   <noscript>
+    <p>
+     <img alt="" src="https://piwik.nowoczesnapolska.org.pl/nocas/matomo.php?idsite=1&amp;rec=1" style="border:0;"/>
+    </p>
+   </noscript>
+   <!-- End Matomo Code -->
+  </link>
+  <meta content="98391ba4fc8f73225d9c9eb62522020e729d7d61308a0f0fab9910566328fb47" name="body_hash"/>
+ </head>
+ <body>
+  <nav class="l-navigation">
+   <div class="l-container">
+    <a class="l-navigation__logo" href="/">
+     <img alt="WolneLektury.pl" src="https://static.wolnelektury.pl/2022/images/logo.aefe561106b6.svg"/>
+    </a>
+    <div class="l-naviagion__search">
+     <form action="/szukaj/">
+      <input autocomplete="off" data-source="/szukaj/hint/?max=10" id="search" name="q" placeholder="szukaj tytułu, autora, motywów…" type="text"/>
+     </form>
+    </div>
+    <div class="l-navigation__actions">
+     <div class="l-navigation__user-actions">
+      <div class="l-navigation__login">
+       <a href="/uzytkownik/login/?next=/" id="login-link">
+        Zaloguj się
+       </a>
+       /
+       <a href="/uzytkownik/signup/?next=/">
+        Załóż konto
+       </a>
+      </div>
+     </div>
+     <button aria-label="Menu" class="l-navigation__button js-menu">
+      <span class="c-hamburger">
+       <span class="bar">
+       </span>
+      </span>
+     </button>
+    </div>
+    <div class="c-lang">
+     <div class="c-lang__button">
+      <i class="icon icon-lang">
+      </i>
+      polski
+      <i class="icon icon-arrow-down">
+      </i>
+     </div>
+     <form action="/i18n/setlang/" method="post">
+      <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+      <div class="c-lang__list">
+       <button class="" lang="de" name="language" tabindex="121" type="submit" value="de">
+        Deutsch
+       </button>
+       <button class="" lang="en" name="language" tabindex="121" type="submit" value="en">
+        English
+       </button>
+       <button class="" lang="es" name="language" tabindex="121" type="submit" value="es">
+        español
+       </button>
+       <button class="" lang="fr" name="language" tabindex="121" type="submit" value="fr">
+        français
+       </button>
+       <button class="" lang="it" name="language" tabindex="121" type="submit" value="it">
+        italiano
+       </button>
+       <button class="" lang="lt" name="language" tabindex="121" type="submit" value="lt">
+        lietuvių
+       </button>
+       <button class="is-active" lang="pl" name="language" tabindex="121" type="submit" value="pl">
+        polski
+       </button>
+       <button class="" lang="ru" name="language" tabindex="121" type="submit" value="ru">
+        русский
+       </button>
+       <button class="" lang="uk" name="language" tabindex="121" type="submit" value="uk">
+        українська
+       </button>
+      </div>
+     </form>
+    </div>
+    <div class="l-navigation__menu">
+     <div class="scrollable">
+      <div class="l-container">
+       <div class="l-navigation__user-bar">
+        <div class="l-navigation__user-actions">
+         <div class="c-lang">
+          <div class="c-lang__button">
+           <i class="icon icon-lang">
+           </i>
+           polski
+           <i class="icon icon-arrow-down">
+           </i>
+          </div>
+          <form action="/i18n/setlang/" method="post">
+           <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+           <div class="c-lang__list">
+            <button class="" lang="de" name="language" tabindex="121" type="submit" value="de">
+             Deutsch
+            </button>
+            <button class="" lang="en" name="language" tabindex="121" type="submit" value="en">
+             English
+            </button>
+            <button class="" lang="es" name="language" tabindex="121" type="submit" value="es">
+             español
+            </button>
+            <button class="" lang="fr" name="language" tabindex="121" type="submit" value="fr">
+             français
+            </button>
+            <button class="" lang="it" name="language" tabindex="121" type="submit" value="it">
+             italiano
+            </button>
+            <button class="" lang="lt" name="language" tabindex="121" type="submit" value="lt">
+             lietuvių
+            </button>
+            <button class="is-active" lang="pl" name="language" tabindex="121" type="submit" value="pl">
+             polski
+            </button>
+            <button class="" lang="ru" name="language" tabindex="121" type="submit" value="ru">
+             русский
+            </button>
+            <button class="" lang="uk" name="language" tabindex="121" type="submit" value="uk">
+             українська
+            </button>
+           </div>
+          </form>
+         </div>
+         <div class="l-navigation__login">
+          <a href="/uzytkownik/login/?next=/" id="login-link">
+           Zaloguj się
+          </a>
+          /
+          <a href="/uzytkownik/signup/?next=/">
+           Załóż konto
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="l-navigation__menu__blocks">
+        <div class="l-navigation__menu__links">
+         <ul>
+          <li>
+           <strong>
+            Katalog
+           </strong>
+          </li>
+          <li>
+           <a href="/info/lektury-szkolne/" tabindex="-1">
+            Lektury szkolne
+           </a>
+          </li>
+          <li>
+           <a href="/katalog/lektury/" tabindex="-1">
+            Książki
+           </a>
+          </li>
+          <li>
+           <a href="https://wolnelektury.pl/katalog/autor/" tabindex="-1">
+            Autorki i autorzy
+           </a>
+          </li>
+          <li>
+           <a href="/katalog/audiobooki/" tabindex="-1">
+            Audiobooki
+           </a>
+          </li>
+          <li>
+           <a href="/katalog/kolekcje/" tabindex="-1">
+            Kolekcje tematyczne
+           </a>
+          </li>
+          <li>
+           <a href="https://wolnelektury.pl/katalog/nowe/" tabindex="-1">
+            NOWOŚCI
+           </a>
+          </li>
+          <li>
+           <a href="/katalog/motyw/" tabindex="-1">
+            Motywy literackie
+           </a>
+          </li>
+          <li>
+           <a href="/katalog/obraz/" tabindex="-1">
+            Obrazy
+           </a>
+          </li>
+          <li>
+           <a href="/katalog/daisy/" tabindex="-1">
+            Katalog DAISY
+           </a>
+          </li>
+          <li>
+           <a href="https://wolnelektury.pl/info/sluchajwszedzie/" tabindex="-1">
+            Podkasty o książkach
+           </a>
+          </li>
+         </ul>
+         <ul>
+          <li>
+           <strong>
+            Włącz się
+           </strong>
+          </li>
+          <li>
+           <a href="/pomagam/" tabindex="-1">
+            <em>
+             Wesprzyj Wolne Lektury
+            </em>
+           </a>
+          </li>
+          <li>
+           <a href="/newsletter/zapisz-sie/" tabindex="-1">
+            Zapisz się na newsletter
+           </a>
+          </li>
+          <li>
+           <a href="/info/wesprzyj-nas/" tabindex="-1">
+            Przekaż 1,5%
+           </a>
+          </li>
+          <li>
+           <hr/>
+          </li>
+          <li>
+           <a href="/info/rekrutacja/" tabindex="-1">
+            Damy pracę!
+           </a>
+          </li>
+          <li>
+           <a href="/info/wlacz-sie-w-prace/" tabindex="-1">
+            Włącz się w prace redakcyjne
+           </a>
+          </li>
+          <li>
+           <a href="/sugestia/" tabindex="-1">
+            Zgłoś błąd
+           </a>
+          </li>
+          <li>
+           <a href="/sugestia/plan/" tabindex="-1">
+            Zgłoś brak utworu
+           </a>
+          </li>
+         </ul>
+         <ul>
+          <li>
+           <strong>
+            Aktualności
+           </strong>
+          </li>
+          <li>
+           <a href="https://fundacja.wolnelektury.pl/2023/11/21/nowy-projekt-feministyczne-inspiracje-popularyzacja-skandynawskiej-literatury-feministycznej/">
+            Nowy projekt: „Feministyczne inspiracje. Popularyzacja skandynawskiej literatury feministycznej”
+           </a>
+          </li>
+          <li>
+           <a href="https://fundacja.wolnelektury.pl/2023/11/07/tajemnica-marii-roget-do-sluchania/">
+            „Tajemnica Marii Rogêt” do słuchania
+           </a>
+          </li>
+          <li>
+           <a href="https://fundacja.wolnelektury.pl/2023/11/02/nowy-audiobook-o-krolu-arturze-i-rycerzach-okraglego-stolu/">
+            Nowy audiobook – „O królu Arturze i rycerzach Okrągłego Stołu”
+           </a>
+          </li>
+          <li>
+           <a href="https://fundacja.wolnelektury.pl/2023/10/23/hamlet-do-sluchania/">
+            „Hamlet” do słuchania
+           </a>
+          </li>
+          <li>
+           <a href="https://fundacja.wolnelektury.pl/2023/10/16/nowy-audiobook-znak-czterech-arthura-conan-doylea/">
+            Nowy audiobook – „Znak czterech” Arthura Conan Doyle’a
+           </a>
+          </li>
+          <li>
+           <a href="https://fundacja.wolnelektury.pl/category/wolne-lektury/" tabindex="-1">
+            Blog
+           </a>
+          </li>
+          <li>
+           <hr/>
+          </li>
+          <li>
+           <a href="/info/szkola-poezji-wolnych-lektur/" tabindex="-1">
+            Szkoła Poezji Wolnych Lektur
+           </a>
+          </li>
+          <li>
+           <a href="https://wolnelektury.pl/info/szkola-prozy-wolnych-lektury/" tabindex="-1">
+            Szkoła Prozy Wolnych Lektur
+           </a>
+          </li>
+          <li>
+           <a href="/info/projekt-e-lektury-dla-uczniow-z-niepelnosprawnosciami-pfron-2022/" tabindex="-1">
+            E-kolekcja lektur szkolnych i klasyki dostępna dla uczniów z niepełnosprawnościami
+           </a>
+          </li>
+          <li>
+           <a href="/info/feministyczne-inspiracje-literatura-skandynawska/" tabindex="-1">
+            Feministyczne inspiracje. Popularyzacja skandynawskiej literatury feministycznej
+           </a>
+          </li>
+          <li>
+           <a href="/info/literatura-wobec-rzeczywistosci/" tabindex="-1">
+            Literatura wobec rzeczywistości
+           </a>
+          </li>
+         </ul>
+         <ul>
+          <li>
+           <strong>
+            Narzędzia
+           </strong>
+          </li>
+          <li>
+           <a href="/mapa/" tabindex="-1">
+            <em>
+             Mapa na wakacje
+            </em>
+           </a>
+          </li>
+          <li>
+           <a href="/lesmianator/" tabindex="-1">
+            Leśmianator
+           </a>
+          </li>
+          <li>
+           <a href="https://polski.wolnelektury.pl/" tabindex="-1">
+            Przewodnik dla piszących i czytających
+           </a>
+          </li>
+          <li>
+           <hr/>
+          </li>
+          <li>
+           <a href="/api/" tabindex="-1">
+            API
+           </a>
+          </li>
+          <li>
+           <a href="/oaipmh/" tabindex="-1">
+            OAI-PMH
+           </a>
+          </li>
+          <li>
+           <a href="/info/widget/" tabindex="-1">
+            Widget Wolnych Lektur
+           </a>
+          </li>
+          <li>
+           <a href="/przypisy/" tabindex="-1">
+            Przypisy
+           </a>
+          </li>
+          <li>
+           <a href="https://wolnelektury.pl/katalog/" tabindex="-1">
+            Katalog
+           </a>
+          </li>
+          <li>
+           <a href="/raporty/katalog.pdf" tabindex="-1">
+            Katalog w formacie PDF
+           </a>
+          </li>
+         </ul>
+         <ul>
+          <li>
+           <strong>
+            O nas
+           </strong>
+          </li>
+          <li>
+           <a href="/info/Kontakt/" tabindex="-1">
+            Kontakt
+           </a>
+          </li>
+          <li>
+           <a href="/info/o-projekcie/" tabindex="-1">
+            O projekcie
+           </a>
+          </li>
+          <li>
+           <a href="/info/zespol/" tabindex="-1">
+            Zespół
+           </a>
+          </li>
+          <li>
+           <hr/>
+          </li>
+          <li>
+           <a href="/info/zasady-wykorzystania/" tabindex="-1">
+            Zasady wykorzystania Wolnych Lektur
+           </a>
+          </li>
+          <li>
+           <a href="/info/logotypy/" tabindex="-1">
+            Logotypy
+           </a>
+          </li>
+          <li>
+           <a href="/info/materialy-promocyjne/" tabindex="-1">
+            Materiały promocyjne
+           </a>
+          </li>
+          <li>
+           <a href="https://nowoczesnapolska.org.pl/prywatnosc/" tabindex="-1">
+            Polityka prywatności
+           </a>
+          </li>
+          <li>
+           <a href="/info/regulamin/" tabindex="-1">
+            Regulamin biblioteki
+           </a>
+          </li>
+          <li>
+           <a href="/info/dane-fnp-i-sprawozdania-finansowe/" tabindex="-1">
+            Dane fundacji i sprawozdania finansowe
+           </a>
+          </li>
+          <li>
+           <a href="/info/regulamin-darowizn/" tabindex="-1">
+            Regulamin darowizn
+           </a>
+          </li>
+          <li>
+           <a href="/info/informacja-o-tresciach-wrazliwych/" tabindex="-1">
+            Informacja o treściach wrażliwych
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="l-navigation__menu__info">
+         <div class="l-navigation__menu__book">
+          <div class="l-navigation__menu__book__header">
+           <p>
+            <strong>
+             Prapremiera!
+            </strong>
+            Dorzuć się, aby przeczytać.
+           </p>
+           <a class="button" href="/pomagam/?pk_campaign=menu-preview">
+            Dorzuć się
+           </a>
+          </div>
+          <div class="l-navigation__menu__book__info">
+           <h3>
+            <a href="/katalog/lektura/witkacy-niemyte-dusze/" tabindex="-1">
+             <img alt="Stanisław Ignacy Witkiewicz (Witkacy), Niemyte dusze" src="/media/book/cover_clean/witkacy-niemyte-dusze_tPxcqlQ.jpg"/>
+            </a>
+            <a href="/katalog/lektura/witkacy-niemyte-dusze/" tabindex="-1">
+             Stanisław Ignacy Witkiewicz (Witkacy)
+             <strong>
+              Niemyte dusze
+             </strong>
+            </a>
+           </h3>
+           <div>
+            <p class="paragraph">
+             „Nie ma na świecie istoty bardziej zakłamanej na temat swego stanowiska i znaczenia w czasoprzestrzennym kontinuum świata jak przeciętny Polak” …
+            </p>
+           </div>
+          </div>
+         </div>
+         <div class="l-navigation__menu__social">
+          <ul>
+           <li>
+            <a href="https://www.facebook.com/wolnelektury/" tabindex="-1" target="_blank" title="Facebook">
+             <i aria-hidden="true" class="icon icon-fb">
+             </i>
+            </a>
+           </li>
+           <li>
+            <a href="https://www.youtube.com/c/WolneLekturyYT/" tabindex="-1" target="_blank" title="YouTube">
+             <i aria-hidden="true" class="icon icon-yt">
+             </i>
+            </a>
+           </li>
+           <li>
+            <a href="https://www.instagram.com/wolnelektury/" tabindex="-1" target="_blank" title="Instagram">
+             <i aria-hidden="true" class="icon icon-ig">
+             </i>
+            </a>
+           </li>
+           <li>
+            <a href="https://twitter.com/wolnelektury" tabindex="-1" target="_blank" title="Twitter">
+             <i aria-hidden="true" class="icon icon-tt">
+             </i>
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <div class="l-container funding-promo-bar">
+  </div>
+  <main class="l-main">
+   <section class="l-section">
+    <div class="l-collections js-collections">
+     <div class="l-collections__header">
+      <h3>
+       <a href="/katalog/lektury/literatura-z-dreszczykiem/">
+        Literatura z dreszczykiem
+       </a>
+      </h3>
+      <div class="l-your-books__header__actions">
+       <button class="js-prev-slide">
+        <i class="icon icon-arrow-left">
+        </i>
+       </button>
+       <button class="js-next-slide">
+        <i class="icon icon-arrow-right">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="l-books">
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-71">
+       <figure class="l-books__item__img book-container book-container-6444" data-book="6444">
+        <a href="/katalog/lektura/conrad-tajny-agent/">
+         <img alt="Tajny agent" src="/media/book/cover_clean/conrad-tajny-agent_R4NHSOk.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6444"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="6444" data-book-slug="conrad-tajny-agent" href="/katalog/lektura/conrad-tajny-agent/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/joseph-conrad/">
+         Joseph Conrad
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/conrad-tajny-agent/">
+         Tajny agent
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść psychologiczna 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-33">
+       <figure class="l-books__item__img book-container book-container-2784" data-book="2784">
+        <a href="/katalog/lektura/zwierciadlana-zagadka/">
+         <img alt="Zwierciadlana zagadka" src="/media/book/cover_clean/zwierciadlana-zagadka_hW9nB1w.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="2784"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="2784" data-book-slug="zwierciadlana-zagadka" href="/katalog/lektura/zwierciadlana-zagadka/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/deotyma/">
+         Deotyma
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/zwierciadlana-zagadka/">
+         Zwierciadlana zagadka
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść fantastyczna 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-95">
+       <figure class="l-books__item__img book-container book-container-4430" data-book="4430">
+        <a href="/katalog/lektura/grozny-cien/">
+         <img alt="Groźny cień" src="/media/book/cover_clean/grozny-cien_6W7sJ2h.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="4430"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="4430" data-book-slug="grozny-cien" href="/katalog/lektura/grozny-cien/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/arthur-conan-doyle/">
+         Arthur Conan Doyle
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/grozny-cien/">
+         Groźny cień
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść kryminalna 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-277">
+       <figure class="l-books__item__img book-container book-container-2197" data-book="2197">
+        <a href="/katalog/lektura/pies-baskervilleow/">
+         <img alt="Pies Baskerville'ów" src="/media/book/cover_clean/pies-baskervilleow_SIpkOrk.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="2197"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="2197" data-book-slug="pies-baskervilleow" href="/katalog/lektura/pies-baskervilleow/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/arthur-conan-doyle/">
+         Arthur Conan Doyle
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/pies-baskervilleow/">
+         Pies Baskerville'ów
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść kryminalna 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-65">
+       <figure class="l-books__item__img book-container book-container-7750" data-book="7750">
+        <a href="/katalog/lektura/doyle-studium-w-szkarlacie/">
+         <img alt="Studium w szkarłacie" src="/media/book/cover_clean/doyle-studium-w-szkarlacie_cUX51ZN.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="7750"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="7750" data-book-slug="doyle-studium-w-szkarlacie" href="/katalog/lektura/doyle-studium-w-szkarlacie/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/arthur-conan-doyle/">
+         Arthur Conan Doyle
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/doyle-studium-w-szkarlacie/">
+         Studium w szkarłacie
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść kryminalna 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-18">
+       <figure class="l-books__item__img book-container book-container-6868" data-book="6868">
+        <a href="/katalog/lektura/trup-w-oblokach-czyli-historia-maszyny-latajacej-w-powietrzu/">
+         <img alt="Trup w obłokach, czyli historia maszyny latającej w powietrzu" src="/media/book/cover_clean/trup-w-oblokach-czyli-historia-maszyny-latajacej-w-powietrzu_PZl3cd0.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6868"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="6868" data-book-slug="trup-w-oblokach-czyli-historia-maszyny-latajacej-w-powietrzu" href="/katalog/lektura/trup-w-oblokach-czyli-historia-maszyny-latajacej-w-powietrzu/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/arthur-conan-doyle/">
+         Arthur Conan Doyle
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/trup-w-oblokach-czyli-historia-maszyny-latajacej-w-powietrzu/">
+         Trup w obłokach, czyli historia maszyny latającej w powietrzu
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Pozytywizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-28">
+       <figure class="l-books__item__img book-container book-container-7883" data-book="7883">
+        <a href="/katalog/lektura/doyle-znak-czterech/">
+         <img alt="Znak czterech" src="/media/book/cover_clean/doyle-znak-czterech_D5mbpFC.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="7883"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="7883" data-book-slug="doyle-znak-czterech" href="/katalog/lektura/doyle-znak-czterech/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/arthur-conan-doyle/">
+         Arthur Conan Doyle
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/doyle-znak-czterech/">
+         Znak czterech
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść kryminalna 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-40">
+       <figure class="l-books__item__img book-container book-container-2573" data-book="2573">
+        <a href="/katalog/lektura/krol-zamczyska/">
+         <img alt="Król zamczyska" src="/media/book/cover_clean/krol-zamczyska_A0jC0cv.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="2573"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="2573" data-book-slug="krol-zamczyska" href="/katalog/lektura/krol-zamczyska/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/seweryn-goszczynski/">
+         Seweryn Goszczyński
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/krol-zamczyska/">
+         Król zamczyska
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść grozy 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-29">
+       <figure class="l-books__item__img book-container book-container-3122" data-book="3122">
+        <a href="/katalog/lektura/zamek-kaniowski/">
+         <img alt="Zamek kaniowski" src="/media/book/cover_clean/zamek-kaniowski_zX8u1YG.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="3122"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="3122" data-book-slug="zamek-kaniowski" href="/katalog/lektura/zamek-kaniowski/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/seweryn-goszczynski/">
+         Seweryn Goszczyński
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/zamek-kaniowski/">
+         Zamek kaniowski
+        </a>
+       </h2>
+       <span class="other-info s">
+        Liryka 
+    Powieść poetycka 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-5">
+       <figure class="l-books__item__img book-container book-container-6882" data-book="6882">
+        <a href="/katalog/lektura/grabinski-z-wyjatkow-w-pomrokach-wiary-klatwa/">
+         <img alt="Klątwa" src="/media/book/cover_clean/grabinski-z-wyjatkow-w-pomrokach-wiary-klatwa_mbT0uD0.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6882"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="6882" data-book-slug="grabinski-z-wyjatkow-w-pomrokach-wiary-klatwa" href="/katalog/lektura/grabinski-z-wyjatkow-w-pomrokach-wiary-klatwa/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/stefan-grabinski/">
+         Stefan Grabiński
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/grabinski-z-wyjatkow-w-pomrokach-wiary-klatwa/">
+         Klątwa
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Nowela 
+    Dwudziestolecie międzywojenne
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-13">
+       <figure class="l-books__item__img book-container book-container-6898" data-book="6898">
+        <a href="/katalog/lektura/grabinski-ksiega-ognia-zbior/">
+         <img alt="Księga ognia" src="/media/book/cover_clean/grabinski-ksiega-ognia-zbior_H3BArfK.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6898"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="6898" data-book-slug="grabinski-ksiega-ognia-zbior" href="/katalog/lektura/grabinski-ksiega-ognia-zbior/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/stefan-grabinski/">
+         Stefan Grabiński
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/grabinski-ksiega-ognia-zbior/">
+         Księga ognia
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Nowela 
+    Dwudziestolecie międzywojenne
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-17">
+       <figure class="l-books__item__img book-container book-container-6887" data-book="6887">
+        <a href="/katalog/lektura/grabinski-z-wyjatkow-w-pomrokach-wiary-wampir/">
+         <img alt="Wampir" src="/media/book/cover_clean/grabinski-z-wyjatkow-w-pomrokach-wiary-wampir_eKqwT7X.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6887"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="6887" data-book-slug="grabinski-z-wyjatkow-w-pomrokach-wiary-wampir" href="/katalog/lektura/grabinski-z-wyjatkow-w-pomrokach-wiary-wampir/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/stefan-grabinski/">
+         Stefan Grabiński
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/grabinski-z-wyjatkow-w-pomrokach-wiary-wampir/">
+         Wampir
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Nowela 
+    Dwudziestolecie międzywojenne
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-47">
+       <figure class="l-books__item__img book-container book-container-2584" data-book="2584">
+        <a href="/katalog/lektura/powiesci-fantastyczne/">
+         <img alt="Powieści fantastyczne" src="/media/book/cover_clean/powiesci-fantastyczne_6nHjJ0M.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="2584"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="2584" data-book-slug="powiesci-fantastyczne" href="/katalog/lektura/powiesci-fantastyczne/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/e-t-a-hoffmann/">
+         E. T. A. Hoffmann
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/powiesci-fantastyczne/">
+         Powieści fantastyczne
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-22">
+       <figure class="l-books__item__img book-container book-container-6839" data-book="6839">
+        <a href="/katalog/lektura/leblanc-wydrazona-iglica/">
+         <img alt="Wydrążona iglica" src="/media/book/cover_clean/leblanc-wydrazona-iglica_8FE6ver.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6839"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="6839" data-book-slug="leblanc-wydrazona-iglica" href="/katalog/lektura/leblanc-wydrazona-iglica/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/maurice-leblanc/">
+         Maurice Leblanc
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/leblanc-wydrazona-iglica/">
+         Wydrążona iglica
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Powieść 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-7">
+       <figure class="l-books__item__img book-container book-container-4870" data-book="4870">
+        <a href="/katalog/lektura/horla/">
+         <img alt="Horla" src="/media/book/cover_clean/horla_6XGRVU1.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="4870"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="4870" data-book-slug="horla" href="/katalog/lektura/horla/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/guy-de-maupassant/">
+         Guy de Maupassant
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/horla/">
+         Horla
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Nowela 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-121">
+       <figure class="l-books__item__img book-container book-container-2397" data-book="2397">
+        <a href="/katalog/lektura/golem/">
+         <img alt="Golem" src="/media/book/cover_clean/golem_QoxGST1.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="2397"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="2397" data-book-slug="golem" href="/katalog/lektura/golem/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/gustav-meyrink/">
+         Gustav Meyrink
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/golem/">
+         Golem
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Powieść 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-47">
+       <figure class="l-books__item__img book-container book-container-6758" data-book="6758">
+        <a href="/katalog/lektura/orbitowski-manto/">
+         <img alt="#manto" src="/media/book/cover_clean/orbitowski-manto_ngHVJ7y.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6758"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="6758" data-book-slug="orbitowski-manto" href="/katalog/lektura/orbitowski-manto/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/lukasz-orbitowski/">
+         Łukasz Orbitowski
+        </a>
+        ,
+        <a href="/katalog/autor/jacek-swidzinski/">
+         Jacek Świdziński
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/orbitowski-manto/">
+         #manto
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Powieść 
+    Współczesność
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-9">
+       <figure class="l-books__item__img book-container book-container-4325" data-book="4325">
+        <a href="/katalog/lektura/guzik-z-kamei/">
+         <img alt="Guzik z kamei" src="/media/book/cover_clean/guzik-z-kamei_xTNIYIy.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="4325"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="4325" data-book-slug="guzik-z-kamei" href="/katalog/lektura/guzik-z-kamei/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/rodrigues-ottolengui/">
+         Rodrigues Ottolengui
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/guzik-z-kamei/">
+         Guzik z kamei
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść kryminalna 
+    Modernizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-136">
+       <figure class="l-books__item__img book-container book-container-1704" data-book="1704">
+        <a href="/katalog/lektura/beczka-amontillada/">
+         <img alt="Beczka Amontillada" src="/media/book/cover_clean/beczka-amontillada_R5SCiiy.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1704"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1704" data-book-slug="beczka-amontillada" href="/katalog/lektura/beczka-amontillada/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/beczka-amontillada/">
+         Beczka Amontillada
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-206">
+       <figure class="l-books__item__img book-container book-container-1629" data-book="1629">
+        <a href="/katalog/lektura/czarny-kot/">
+         <img alt="Czarny kot" src="/media/book/cover_clean/czarny-kot_DVU5xn5.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1629"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1629" data-book-slug="czarny-kot" href="/katalog/lektura/czarny-kot/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/czarny-kot/">
+         Czarny kot
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-144">
+       <figure class="l-books__item__img book-container book-container-1755" data-book="1755">
+        <a href="/katalog/lektura/diabel-na-wiezy/">
+         <img alt="Diabeł na wieży" src="/media/book/cover_clean/diabel-na-wiezy_oiGWAqq.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1755"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1755" data-book-slug="diabel-na-wiezy" href="/katalog/lektura/diabel-na-wiezy/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/diabel-na-wiezy/">
+         Diabeł na wieży
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-116">
+       <figure class="l-books__item__img book-container book-container-1768" data-book="1768">
+        <a href="/katalog/lektura/krol-dzumiec/">
+         <img alt="Król Dżumiec" src="/media/book/cover_clean/krol-dzumiec_o3S33fY.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1768"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1768" data-book-slug="krol-dzumiec" href="/katalog/lektura/krol-dzumiec/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/krol-dzumiec/">
+         Król Dżumiec
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-153">
+       <figure class="l-books__item__img book-container book-container-1633" data-book="1633">
+        <a href="/katalog/lektura/maska-smierci-szkarlatnej/">
+         <img alt="Maska śmierci szkarłatnej" src="/media/book/cover_clean/maska-smierci-szkarlatnej_QeNlgmZ.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1633"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1633" data-book-slug="maska-smierci-szkarlatnej" href="/katalog/lektura/maska-smierci-szkarlatnej/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/maska-smierci-szkarlatnej/">
+         Maska śmierci szkarłatnej
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-106">
+       <figure class="l-books__item__img book-container book-container-1770" data-book="1770">
+        <a href="/katalog/lektura/portret-owalny/">
+         <img alt="Portret owalny" src="/media/book/cover_clean/portret-owalny_tFttFLW.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1770"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1770" data-book-slug="portret-owalny" href="/katalog/lektura/portret-owalny/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/portret-owalny/">
+         Portret owalny
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-104">
+       <figure class="l-books__item__img book-container book-container-1735" data-book="1735">
+        <a href="/katalog/lektura/prawdziwy-opis-wypadku-z-p-waldemarem/">
+         <img alt="Prawdziwy opis wypadku z p. Waldemarem" src="/media/book/cover_clean/prawdziwy-opis-wypadku-z-p-waldemarem_11NnkG8.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1735"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1735" data-book-slug="prawdziwy-opis-wypadku-z-p-waldemarem" href="/katalog/lektura/prawdziwy-opis-wypadku-z-p-waldemarem/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/prawdziwy-opis-wypadku-z-p-waldemarem/">
+         Prawdziwy opis wypadku z p. Waldemarem
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-107">
+       <figure class="l-books__item__img book-container book-container-1682" data-book="1682">
+        <a href="/katalog/lektura/serce-oskarzycielem/">
+         <img alt="Serce oskarżycielem" src="/media/book/cover_clean/serce-oskarzycielem_7FkMsrq.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1682"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1682" data-book-slug="serce-oskarzycielem" href="/katalog/lektura/serce-oskarzycielem/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/serce-oskarzycielem/">
+         Serce oskarżycielem
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-8">
+       <figure class="l-books__item__img book-container book-container-7676" data-book="7676">
+        <a href="/katalog/lektura/poe-zloty-zuk-skradziony-list/">
+         <img alt="Skradziony list" src="/media/book/cover_clean/poe-zloty-zuk-skradziony-list_HGNzB7w.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="7676"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="7676" data-book-slug="poe-zloty-zuk-skradziony-list" href="/katalog/lektura/poe-zloty-zuk-skradziony-list/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/poe-zloty-zuk-skradziony-list/">
+         Skradziony list
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-106">
+       <figure class="l-books__item__img book-container book-container-1897" data-book="1897">
+        <a href="/katalog/lektura/studnia-i-wahadlo/">
+         <img alt="Studnia i wahadło" src="/media/book/cover_clean/studnia-i-wahadlo_8MF9dT4.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1897"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1897" data-book-slug="studnia-i-wahadlo" href="/katalog/lektura/studnia-i-wahadlo/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/studnia-i-wahadlo/">
+         Studnia i wahadło
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-22">
+       <figure class="l-books__item__img book-container book-container-7860" data-book="7860">
+        <a href="/katalog/lektura/poe-tajemnica-marii-roget/">
+         <img alt="Tajemnica Marii Rogêt" src="/media/book/cover_clean/poe-tajemnica-marii-roget_LWdBthu.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="7860"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="7860" data-book-slug="poe-tajemnica-marii-roget" href="/katalog/lektura/poe-tajemnica-marii-roget/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/poe-tajemnica-marii-roget/">
+         Tajemnica Marii Rogêt
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-23">
+       <figure class="l-books__item__img book-container book-container-7807" data-book="7807">
+        <a href="/katalog/lektura/poe-zabojstwo-przy-rue-morgue/">
+         <img alt="Zabójstwo przy rue Morgue" src="/media/book/cover_clean/poe-zabojstwo-przy-rue-morgue_WAevKPJ.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="7807"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="7807" data-book-slug="poe-zabojstwo-przy-rue-morgue" href="/katalog/lektura/poe-zabojstwo-przy-rue-morgue/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/poe-zabojstwo-przy-rue-morgue/">
+         Zabójstwo przy rue Morgue
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-171">
+       <figure class="l-books__item__img book-container book-container-1920" data-book="1920">
+        <a href="/katalog/lektura/zaglada-domu-usherow/">
+         <img alt="Zagłada domu Usherów" src="/media/book/cover_clean/zaglada-domu-usherow_tK27GZl.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="1920"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="1920" data-book-slug="zaglada-domu-usherow" href="/katalog/lektura/zaglada-domu-usherow/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-allan-poe/">
+         Edgar Allan Poe
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/zaglada-domu-usherow/">
+         Zagłada domu Usherów
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Romantyzm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-79">
+       <figure class="l-books__item__img book-container book-container-6920" data-book="6920">
+        <a href="/katalog/lektura/stevenson-dr-jekyll-i-mr-hyde/">
+         <img alt="Doktor Jekyll i pan Hyde" src="/media/book/cover_clean/stevenson-dr-jekyll-i-mr-hyde_rogyaU2.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6920"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="6920" data-book-slug="stevenson-dr-jekyll-i-mr-hyde" href="/katalog/lektura/stevenson-dr-jekyll-i-mr-hyde/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/robert-louis-stevenson/">
+         Robert Louis Stevenson
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/stevenson-dr-jekyll-i-mr-hyde/">
+         Doktor Jekyll i pan Hyde
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Pozytywizm
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-18">
+       <figure class="l-books__item__img book-container book-container-6922" data-book="6922">
+        <a href="/katalog/lektura/wallace-splacony-dlug/">
+         <img alt="Spłacony dług" src="/media/book/cover_clean/wallace-splacony-dlug_sVFNbO8.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="6922"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <a class="icon icon-like" data-book="6922" data-book-slug="wallace-splacony-dlug" href="/katalog/lektura/wallace-splacony-dlug/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/edgar-wallace/">
+         Edgar Wallace
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/wallace-splacony-dlug/">
+         Spłacony dług
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    powieść kryminalna 
+    Dwudziestolecie międzywojenne
+       </span>
+      </article>
+      <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-51">
+       <figure class="l-books__item__img book-container book-container-7853" data-book="7853">
+        <a href="/katalog/lektura/wilde-duch-z-canterville/">
+         <img alt="Duch z Canterville" src="/media/book/cover_clean/wilde-duch-z-canterville_hi0mqEp.jpg"/>
+        </a>
+        <div class="set-tools">
+         <div class="sets">
+         </div>
+         <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+          <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+          <input name="book" type="hidden" value="7853"/>
+          <input name="name" placeholder="nazwa półki">
+           <button type="submit">
+            
+           </button>
+          </input>
+         </form>
+        </div>
+       </figure>
+       <div class="l-books__item__actions">
+        <span class="icon icon-book-alt" title="książka">
+        </span>
+        <span class="icon icon-audio" title="audiobook">
+        </span>
+        <a class="icon icon-like" data-book="7853" data-book-slug="wilde-duch-z-canterville" href="/katalog/lektura/wilde-duch-z-canterville/">
+        </a>
+       </div>
+       <h3 class="s">
+        <a href="/katalog/autor/oscar-wilde/">
+         Oscar Wilde
+        </a>
+       </h3>
+       <h2 class="s">
+        <a href="/katalog/lektura/wilde-duch-z-canterville/">
+         Duch z Canterville
+        </a>
+       </h2>
+       <span class="other-info s">
+        Epika 
+    Opowiadanie 
+    Modernizm
+       </span>
+      </article>
+     </div>
+     <div class="c-read_more">
+      <a href="/katalog/kolekcje/">
+       zobacz wszystkie kolekcje
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="l-section">
+    <div class="p-homepage__info">
+     <div class="p-homepage__info__box p-homepage__info__box--carousel">
+      <div style="background-image: url('/media/wspieraj-wl-2023-06.png');">
+       <a href="https://wolnelektury.pl/pomagam?pk_campaign=karuzela-2023-06">
+       </a>
+      </div>
+      <div style="background-image: url('/media/YT-karuzela_-wl.png');">
+       <a href="https://www.youtube.com/channel/UC8tQ54NHy56gWhlwMmOZwbA">
+       </a>
+      </div>
+     </div>
+     <div class="p-homepage__info__box p-homepage__info__box--donate">
+      <figure>
+       <img alt="Dorzuć się!" src="https://static.wolnelektury.pl/2022/images/book-donate.62d7c8dbef2e.svg"/>
+      </figure>
+      <div class="p-homepage__info__box__content">
+       <p>
+        Nasze książki są dostępne dla tysięcy dzieciaków dzięki
+        <strong>
+         darowiznom
+        </strong>
+        od osób takich jak
+        <strong>
+         Ty
+        </strong>
+        !
+       </p>
+       <a class="l-button l-button--default l-button--default--dark" href="/pomagam/?pk_campaign=home">
+        Dorzuć się!
+       </a>
+      </div>
+     </div>
+     <div class="p-homepage__info__box p-homepage__info__box--newsletter">
+      <figure>
+       <img alt="Zapisz się na nasz Newsletter!" src="https://static.wolnelektury.pl/2022/images/book-newsletter.846f786a6785.svg"/>
+      </figure>
+      <div class="p-homepage__info__box__content">
+       <h3>
+        Informacja o nowościach
+        <strong>
+         Newsletter!
+        </strong>
+       </h3>
+       <a class="l-button l-button--default" href="/newsletter/zapisz-sie/?pk_campaign=home">
+        Zapisz się
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="l-section l-section--row">
+    <div class="l-quotes" style="">
+     <div class="l-quotes__item">
+      <img alt="Adam Wajrak" src="/media/cache/19/dd/19dd13953ec644952770f8e7ee799beb.jpg"/>
+      <h4>
+       Adam Wajrak
+      </h4>
+      <p>
+       Tylko społeczeństwo, które czyta, jest w stanie sprostać wyzwaniom współczesnego świata, takim jak katastrofa klimatyczna albo gigantyczne wymieranie. Tylko społeczeństwo, które czyta, może być współczujące i tolerancyjne. Dlatego wspieram „Wolne Lektury”, bo dają dzieciakom darmowe książki, zachęcając je do czytania. To ważne, ponieważ wciąż książka dla wielu jest dobrem luksusowym.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Adam Fidusiewicz" src="/media/cache/ef/d2/efd2964e4452c91d58213051f686f36f.jpg"/>
+      <h4>
+       Adam Fidusiewicz
+      </h4>
+      <p>
+       Wspieram, bo uważam że dostęp do wiedzy powinien być darmowy. Sam często korzystam z zasobów wolnelektury.pl więc wspieram jak tylko mogę.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Filip Springer" src="/media/cache/2d/ea/2dea91dc03cfbad70cd543effa278a4e.jpg"/>
+      <h4>
+       Filip Springer
+      </h4>
+      <p>
+       Nie umiem błyskotliwie odpowiedzieć na pytanie o to dlaczego warto wspierać Wolne Lektury. Chciałbym być oryginalny, a to jest tak naprawdę pytanie dlaczego dostęp do świetnej literatury powinien być nieograniczony i dla każdego. Każda odpowiedź na to pytanie trąci truizmem. Jedyna rozsądna jaka się nasuwa brzmi następująco: Wolne Lektury należy wspierać bo są.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Piotr Głowacki" src="/media/cache/d6/e5/d6e57bf1d579b00b981582f148f48fb7.jpg"/>
+      <h4>
+       Piotr Głowacki
+      </h4>
+      <p>
+       Wolne Lektury to skarbnica mądrości otwarta na oścież. Tu wolno czytać wszystko. Tylko od was zależy, czy podejmiecie to wyzwanie. Tu już nic nie stoi na przeszkodzie. Wolność lektury, wolność wyboru, wolność wyobraźni – twoja wolność.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Sylwia Chutnik" src="/media/cache/9c/06/9c06dd78e3d8dadef86bc4a9e6fb56c9.jpg"/>
+      <h4>
+       Sylwia Chutnik
+      </h4>
+      <p>
+       Warto wspierać czytanie w każdej formie, możliwie dostępne dla wszystkich. I takich książek, po które warto sięgnąć.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Robert Koszucki" src="/media/cache/8a/e8/8ae8adec082f0b7807af1aa4f077ccbd.jpg"/>
+      <h4>
+       Robert Koszucki
+      </h4>
+      <p>
+       Lektury szkolne muszą być wolne! Darmowy i łatwy dostęp do każdej lektury - skoro jest obowiązkowa - powinien być zagwarantowany dzieciakom.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Paulina Młynarska" src="/media/cache/e7/9f/e79f2e061cea19afb5d3b0bd1034e857.jpg"/>
+      <h4>
+       Paulina Młynarska
+      </h4>
+      <p>
+       Kto raz pokocha czytanie, już nigdy nie będzie całkiem sam. Książki ratują życie. Na Wolnych Lekturach znajdziecie ich bez liku.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Paulina Holtz" src="/media/cache/d8/45/d8453fba3f56ade57be026ec2e66cb62.jpg"/>
+      <h4>
+       Paulina Holtz
+      </h4>
+      <p>
+       Miejsca takie jak Wolne Lektury są bezwzględnie potrzebne. To port lotniczy skąd każdy, niezależnie od wieku i zawartości portfela, może wyruszyć na poszukiwanie przygody.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Barbara Klicka" src="/media/cache/80/9c/809cdbe11396cf741450c6605c3b1ea0.jpg"/>
+      <h4>
+       Barbara Klicka
+      </h4>
+      <p>
+       Wolne Lektury to biblioteka, która jest czynna 24 godziny na dobę i w dodatku można z niej korzystać bez wychodzenia z domu. No i można tam znaleźć mnóstwo klasycznych pozycji, również tych mniej oczywistych.
+      </p>
+     </div>
+     <div class="l-quotes__item">
+      <img alt="Michał Nogaś" src="/media/cache/5d/23/5d235fcb8e0cef8acb1e1604fc230bd7.jpg"/>
+      <h4>
+       Michał Nogaś
+      </h4>
+      <p>
+       Wolne Lektury to dobro. Narodowe.
+      </p>
+     </div>
+    </div>
+    <div class="l-quotes-ad" style="">
+     <div class="p-homepage-prapremiera">
+      <h3>
+       Prapremiera
+      </h3>
+      <div class="p-homepage-prapremiera__box">
+       <div class="p-homepage-prapremiera__box__item">
+        <figure>
+         <a href="/katalog/lektura/witkacy-niemyte-dusze/">
+          <img alt="Stanisław Ignacy Witkiewicz (Witkacy), Niemyte dusze" src="/media/book/cover_clean/witkacy-niemyte-dusze_tPxcqlQ.jpg"/>
+         </a>
+        </figure>
+        <div class="p-homepage-prapremiera__box__content">
+         <h4>
+          <a href="/katalog/autor/stanislaw-ignacy-witkiewicz/">
+           Stanisław Ignacy Witkiewicz (Witkacy)
+          </a>
+         </h4>
+         <h3>
+          <a href="/katalog/lektura/witkacy-niemyte-dusze/">
+           Niemyte dusze
+          </a>
+         </h3>
+         <p>
+          <p class="paragraph">
+           „Nie ma na świecie istoty bardziej zakłamanej na temat swego stanowiska i znaczenia w czasoprzestrzennym kontinuum świata jak przeciętny …
+          </p>
+         </p>
+        </div>
+       </div>
+       <div class="p-homepage-prapremiera__box__donate">
+        <p>
+         Aby przeczytać prapremierę,
+         <strong>
+          dorzuć
+         </strong>
+         się do Wolnych Lektur dowolną wpłatą. Ustaw stałe wsparcie, a będziesz mieć dostęp do kolejnych
+         <strong>
+          prapremier
+         </strong>
+         .
+        </p>
+        <a class="l-button l-button--default l-button--default--dark" href="/katalog/lektura/witkacy-niemyte-dusze/">
+         Dorzuć się
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="l-section">
+    <div class="p-homepage__info p-homepage__info--second">
+     <div class="p-homepage__info__box p-homepage__info__box--full">
+      <figure>
+       <img alt="Dorzuć się!" src="https://static.wolnelektury.pl/2022/images/kid.b3bf5c763361.png"/>
+      </figure>
+      <div class="p-homepage__info__box__content">
+       <p>
+        <strong>
+         Wolne Lektury
+        </strong>
+        to lektury szkolne i tysiące innych książek – za
+        <strong>
+         darmo
+        </strong>
+        i
+        <strong>
+         bez rejestracji
+        </strong>
+        .
+       </p>
+       <p>
+        Czytaj i słuchaj online, ściągaj na swój telefon lub komputer, dziel się z innymi.
+       </p>
+       <p>
+        Dla uczennic i uczniów dodajemy przypisy, motywy literackie, biogramy i geotagowanie.
+       </p>
+       <a class="l-button l-button--default l-button--default--dark" href="/info/o-projekcie/?pk_campaign=wl-infobox">
+        Dowiedz się więcej
+       </a>
+      </div>
+     </div>
+     <div class="p-homepage__info__box__rows">
+      <div class="p-homepage__info__box p-homepage__info__box--full--sm">
+       <figure>
+        <img alt="Dorzuć się!" src="https://static.wolnelektury.pl/2022/images/kid-2.efea3a4f81f6.png"/>
+       </figure>
+       <div class="p-homepage__info__box__content">
+        <p>
+         Jesteśmy częścią ruchu
+         <strong>
+          wolnej kultury
+         </strong>
+         !
+        </p>
+        <a class="l-button l-button--default" href="https://fundacja.wolnelektury.pl/o-fundacji/?pk_campaign=wl-infobox">
+         Dowiedz się więcej
+        </a>
+       </div>
+      </div>
+      <div class="p-homepage__info__box p-homepage__info__box--full--sm">
+       <figure>
+        <img alt="Dorzuć się!" src="https://static.wolnelektury.pl/2022/images/kid-3.c69f752cbf6b.png"/>
+       </figure>
+       <div class="p-homepage__info__box__content">
+        <p>
+         Jak budujemy najpopularniejszą
+         <strong>
+          bibliotekę online
+         </strong>
+         w Polsce
+        </p>
+        <a class="l-button l-button--default" href="/info/jak-powstaja-wolne-lektury/">
+         Dowiedz się więcej
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <section class="l-section">
+   <div class="l-collections js-collections">
+    <div class="l-collections__header">
+     <h3>
+      <a href="/katalog/nowe/">
+       Nowości
+      </a>
+     </h3>
+     <div class="l-your-books__header__actions">
+      <button class="js-prev-slide">
+       <i class="icon icon-arrow-left">
+       </i>
+      </button>
+      <button class="js-next-slide">
+       <i class="icon icon-arrow-right">
+       </i>
+      </button>
+     </div>
+    </div>
+    <div class="l-books" style="display:block;">
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-0">
+      <figure class="l-books__item__img book-container book-container-7914" data-book="7914">
+       <a href="/katalog/lektura/oleszczynski-dziennik-z-oblezenia-paryza/">
+        <img alt="Dziennik z oblężenia Paryża" src="/media/book/cover_clean/oleszczynski-dziennik-z-oblezenia-paryza.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7914"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7914" data-book-slug="oleszczynski-dziennik-z-oblezenia-paryza" href="/katalog/lektura/oleszczynski-dziennik-z-oblezenia-paryza/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/antoni-oleszczynski/">
+        Antoni Oleszczyński
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/oleszczynski-dziennik-z-oblezenia-paryza/">
+        Dziennik z oblężenia Paryża
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    Pamiętnik 
+    Romantyzm
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-0">
+      <figure class="l-books__item__img book-container book-container-7913" data-book="7913">
+       <a href="/katalog/lektura/kisch-sprawa-szefa-sztabu-redla/">
+        <img alt="Sprawa szefa sztabu Redla. Z tajników szpiegostwa" src="/media/book/cover_clean/kisch-sprawa-szefa-sztabu-redla_L6cu8NP.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7913"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7913" data-book-slug="kisch-sprawa-szefa-sztabu-redla" href="/katalog/lektura/kisch-sprawa-szefa-sztabu-redla/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/egon-erwin-kisch/">
+        Egon Erwin Kisch
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/kisch-sprawa-szefa-sztabu-redla/">
+        Sprawa szefa sztabu Redla. Z tajników szpiegostwa
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    Reportaż 
+    Współczesność
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-2">
+      <figure class="l-books__item__img book-container book-container-7912" data-book="7912">
+       <a href="/katalog/lektura/gall-anonim-kronika-polska/">
+        <img alt="Kronika polska" src="/media/book/cover_clean/gall-anonim-kronika-polska.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7912"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7912" data-book-slug="gall-anonim-kronika-polska" href="/katalog/lektura/gall-anonim-kronika-polska/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/gall-anonim/">
+        Gall Anonim
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/gall-anonim-kronika-polska/">
+        Kronika polska
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    Kronika 
+    Średniowiecze
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-0">
+      <figure class="l-books__item__img book-container book-container-7911" data-book="7911">
+       <a href="/katalog/lektura/giller-ogolna-charakterystyka-powstania-w-1863-r/">
+        <img alt="Ogólna charakterystyka powstania w 1863 r." src="/media/book/cover_clean/giller-ogolna-charakterystyka-powstania-w-1863-r.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7911"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7911" data-book-slug="giller-ogolna-charakterystyka-powstania-w-1863-r" href="/katalog/lektura/giller-ogolna-charakterystyka-powstania-w-1863-r/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/agaton-giller/">
+        Agaton Giller
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/giller-ogolna-charakterystyka-powstania-w-1863-r/">
+        Ogólna charakterystyka powstania w 1863 r.
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    Artykuł 
+    Pozytywizm
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-2">
+      <figure class="l-books__item__img book-container book-container-7910" data-book="7910">
+       <a href="/katalog/lektura/borowski-alicja-w-krainie-czarow/">
+        <img alt="Alicja w krainie czarów" src="/media/book/cover_clean/borowski-alicja-w-krainie-czarow_gyuNm73.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7910"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7910" data-book-slug="borowski-alicja-w-krainie-czarow" href="/katalog/lektura/borowski-alicja-w-krainie-czarow/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/tadeusz-borowski/">
+        Tadeusz Borowski
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/borowski-alicja-w-krainie-czarow/">
+        Alicja w krainie czarów
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    Felieton 
+    Współczesność
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-7">
+      <figure class="l-books__item__img book-container book-container-7909" data-book="7909">
+       <a href="/katalog/lektura/doyle-dolina-trwogi/">
+        <img alt="Dolina trwogi" src="/media/book/cover_clean/doyle-dolina-trwogi.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7909"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7909" data-book-slug="doyle-dolina-trwogi" href="/katalog/lektura/doyle-dolina-trwogi/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/arthur-conan-doyle/">
+        Arthur Conan Doyle
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/doyle-dolina-trwogi/">
+        Dolina trwogi
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    powieść kryminalna 
+    Modernizm
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-3">
+      <figure class="l-books__item__img book-container book-container-7908" data-book="7908">
+       <a href="/katalog/lektura/coolidge-co-kasia-robila/">
+        <img alt="Co Kasia robiła" src="/media/book/cover_clean/coolidge-co-kasia-robila.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7908"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7908" data-book-slug="coolidge-co-kasia-robila" href="/katalog/lektura/coolidge-co-kasia-robila/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/susan-coolidge/">
+        Susan Coolidge
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/coolidge-co-kasia-robila/">
+        Co Kasia robiła
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    powieść dla dzieci i młodzieży 
+    Pozytywizm
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-1">
+      <figure class="l-books__item__img book-container book-container-7907" data-book="7907">
+       <a href="/katalog/lektura/szac-wajnkranc-przeminelo-z-ogniem/">
+        <img alt="Przeminęło z ogniem" src="/media/book/cover_clean/szac-wajnkranc-przeminelo-z-ogniem_PFkl3in.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7907"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7907" data-book-slug="szac-wajnkranc-przeminelo-z-ogniem" href="/katalog/lektura/szac-wajnkranc-przeminelo-z-ogniem/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/noemi-szac-wajnkranc/">
+        Noemi Szac-Wajnkranc
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/szac-wajnkranc-przeminelo-z-ogniem/">
+        Przeminęło z ogniem
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    Pamiętnik 
+    Współczesność
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-4">
+      <figure class="l-books__item__img book-container book-container-7906" data-book="7906">
+       <a href="/katalog/lektura/twain-przygody-hucka-finna/">
+        <img alt="Przygody Hucka Finna" src="/media/book/cover_clean/twain-przygody-hucka-finna_eXNSQZE.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7906"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7906" data-book-slug="twain-przygody-hucka-finna" href="/katalog/lektura/twain-przygody-hucka-finna/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/mark-twain/">
+        Mark Twain
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/twain-przygody-hucka-finna/">
+        Przygody Hucka Finna
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    powieść dla dzieci i młodzieży 
+    Pozytywizm
+      </span>
+     </article>
+     <article class="l-books__item book-container-activator" data-longpress="hover" data-pop="-8">
+      <figure class="l-books__item__img book-container book-container-7905" data-book="7905">
+       <a href="/katalog/lektura/lata-nauki-wilhelma-meistra/">
+        <img alt="Lata nauki Wilhelma Meistra" src="/media/book/cover_clean/lata-nauki-wilhelma-meistra.jpg"/>
+       </a>
+       <div class="set-tools">
+        <div class="sets">
+        </div>
+        <form action="/ludzie/dodaj-tag/" class="add-set-tag" method="post">
+         <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+         <input name="book" type="hidden" value="7905"/>
+         <input name="name" placeholder="nazwa półki">
+          <button type="submit">
+           
+          </button>
+         </input>
+        </form>
+       </div>
+      </figure>
+      <div class="l-books__item__actions">
+       <span class="icon icon-book-alt" title="książka">
+       </span>
+       <a class="icon icon-like" data-book="7905" data-book-slug="lata-nauki-wilhelma-meistra" href="/katalog/lektura/lata-nauki-wilhelma-meistra/">
+       </a>
+      </div>
+      <h3 class="s">
+       <a href="/katalog/autor/johann-wolfgang-von-goethe/">
+        Johann Wolfgang von Goethe
+       </a>
+      </h3>
+      <h2 class="s">
+       <a href="/katalog/lektura/lata-nauki-wilhelma-meistra/">
+        Lata nauki Wilhelma Meistra
+       </a>
+      </h2>
+      <span class="other-info s">
+       Epika 
+    Powieść 
+    Romantyzm
+      </span>
+     </article>
+    </div>
+   </div>
+  </section>
+  <div class="l-container">
+   <section class="l-section">
+    <div class="p-homepage__uptodate">
+     <div class="p-homepage__uptodate__header">
+      <h3>
+       Bądź na bieżąco
+      </h3>
+      <ul>
+       <li>
+        <a href="https://www.facebook.com/wolnelektury/" tabindex="-1" target="_blank" title="Facebook">
+         <i aria-hidden="true" class="icon icon-fb">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="https://www.youtube.com/c/WolneLekturyYT/" tabindex="-1" target="_blank" title="YouTube">
+         <i aria-hidden="true" class="icon icon-yt">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="https://www.instagram.com/wolnelektury/" tabindex="-1" target="_blank" title="Instagram">
+         <i aria-hidden="true" class="icon icon-ig">
+         </i>
+        </a>
+       </li>
+       <li>
+        <a href="https://twitter.com/wolnelektury" tabindex="-1" target="_blank" title="Twitter">
+         <i aria-hidden="true" class="icon icon-tt">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <style type="text/css">
+      .sponsors-page a{background-image:url(/media/sponsorzy/sprite/sponsorzy/sprite/footer-1681826441.png);}
+     </style>
+     <div class="sponsors-page">
+      <div class="sponsors-column">
+       <p class="sponsors-column-name">
+        Honorowy patronat
+       </p>
+       <div class="sponsor-logos">
+        <a href="http://www.men.gov.pl/" style="background-position: 0px 0px;" title="Ministerstwo Edukacji Narodowej">
+        </a>
+        <a href="http://www.mkidn.gov.pl/" style="background-position: 0px -120px;" title="Ministerstwo Kultury i Dziedzictwa Narodowego">
+        </a>
+        <a href="http://sppwarszawa.pl/" style="background-position: 0px -240px;" title="Stowarzyszenie Pisarzy Polskich">
+        </a>
+       </div>
+      </div>
+      <div class="sponsors-column">
+       <p class="sponsors-column-name">
+        Partnerzy merytoryczni
+       </p>
+       <div class="sponsor-logos">
+        <a href="http://www.icm.edu.pl/" style="background-position: 0px -360px;" title="ICM">
+        </a>
+        <a href="https://finereader.pl/" style="background-position: 0px -480px;" title="Abby Fine Reader">
+        </a>
+       </div>
+      </div>
+      <div class="sponsors-column">
+       <p class="sponsors-column-name">
+        Grantodawcy
+       </p>
+       <div class="sponsor-logos">
+        <a href="http://www.mkidn.gov.pl/" style="background-position: 0px -600px;" title="MKiDN">
+        </a>
+        <a href="" style="background-position: 0px -720px;" title="PFRON">
+        </a>
+       </div>
+      </div>
+      <div class="sponsors-column">
+       <p class="sponsors-column-name">
+        Sponsorzy
+       </p>
+       <div class="sponsor-logos">
+        <a href="https://www.fundacjalotto.pl/" style="background-position: 0px -840px;" title="Fundacja Lotto">
+        </a>
+       </div>
+      </div>
+      <div class="sponsors-column">
+       <p class="sponsors-column-name">
+        Patroni medialni
+       </p>
+       <div class="sponsor-logos">
+        <a href="http://w.bibliotece.pl/" style="background-position: 0px -960px;" title="w.bibliotece.pl">
+        </a>
+        <a href="" style="background-position: 0px -1080px;" title="SBP">
+        </a>
+       </div>
+      </div>
+      <div class="sponsors-column">
+       <p class="sponsors-column-name">
+        Partner
+       </p>
+       <div class="sponsor-logos">
+        <a href="" style="background-position: 0px -1200px;" title="BUW">
+        </a>
+        <a href="https://klp.pl" style="background-position: 0px -1320px;" title="Klp.pl">
+        </a>
+        <a href="" style="background-position: 0px -1440px;" title="Nie czytasz">
+        </a>
+        <a href="http://www.bn.org.pl/" style="background-position: 0px -1560px;" title="Biblioteka Narodowa">
+        </a>
+        <a href="https://inkbook.pl/" style="background-position: 0px -1680px;" title="inkbook_kolor">
+        </a>
+        <a href="https://polszczyzna.pl/" style="background-position: 0px -1800px;" title="Poprawna Polszczyzna">
+        </a>
+        <a href="https://haveabook.eu/pl" style="background-position: 0px -1920px;" title="Have a Book">
+        </a>
+       </div>
+      </div>
+      <div style="clear: both">
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <div class="l-footer">
+   <div class="l-container">
+    <div class="l-footer__row">
+     <ul>
+      <li>
+       <a href="https://fundacja.wolnelektury.pl">
+        Fundacja Wolne Lektury
+       </a>
+      </li>
+      <li>
+       ul. Marszałkowska 84/92 lok. 125
+      </li>
+      <li>
+       00-514 Warszawa
+      </li>
+      <li>
+       tel.
+       <a href="tel:+48-22-621-30-17">
+        +48 22 621 30 17
+       </a>
+      </li>
+      <li>
+       email
+       <a href="mailto:fundacja@wolnelektury.pl">
+        fundacja@wolnelektury.pl
+       </a>
+      </li>
+     </ul>
+     <ul>
+      <li>
+       NIP: 952-187-70-87
+      </li>
+      <li>
+       KRS: 0000070056
+      </li>
+      <li>
+       REGON: 017423865
+      </li>
+      <li>
+       Numer konta:
+          75 1090 2851 0000 0001 4324 3317
+      </li>
+     </ul>
+    </div>
+    <div class="l-footer__row">
+     <div>
+      Wolne Lektury to projekt prowadzony przez fundację
+      <a href="https://fundacja.wolnelektury.pl">
+       Wolne Lektury
+      </a>
+      .
+      <br/>
+     </div>
+     <div>
+      <a href="https://www.gov.pl/web/kultura">
+       <img alt="MKiDN" src="https://static.wolnelektury.pl/2022/images/MKiDN.df3cba701c01.png"/>
+      </a>
+     </div>
+     <div>
+      Strona biblioteki Wolne Lektury powstała dzięki dofinansowaniu ze środków Ministra
+      <a href="https://www.gov.pl/web/kultura">
+       Kultury i Dziedzictwa Narodowego
+      </a>
+      pochodzących z Funduszu Promocji Kultury – państwowego funduszu celowego.
+     </div>
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   var LANGUAGE_CODE = "pl";
+  </script>
+  <script charset="utf-8" src="https://static.wolnelektury.pl/js/compressed/main.min.4ac152751d02.js" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="https://static.wolnelektury.pl/js/compressed/player.min.008ec5c675dd.js" type="text/javascript">
+  </script>
+  <!-- Hotjar Tracking Code for https://wolnelektury.pl/ -->
+  <script>
+   (function(h,o,t,j,a,r){
+     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+     h._hjSettings={hjid:2661024,hjsv:6};
+     a=o.getElementsByTagName('head')[0];
+     r=o.createElement('script');r.async=1;
+     r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+     a.appendChild(r);
+ })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script>
+   window.markerConfig = {
+    destination: '6177df91cd90df729b89c94d', 
+    source: 'snippet'
+  };
+  </script>
+  <script>
+   !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
+  </script>
+  <input name="csrfmiddlewaretoken" type="hidden" value="mSPgXUVzmkivKrd6rJLg1QoOcn1gjgGEdT4H4ICT7gqTRfLBki2xqzu842XkUn4r"/>
+ </body>
+</html>
