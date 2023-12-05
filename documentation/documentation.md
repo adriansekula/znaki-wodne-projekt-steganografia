@@ -33,6 +33,7 @@ Niewidoczne znakowanie wodne jest ukryte i jest przeznaczone do weryfikacji aute
 
 W miarę rozwoju technologii, stan techniki z rozwiązaniami znakowania wodnego ewoluuje, oferując nowe metody zabezpieczeń danych cyfrowych, które są zarówno bardziej wydajne, jak i trudniejsze do pokonania. Rozwój tych technologii jest napędzany również postępem w zakresie uczenia maszynowego, rozpoznawania obrazów oraz analizy i przetwarzania sygnałów cyfrowych.
 
+## Prace naukowe wykorzystane w projekcie
 
 ### Copyright for web content using invisible text watermarking
 
